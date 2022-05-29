@@ -1,4 +1,5 @@
 import React from 'react';
+import MenuIcon from 'public/icons/menu.svg';
 
 type Props = {
   theme?: 'primary' | 'default';
@@ -11,7 +12,9 @@ export default function Header({ theme = 'default' }: Props) {
         theme === 'primary' ? 'text-primary' : 'text-white'
       }`}
     >
-      <span>AUSG</span> <span>메뉴아이콘</span>
+      {/* TODO: replace logo icon */}
+      <span>AUSG</span>
+      <MenuIcon />
     </div>
   );
 }
