@@ -6,7 +6,6 @@ import IntroSection from '@/_pages/index/components/IntroSection';
 import MainSection from '@/_pages/index/components/MainSection';
 import MemberSection from '@/_pages/index/components/MemberSection';
 import SubscribeSection from '@/_pages/index/components/SubscribeSection';
-import Header from '@/components/Header';
 
 const Home: NextPage = () => (
   <div>
@@ -19,7 +18,6 @@ const Home: NextPage = () => (
       <link rel="icon" href="/favicon.ico" />
     </Head>
 
-    <Header />
     <IntroSection />
     <MainSection />
     <MemberSection />

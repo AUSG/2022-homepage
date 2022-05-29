@@ -1,10 +1,16 @@
 import React from 'react';
 
-type Props = {};
+type Props = {
+  theme?: 'primary' | 'default';
+};
 
-export default function Header({}: Props) {
+export default function Header({ theme = 'default' }: Props) {
   return (
-    <div className="align-center flex h-[60px] justify-between px-[20px] py-[17px]">
+    <div
+      className={`flex h-[60px] items-center justify-between bg-transparent px-[20px] py-[17px] ${
+        theme === 'primary' ? 'text-primary' : 'text-white'
+      }`}
+    >
       <span>AUSG</span> <span>메뉴아이콘</span>
     </div>
   );
