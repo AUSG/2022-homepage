@@ -1,5 +1,11 @@
 import type { NextPage } from 'next';
 import Head from 'next/head';
+import BlogSection from '../src/_pages/index/components/BlogSection';
+import FAQSection from '../src/_pages/index/components/FAQSection';
+import IntroSection from '../src/_pages/index/components/IntroSection';
+import MainSection from '../src/_pages/index/components/MainSection';
+import MemberSection from '../src/_pages/index/components/MemberSection';
+import SubscribeSection from '../src/_pages/index/components/SubscribeSection';
 
 const Home: NextPage = () => (
   <div>
@@ -12,7 +18,12 @@ const Home: NextPage = () => (
       <link rel="icon" href="/favicon.ico" />
     </Head>
 
-    <main />
+    <IntroSection />
+    <MainSection />
+    <MemberSection />
+    <BlogSection />
+    <FAQSection />
+    <SubscribeSection />
 
     <footer />
   </div>
