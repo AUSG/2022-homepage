@@ -1,8 +1,9 @@
-{
+module.exports = {
   "trailingComma": "es5",
   "tabWidth": 2,
   "semi": true,
   "singleQuote": true,
   "bracketSpacing": true,
-  "arrowParens": "avoid"
+  "arrowParens": "avoid",
+  plugins: [require('prettier-plugin-tailwindcss')],
 }

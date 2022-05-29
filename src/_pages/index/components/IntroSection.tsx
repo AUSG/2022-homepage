@@ -4,6 +4,8 @@ type Props = {}
 
 export default function IntroSection({ }: Props) {
   return (
-    <div>IntroSection</div>
+    <div className='h-screen'>
+      Intro
+    </div>
   )
 }

@@ -27,6 +27,7 @@ __metadata:
     next: 12.1.6
     postcss: ^8.4.14
     prettier: ^2.6.0
+    prettier-plugin-tailwindcss: ^0.1.11
     react: 18.1.0
     react-dom: 18.1.0
     tailwindcss: ^3.0.24
@@ -2831,6 +2832,15 @@ __metadata:
   version: 1.2.1
   resolution: "prelude-ls@npm:1.2.1"
   checksum: cd192ec0d0a8e4c6da3bb80e4f62afe336df3f76271ac6deb0e6a36187133b6073a19e9727a1ff108cd8b9982e4768850d413baa71214dd80c7979617dca827a
+  languageName: node
+  linkType: hard
+
+"prettier-plugin-tailwindcss@npm:^0.1.11":
+  version: 0.1.11
+  resolution: "prettier-plugin-tailwindcss@npm:0.1.11"
+  peerDependencies:
+    prettier: ">=2.2.0"
+  checksum: b06a81a22242407676de7b69342c1d69078e731e6363c7abd5877b044f2ddd83eba7281b085ea77754a49de88dcde164f394c31ae724a99fd46c0f9a4d4547a0
   languageName: node
   linkType: hard
 
