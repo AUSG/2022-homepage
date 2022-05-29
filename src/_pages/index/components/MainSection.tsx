@@ -1,6 +1,6 @@
 import React, { Fragment } from 'react';
-import MainImage from 'public/images/main.svg';
 import CheckIcon from 'public/icons/check.svg';
+import ArrowRightIcon from 'public/icons/arrow_right.svg';
 
 type Props = {};
 
@@ -11,7 +11,7 @@ export default function MainSection({}: Props) {
         프로젝트, 교육이 아닌 <br />
         서로 공유하는 커뮤니티
       </h1>
-      <MainImage className="mt-[12px]" />
+      <img src="images/main.png" alt="ausg" className="mt-[12px] text-white" />
 
       <section className="mt-[32px] flex flex-col gap-y-[12px]">
         {cards.map(card => (
@@ -31,6 +31,13 @@ export default function MainSection({}: Props) {
           </div>
         ))}
       </section>
+
+      <div className="flex justify-center">
+        <button className="mt-[60px] flex items-center gap-x-[8px] rounded-[20px] bg-primary py-[6px] px-[48px] text-[14px] font-bold leading-[36px] text-white">
+          AUSG 활동 더 살펴보기
+          <ArrowRightIcon className="text-white" />
+        </button>
+      </div>
     </div>
   );
 }

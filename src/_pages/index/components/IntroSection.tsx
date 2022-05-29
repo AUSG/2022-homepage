@@ -18,7 +18,7 @@ export default function IntroSection({}: Props) {
             <br />
             클라우드 커뮤니티
           </h1>
-          <MainArrowIcon className="pt-[6px]" />
+          <MainArrowIcon className="pt-[6px] text-point" />
         </div>
 
         <section className="flex flex-col items-center">
