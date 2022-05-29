@@ -1,9 +1,54 @@
-import React from 'react'
+import React, { Fragment } from 'react';
+import MainImage from 'public/images/main.svg';
+import CheckIcon from 'public/icons/check.svg';
 
-type Props = {}
+type Props = {};
 
-export default function MainSection({ }: Props) {
+export default function MainSection({}: Props) {
   return (
-    <div>MainSection</div>
-  )
+    <div className="px-[20px] pt-[48px] pb-[40px]">
+      <h1 className="text-[28px] font-bold leading-[36px] text-gray-900">
+        프로젝트, 교육이 아닌 <br />
+        서로 공유하는 커뮤니티
+      </h1>
+      <MainImage className="mt-[12px]" />
+
+      <section className="mt-[32px] flex flex-col gap-y-[12px]">
+        {cards.map(card => (
+          <div className="flex items-center rounded-[20px] bg-gray-100 pt-[4px] pr-[15px] pb-[12px] pl-[10px]">
+            <CheckIcon className="mr-[8px] shrink-0" />
+            <div>
+              <h3 className="font-bold leading-[36px]">{card.title}</h3>
+              <p className="text-[12px] leading-[18px] text-gray-900">
+                {card.description.map((desc, idx) => (
+                  <Fragment key={idx}>
+                    {desc}
+                    <br />
+                  </Fragment>
+                ))}
+              </p>
+            </div>
+          </div>
+        ))}
+      </section>
+    </div>
+  );
 }
+
+const cards = [
+  {
+    title: '발표를 통해 지식을 공유해요',
+    description: [
+      `생생한 경험과 유익한 지식을 서로 나눠요.`,
+      '다양한 주제로 토론해요.',
+    ],
+  },
+  {
+    title: '만나고, 모이고, 함께 즐겨요.',
+    description: ['사소한 계기로 새로운 사람을 만나고, 친해져요.'],
+  },
+  {
+    title: '함께 배우고 성장해요.',
+    description: ['다양한 스터디에 참가하고  같은 목표를 향해 달려 나가요.'],
+  },
+];
