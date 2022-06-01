@@ -1,11 +1,14 @@
-import Head from 'next/head';
-import React from 'react';
+import Script from 'next/script';
+import { Html, Head, Main, NextScript } from 'next/document';
 
-export default function FontScript() {
+export default function Document() {
   return (
-    <Head>
-      <script>
-        {`(function (d) {
+    <Html>
+      <Head>
+        <Script
+          id="font-script"
+          dangerouslySetInnerHTML={{
+            __html: `(function (d) {
           var config = {
               kitId: 'tzb3acl',
               scriptTimeout: 3000,
@@ -33,8 +36,14 @@ export default function FontScript() {
             } catch (e) {}
           };
           s.parentNode.insertBefore(tk, s);
-        })(document)`}
-      </script>
-    </Head>
+            })(document)`,
+          }}
+        />
+      </Head>
+      <body>
+        <Main />
+        <NextScript />
+      </body>
+    </Html>
   );
 }
