@@ -1,9 +1,7 @@
 import Head from 'next/head';
 import React from 'react';
 
-type Props = {};
-
-export default function FontScript({}: Props) {
+export default function FontScript() {
   return (
     <Head>
       <script>
