@@ -1,33 +1,40 @@
-# Reference: https://github.com/yarnpkg/berry/discussions/3201#discussioncomment-1166192
+FROM node:16-alpine AS deps
 
-FROM node:16-alpine AS base
-ENV NODE_ENV production
-
-RUN apk add --no-cache libc6-compat
-
-FROM base AS builder
+# If you need libc for any of your deps, uncomment this line:
+# RUN apk add --no-cache libc6-compat
 
 WORKDIR /app
+
+COPY package.json package-lock.json ./
+RUN npm ci
+
+FROM node:16-alpine AS builder
+
+WORKDIR /app
+
+COPY --from=deps /app/node_modules ./node_modules
 COPY . .
 
-RUN yarn rebuild && yarn build
+RUN npm run build
+RUN npm ci --production --ignore-scripts
 
-FROM base AS runner
+FROM node:16-alpine AS runner
+
+ENV NODE_ENV production
+
+RUN addgroup -g 1001 -S nodejs
+RUN adduser -S nextjs -u 1001
 
 WORKDIR /app
 
-COPY --from=builder /app/next.config.js ./
-COPY --from=builder /app/public ./public
-COPY --from=builder /app/.next ./.next
-COPY --from=builder /app/.yarn ./.yarn
-COPY --from=builder /app/yarn.lock ./yarn.lock
-COPY --from=builder /app/.yarnrc.yml ./.yarnrc.yml
-COPY --from=builder /app/.pnp.cjs ./.pnp.cjs
-COPY --from=builder /app/package.json ./package.json
+COPY --from=builder --chown=nextjs:nodejs /app/next.config.js  ./
+COPY --from=builder --chown=nextjs:nodejs /app/package.json /app/package-lock.json ./
+COPY --from=builder --chown=nextjs:nodejs /app/node_modules ./node_modules
+COPY --from=builder --chown=nextjs:nodejs /app/public ./public
+COPY --from=builder --chown=nextjs:nodejs /app/.next ./.next
 
-RUN rm -rf /app/.yarn/unplugged && yarn rebuild
+USER nextjs
 
 EXPOSE 3000
-ENV NEXT_TELEMETRY_DISABLED 1
 
-CMD ["yarn", "start"]
+CMD [ "npm", "start" ]
