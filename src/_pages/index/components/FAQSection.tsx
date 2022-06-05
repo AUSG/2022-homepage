@@ -40,13 +40,15 @@ export default function FAQSection() {
       </section>
 
       <div className="flex justify-center">
-        <button
-          type="button"
-          className="mt-[36px] flex items-center gap-x-[8px] rounded-[20px] bg-primary py-[6px] px-[48px] text-[14px] font-bold leading-[36px] text-white"
-        >
-          아직 궁금한 점이 있다면
-          <ArrowRightIcon className="h-[24px] w-[24px] text-white" />
-        </button>
+        <a href="https://tally.so/r/w447O5" target="_blank" rel="noreferrer">
+          <button
+            type="button"
+            className="mt-[36px] flex items-center gap-x-[8px] rounded-[20px] bg-primary py-[6px] px-[48px] text-[14px] font-bold leading-[36px] text-white"
+          >
+            아직 궁금한 점이 있다면
+            <ArrowRightIcon className="h-[24px] w-[24px] text-white" />
+          </button>
+        </a>
       </div>
     </div>
   );
