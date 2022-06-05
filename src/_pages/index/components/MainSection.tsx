@@ -1,49 +1,7 @@
 import React, { Fragment } from 'react';
 import CheckIcon from 'public/icons/check.svg';
 import ArrowRightIcon from 'public/icons/arrow_right.svg';
-
-type Props = {};
-
-export default function MainSection({}: Props) {
-  return (
-    <div className="px-[20px] pt-[48px] pb-[40px]">
-      <h1 className="text-[28px] font-bold leading-[36px] text-gray-900">
-        프로젝트, 교육이 아닌 <br />
-        서로 공유하는 커뮤니티
-      </h1>
-      <img src="images/main.png" alt="ausg" className="mt-[12px] text-white" />
-
-      <section className="mt-[32px] flex flex-col gap-y-[12px]">
-        {cards.map(card => (
-          <div
-            key={card.title}
-            className="flex items-center rounded-[20px] bg-gray-100 pt-[4px] pr-[15px] pb-[12px] pl-[10px]"
-          >
-            <CheckIcon className="mr-[8px] shrink-0 text-primary" />
-            <div>
-              <h3 className="font-bold leading-[36px]">{card.title}</h3>
-              <p className="text-[12px] leading-[18px] text-gray-900">
-                {card.description.map((desc, idx) => (
-                  <Fragment key={idx}>
-                    {desc}
-                    <br />
-                  </Fragment>
-                ))}
-              </p>
-            </div>
-          </div>
-        ))}
-      </section>
-
-      <div className="flex justify-center">
-        <button className="mt-[60px] flex items-center gap-x-[8px] rounded-[20px] bg-primary py-[6px] px-[48px] text-[14px] font-bold leading-[36px] text-white">
-          AUSG 활동 더 살펴보기
-          <ArrowRightIcon className="text-white" />
-        </button>
-      </div>
-    </div>
-  );
-}
+import MainImage from 'public/icons/main_image.svg';
 
 const cards = [
   {
@@ -62,3 +20,48 @@ const cards = [
     description: ['다양한 스터디에 참가하고  같은 목표를 향해 달려 나가요.'],
   },
 ];
+
+export default function MainSection() {
+  return (
+    <div className="flex flex-col px-[20px] pt-[48px] pb-[40px]">
+      <h1 className="text-[28px] font-bold leading-[36px] text-gray-900">
+        프로젝트, 교육이 아닌 <br />
+        서로 공유하는 커뮤니티
+      </h1>
+
+      <MainImage className="mt-[36px] h-[234px] w-[306px] self-center" />
+
+      <section className="mt-[32px] flex flex-col gap-y-[12px]">
+        {cards.map(card => (
+          <div
+            key={card.title}
+            className="flex items-center rounded-[20px] bg-gray-100 pt-[4px] pr-[15px] pb-[12px] pl-[10px]"
+          >
+            <CheckIcon className="mr-[8px] shrink-0 text-primary" />
+            <div>
+              <h3 className="font-bold leading-[36px]">{card.title}</h3>
+              <p className="text-[12px] leading-[18px] text-gray-900">
+                {card.description.map(desc => (
+                  <Fragment key={card.title}>
+                    {desc}
+                    <br />
+                  </Fragment>
+                ))}
+              </p>
+            </div>
+          </div>
+        ))}
+      </section>
+
+      <div className="flex justify-center">
+        <button
+          type="button"
+          className="mt-[36px] flex items-center gap-x-[8px] rounded-[20px] bg-primary py-[6px] px-[48px] text-[14px] font-bold leading-[36px] text-white"
+        >
+          AUSG 활동 더 살펴보기
+          <ArrowRightIcon className="text-white" />
+        </button>
+      </div>
+    </div>
+  );
+}
