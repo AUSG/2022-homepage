@@ -42,7 +42,7 @@ export default function BlogSection() {
         ))}
       </section>
 
-      <div className="flex justify-center">
+      <div className="flex justify-center pr-[20px]">
         <button
           type="button"
           className="mt-[36px] flex items-center gap-x-[8px] rounded-[20px] bg-white py-[6px] px-[48px] text-[14px] font-bold leading-[36px]"
