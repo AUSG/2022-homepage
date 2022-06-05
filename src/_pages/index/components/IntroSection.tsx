@@ -25,13 +25,15 @@ export default function IntroSection() {
           <p className="mt-[6px] text-white">
             클라우드 컴퓨팅에 관심 있는 개발자라면?
           </p>
-          <button
-            type="button"
-            className="mt-[8px] flex items-center gap-[8px] rounded-[20px] bg-white py-[6px] px-[48px] font-bold leading-[36px]"
-          >
-            AUSG 6기 지원하기
-            <ArrowRightIcon className="h-[24px] w-[24px]" />
-          </button>
+          <a href="https://tally.so/r/3NpX7l" target="_blank" rel="noreferrer">
+            <button
+              type="button"
+              className="mt-[8px] flex items-center gap-[8px] rounded-[20px] bg-white py-[6px] px-[48px] font-bold leading-[36px]"
+            >
+              AUSG 6기 지원하기
+              <ArrowRightIcon className="h-[24px] w-[24px]" />
+            </button>
+          </a>
         </section>
       </main>
     </div>
