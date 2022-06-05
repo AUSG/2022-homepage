@@ -1,7 +1,8 @@
 import Header from '@/components/Header';
 import React from 'react';
 import ArrowRightIcon from 'public/icons/arrow_right.svg';
-import CloudIcon from 'public/icons/cloud.svg';
+import CloudImage from 'public/images/cloud.png';
+import Image from 'next/image';
 
 export default function IntroSection() {
   return (
@@ -16,7 +17,9 @@ export default function IntroSection() {
           </h1>
         </div>
 
-        <CloudIcon className="right-[-40px] h-[235px] w-[337px]" />
+        <div className="relative right-[-40px] h-[235px] w-[337px]">
+          <Image src={CloudImage} alt="cloud image" />
+        </div>
 
         <section className="flex flex-col items-center">
           <p className="mt-[6px] text-white">
@@ -27,7 +30,7 @@ export default function IntroSection() {
             className="mt-[8px] flex items-center gap-[8px] rounded-[20px] bg-white py-[6px] px-[48px] font-bold leading-[36px]"
           >
             AUSG 6기 지원하기
-            <ArrowRightIcon />
+            <ArrowRightIcon className="h-[24px] w-[24px]" />
           </button>
         </section>
       </main>

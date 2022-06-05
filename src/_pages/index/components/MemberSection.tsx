@@ -21,7 +21,7 @@ export default function MemberSection() {
           className="mt-[36px] flex items-center gap-x-[8px] rounded-[20px] bg-primary py-[6px] px-[48px] text-[14px] font-bold leading-[36px] text-white"
         >
           AUSG 멤버 더 살펴보기
-          <ArrowRightIcon className="text-white" />
+          <ArrowRightIcon className="h-[24px] w-[24px] text-white" />
         </button>
       </div>
     </div>

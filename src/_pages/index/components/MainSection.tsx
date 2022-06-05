@@ -1,7 +1,8 @@
 import React, { Fragment } from 'react';
 import CheckIcon from 'public/icons/check.svg';
 import ArrowRightIcon from 'public/icons/arrow_right.svg';
-import MainImage from 'public/icons/main_image.svg';
+import MainImage from 'public/images/main.png';
+import Image from 'next/image';
 
 const cards = [
   {
@@ -29,7 +30,9 @@ export default function MainSection() {
         서로 공유하는 커뮤니티
       </h1>
 
-      <MainImage className="mt-[36px] h-[234px] w-[306px] self-center" />
+      <div className="mt-[36px] h-[234px] w-[306px] self-center">
+        <Image src={MainImage} alt="ausg" />
+      </div>
 
       <section className="mt-[32px] flex flex-col gap-y-[12px]">
         {cards.map(card => (
@@ -42,7 +45,7 @@ export default function MainSection() {
               <h3 className="font-bold leading-[36px]">{card.title}</h3>
               <p className="text-[12px] leading-[18px] text-gray-900">
                 {card.description.map(desc => (
-                  <Fragment key={card.title}>
+                  <Fragment key={desc}>
                     {desc}
                     <br />
                   </Fragment>
@@ -59,7 +62,7 @@ export default function MainSection() {
           className="mt-[36px] flex items-center gap-x-[8px] rounded-[20px] bg-primary py-[6px] px-[48px] text-[14px] font-bold leading-[36px] text-white"
         >
           AUSG 활동 더 살펴보기
-          <ArrowRightIcon className="text-white" />
+          <ArrowRightIcon className="h-[24px] w-[24px] text-white" />
         </button>
       </div>
     </div>
