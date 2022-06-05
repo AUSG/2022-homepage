@@ -5,7 +5,7 @@ import FAQSection from '@/_pages/index/components/FAQSection';
 import IntroSection from '@/_pages/index/components/IntroSection';
 import MainSection from '@/_pages/index/components/MainSection';
 import MemberSection from '@/_pages/index/components/MemberSection';
-import SubscribeSection from '@/_pages/index/components/SubscribeSection';
+// import SubscribeSection from '@/_pages//index/components/SubscribeSection';
 
 const Home: NextPage = () => (
   <div>
@@ -23,7 +23,8 @@ const Home: NextPage = () => (
     <MemberSection />
     <BlogSection />
     <FAQSection />
-    <SubscribeSection />
+    {/* TODO: implement subscribe */}
+    {/* <SubscribeSection /> */}
 
     <footer />
   </div>
