@@ -24,7 +24,7 @@ const cards = [
 export default function MainSection() {
   return (
     <div className="flex flex-col px-[20px] pt-[48px] pb-[40px]">
-      <h1 className="text-[28px] font-bold leading-[36px] text-gray-900">
+      <h1 className="text-[24px] font-bold leading-[34px] text-gray-900">
         프로젝트, 교육이 아닌 <br />
         서로 공유하는 커뮤니티
       </h1>
