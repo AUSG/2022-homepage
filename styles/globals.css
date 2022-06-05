@@ -6,10 +6,6 @@ svg {
   fill: currentColor;
 }
 
-svg path {
-  fill: inherit;
-}
-
 body {
   font-family: source-han-sans-korean, sans-serif;
 }
