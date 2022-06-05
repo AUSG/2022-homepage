@@ -1,9 +1,7 @@
-import React from 'react'
+import React from 'react';
 
-type Props = {}
+type Props = {};
 
-export default function FAQSection({ }: Props) {
-  return (
-    <div>FAQSection</div>
-  )
+export default function FAQSection({}: Props) {
+  return <div>FAQSection</div>;
 }

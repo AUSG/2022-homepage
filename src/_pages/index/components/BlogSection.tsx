@@ -1,9 +1,7 @@
-import React from 'react'
+import React from 'react';
 
-type Props = {}
+type Props = {};
 
-export default function BlogSection({ }: Props) {
-  return (
-    <div>BlogSection</div>
-  )
+export default function BlogSection({}: Props) {
+  return <div>BlogSection</div>;
 }

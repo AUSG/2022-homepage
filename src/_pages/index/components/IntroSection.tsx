@@ -3,9 +3,7 @@ import React from 'react';
 import ArrowRightIcon from 'public/icons/arrow_right.svg';
 import MainArrowIcon from 'public/icons/main_arrow.svg';
 
-type Props = {};
-
-export default function IntroSection({}: Props) {
+export default function IntroSection() {
   return (
     <div className="bg-primary">
       <Header />
@@ -25,7 +23,10 @@ export default function IntroSection({}: Props) {
           <p className="mt-[52px] text-white">
             클라우드 컴퓨팅에 관심 있는 개발자라면?
           </p>
-          <button className="mt-[8px] flex items-center gap-[8px] rounded-[20px] bg-white py-[6px] px-[48px] font-bold leading-[36px]">
+          <button
+            type="button"
+            className="mt-[8px] flex items-center gap-[8px] rounded-[20px] bg-white py-[6px] px-[48px] font-bold leading-[36px]"
+          >
             AUSG 6기 지원하기
             <ArrowRightIcon />
           </button>
