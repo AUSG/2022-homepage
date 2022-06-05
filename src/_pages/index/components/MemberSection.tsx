@@ -1,10 +1,8 @@
 import React from 'react';
-import QuoteCard from './QuoteCard';
 import ArrowRightIcon from 'public/icons/arrow_right.svg';
+import QuoteCard from './QuoteCard';
 
-type Props = {};
-
-export default function MemberSection({}: Props) {
+export default function MemberSection() {
   return (
     <div className="px-[20px] pt-[40px] pb-[80px]">
       <h1 className="text-[28px] font-bold leading-[36px] text-gray-900">
@@ -18,7 +16,10 @@ export default function MemberSection({}: Props) {
       </section>
 
       <div className="flex justify-center">
-        <button className="mt-[60px] flex items-center gap-x-[8px] rounded-[20px] bg-primary py-[6px] px-[48px] text-[14px] font-bold leading-[36px] text-white">
+        <button
+          type="button"
+          className="mt-[36px] flex items-center gap-x-[8px] rounded-[20px] bg-primary py-[6px] px-[48px] text-[14px] font-bold leading-[36px] text-white"
+        >
           AUSG 멤버 더 살펴보기
           <ArrowRightIcon className="text-white" />
         </button>
