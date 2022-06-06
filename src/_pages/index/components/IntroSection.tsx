@@ -14,7 +14,7 @@ export default function IntroSection() {
             <CloudImage
               width="full"
               height="full"
-              className="animate-floating transition-[translate]"
+              className="animate-floating"
             />
           </div>
           <div className="mt-[8px] flex flex-col items-center md:min-w-[400px] md:flex-1">
