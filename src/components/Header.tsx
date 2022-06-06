@@ -11,7 +11,7 @@ interface HeaderProps {
 
 export default function Header({ theme = 'white' }: HeaderProps) {
   return (
-    <div className="flex h-[60px] items-center justify-between bg-transparent">
+    <div className="flex h-[60px] items-center justify-between bg-transparent md:mx-auto md:max-w-screen-xl">
       <Link href="/">
         <a className="flex h-full items-center px-[20px]">
           {theme === 'white' ? (
