@@ -40,7 +40,7 @@ export default function MainSection() {
             key={card.title}
             className="flex items-center rounded-[20px] bg-gray-100 pt-[4px] pr-[15px] pb-[12px] pl-[10px]"
           >
-            <CheckIcon className="mr-[8px] shrink-0 text-primary" />
+            <CheckIcon className="mr-[8px] shrink-0 fill-primary" />
             <div>
               <h3 className="font-bold leading-[36px]">{card.title}</h3>
               <p className="text-[12px] leading-[18px] text-gray-900">

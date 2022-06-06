@@ -46,7 +46,7 @@ export default function FAQSection() {
             className="mt-[36px] flex items-center gap-x-[8px] rounded-[20px] bg-primary py-[6px] px-[48px] text-[14px] font-bold leading-[36px] text-white"
           >
             아직 궁금한 점이 있다면
-            <ArrowRightIcon className="h-[24px] w-[24px] text-white" />
+            <ArrowRightIcon className="h-[24px] w-[24px] fill-white" />
           </button>
         </a>
       </div>

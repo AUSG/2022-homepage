@@ -17,9 +17,11 @@ export default function Dropdown({ title, description }: Props) {
   return (
     <div>
       <div className="flex items-center gap-[8px]" onClick={toggleContent}>
-        <QuestionIcon />
+        <QuestionIcon className="fill-[#212121]" />
         <span className="text-[14px] leading-[22px]">{title}</span>
-        <ChevronUpIcon className={`${showContent ? 'rotate-180' : ''}`} />
+        <ChevronUpIcon
+          className={`fill-[#212121] ${showContent ? 'rotate-180' : ''}`}
+        />
       </div>
 
       {showContent && (
