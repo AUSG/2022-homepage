@@ -6,7 +6,7 @@ type Props = {};
 export default function QuoteCard({}: Props) {
   return (
     <div className="rounded-[20px] bg-gray-100 px-[30px] pt-[40px] pb-[20px]">
-      <QuoteIcon className="text-primary" />
+      <QuoteIcon className="fill-primary" />
       <div className="leading-22px mt-[12px]">
         Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
         sint. Velit officia consequat duis enim velit mollit. Exercitation
