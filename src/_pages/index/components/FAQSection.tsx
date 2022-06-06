@@ -2,6 +2,7 @@ import React from 'react';
 import ArrowRightIcon from 'public/icons/arrow_right.svg';
 import Dropdown from '@/components/Dropdown';
 import { QUESTIONS } from '@/constants';
+import Link from 'next/link';
 
 export default function FAQSection() {
   return (
@@ -27,17 +28,19 @@ export default function FAQSection() {
           </div>
         </div>
 
-        <a href="https://tally.so/r/w447O5" target="_blank" rel="noreferrer">
-          <button
-            type="button"
-            className="mx-auto mt-[36px] flex items-center rounded-[20px] bg-primary py-[6px] px-[48px] md:mt-[60px]"
-          >
-            <span className="mr-[8px] text-[14px] font-bold leading-[36px] text-white md:text-[16px] md:leading-[48px]">
-              아직 궁금한 점이 있다면
-            </span>
-            <ArrowRightIcon className="h-[24px] w-[24px] fill-white" />
-          </button>
-        </a>
+        <Link href="/contact">
+          <a>
+            <button
+              type="button"
+              className="mx-auto mt-[36px] flex items-center rounded-[20px] bg-primary py-[6px] px-[48px] md:mt-[60px]"
+            >
+              <span className="mr-[8px] text-[14px] font-bold leading-[36px] text-white md:text-[16px] md:leading-[48px]">
+                아직 궁금한 점이 있다면
+              </span>
+              <ArrowRightIcon className="h-[24px] w-[24px] fill-white" />
+            </button>
+          </a>
+        </Link>
       </div>
     </div>
   );
