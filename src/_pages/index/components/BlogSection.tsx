@@ -26,31 +26,33 @@ const posts = [
 
 export default function BlogSection() {
   return (
-    <div className="bg-primary py-[48px] pl-[20px]">
-      <h1 className="text-[24px] font-bold leading-[34px] text-white">
-        멤버들이 공유한 <br />
-        지식과 경험을 확인해보세요!
-      </h1>
-      <section className="mt-[36px] flex gap-[16px] overflow-x-auto">
-        {posts.map(post => (
-          <Card
-            key={post.url}
-            title={post.title}
-            url={post.url}
-            author={post.author}
-          />
-        ))}
-      </section>
+    <div className="bg-primary">
+      <div className="py-[48px] pl-[20px] md:mx-auto md:max-w-screen-xl xl:py-[100px]">
+        <h1 className="text-[24px] font-bold leading-[34px] text-white xl:text-[36px] xl:leading-[52px]">
+          멤버들이 공유한 <br className="xl:hidden" />
+          지식과 경험을 확인해보세요!
+        </h1>
+        <section className="mt-[36px] flex gap-[16px] overflow-x-auto xl:mt-[60px] xl:gap-[48px]">
+          {posts.map(post => (
+            <Card
+              key={post.url}
+              title={post.title}
+              url={post.url}
+              author={post.author}
+            />
+          ))}
+        </section>
 
-      <div className="flex justify-center pr-[20px]">
-        {/* TODO: 블로그 페이지 개발 후 주석 해제하기 */}
-        {/* <button
+        <div className="flex justify-center pr-[20px]">
+          {/* TODO: 블로그 페이지 개발 후 주석 해제하기 */}
+          {/* <button
           type="button"
           className="mt-[36px] flex items-center gap-x-[8px] rounded-[20px] bg-white py-[6px] px-[48px] text-[14px] font-bold leading-[36px]"
         >
           더 보러가기
           <ArrowRightIcon className="h-[24px] w-[24px]" />
         </button> */}
+        </div>
       </div>
     </div>
   );

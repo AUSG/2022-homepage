@@ -1,5 +1,4 @@
 import React from 'react';
-import Image from 'next/image';
 
 interface Props {
   title: string;
@@ -14,22 +13,20 @@ interface Props {
 export default function Card({
   title,
   url,
-  backgroundImageUrl = 'https://placeimg.com/200/240/tech',
+  backgroundImageUrl = 'https://placeimg.com/444/240/tech',
   author,
 }: Props) {
   return (
     <a href={url} target="_blank" rel="noreferrer">
-      <div className="h-[240px] w-[196px] rounded-[20px] bg-white">
-        <div>
-          <Image
-            width="200"
-            height="152"
+      <div className="h-[240px] w-[196px] rounded-[20px] bg-white xl:h-[272px] xl:w-[444px]">
+        <div className="">
+          <img
             src={backgroundImageUrl}
             alt={title}
-            className="rounded-tl-[20px] rounded-tr-[20px] object-cover"
+            className="max-h-[152px] w-full rounded-tl-[20px] rounded-tr-[20px] object-cover xl:max-h-[180px]"
           />
         </div>
-        <div className="px-[8px] pt-[12px] text-[14px] leading-[22px]">
+        <div className="px-[8px] pt-[12px] text-[14px] leading-[22px] xl:px-[20px] xl:pt-[13px]">
           {title}
         </div>
       </div>
