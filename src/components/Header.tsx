@@ -1,15 +1,34 @@
 import React from 'react';
 import MenuIcon from 'public/icons/menu.svg';
-import LogoImage from 'public/images/logo.png';
+import LogoWhite from 'public/images/logo-white.svg';
+import LogoColor from 'public/images/logo-color.svg';
 import Image from 'next/image';
+import Link from 'next/link';
 
-export default function Header() {
+interface HeaderProps {
+  theme?: 'white' | 'colored';
+}
+
+export default function Header({ theme = 'white' }: HeaderProps) {
   return (
-    <div className="flex h-[60px] items-center justify-between bg-transparent px-[20px] py-[17px]">
-      <div className="h-[16px] w-[92px]">
-        <Image src={LogoImage} alt="ausg logo" />
-      </div>
-      <MenuIcon className="h-[24px] w-[24px] text-white" />
+    <div className="flex h-[60px] items-center justify-between bg-transparent">
+      <Link href="/">
+        <a className="flex h-full items-center px-[20px]">
+          {theme === 'white' ? (
+            <LogoColor className="h-[16px] w-[92px]" />
+          ) : (
+            <LogoWhite className="h-[16px] w-[92px]" />
+          )}
+        </a>
+      </Link>
+      <button type="button" className="flex h-full items-center px-[20px]">
+        <MenuIcon
+          className={`h-[24px] w-[24px] ${
+            theme === 'white' ? 'fill-primary' : 'fill-white'
+          }`}
+          style={{ fill: theme === 'white' ? 'black' : 'white' }}
+        />
+      </button>
     </div>
   );
 }

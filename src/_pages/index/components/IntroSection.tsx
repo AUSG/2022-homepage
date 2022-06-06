@@ -7,7 +7,7 @@ import Image from 'next/image';
 export default function IntroSection() {
   return (
     <div className="bg-primary">
-      <Header />
+      <Header theme="colored" />
       <main className="flex flex-col overflow-hidden px-[20px] pb-[38px] pt-[30px]">
         <div className="flex items-center">
           <h1 className="mt-[8px] text-[28px] font-bold text-white">
