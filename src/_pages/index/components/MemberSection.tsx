@@ -4,13 +4,13 @@ import QuoteCard from './QuoteCard';
 
 export default function MemberSection() {
   return (
-    <div className="px-[20px] pt-[40px] pb-[80px]">
-      <h1 className="text-[24px] font-bold leading-[34px] text-gray-900">
-        우리는 대학생이지만 -<br />
+    <div className="px-[20px] pt-[40px] pb-[80px] md:mx-auto md:max-w-screen-xl">
+      <h1 className="text-[24px] font-bold leading-[34px] text-gray-900 xl:text-[36px] xl:leading-[52px]">
+        우리는 대학생이지만 - <br className="xl:hidden" />
         전문가가 될 수 있다!
       </h1>
 
-      <section className="mt-[40px] flex flex-col gap-y-[24px]">
+      <section className="mt-[40px] flex flex-col gap-y-[24px] xl:mt-[60px] xl:flex-row xl:gap-x-[60px]">
         <QuoteCard />
         <QuoteCard />
       </section>
