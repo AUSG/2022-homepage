@@ -13,11 +13,6 @@ const Home: NextPage = () => (
     <div className="max-w-[390px]">
       <Head>
         <title>AUSG</title>
-        <meta
-          name="description"
-          content="AUSG는 대학생 개발자를 위한 클라우드 커뮤니티입니다."
-        />
-        <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <IntroSection />

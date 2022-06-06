@@ -5,6 +5,22 @@ export default function Document() {
   return (
     <Html>
       <Head>
+        <meta
+          name="description"
+          content="AUSG는 대학생 개발자를 위한 클라우드 커뮤니티입니다."
+        />
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="32x32"
+          href="/favicon-32x32.png"
+        />
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="16x16"
+          href="/favicon-16x16.png"
+        />
         <Script
           id="font-script"
           dangerouslySetInnerHTML={{
