@@ -8,23 +8,20 @@ import MemberSection from '@/_pages/index/components/MemberSection';
 // import SubscribeSection from '@/_pages//index/components/SubscribeSection';
 
 const Home: NextPage = () => (
-  <div className="flex justify-center">
-    {/* TODO: 데스크톱 대응 */}
-    <div className="max-w-[390px]">
-      <Head>
-        <title>AUSG</title>
-      </Head>
+  <div className="">
+    <Head>
+      <title>AUSG</title>
+    </Head>
 
-      <IntroSection />
-      <MainSection />
-      <MemberSection />
-      <BlogSection />
-      <FAQSection />
-      {/* TODO: implement subscribe */}
-      {/* <SubscribeSection /> */}
+    <IntroSection />
+    <MainSection />
+    <MemberSection />
+    <BlogSection />
+    <FAQSection />
+    {/* TODO: implement subscribe */}
+    {/* <SubscribeSection /> */}
 
-      <footer />
-    </div>
+    <footer />
   </div>
 );
 
