@@ -16,6 +16,7 @@ export default function QuoteCard({}: Props) {
         <img
           src="images/profile-1.png"
           className="mr-[8px] h-[48px] w-[48px] shrink-0"
+          alt=""
         />
         <div className="text-[14px] leading-[18px]">
           <strong>현 마켓컬리 엔지니어 김민태</strong>
