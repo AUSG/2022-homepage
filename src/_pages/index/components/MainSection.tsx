@@ -1,6 +1,6 @@
 import React, { Fragment } from 'react';
 import CheckIcon from 'public/icons/check.svg';
-import ArrowRightIcon from 'public/icons/arrow_right.svg';
+// import ArrowRightIcon from 'public/icons/arrow_right.svg';
 import MainImage from 'public/images/main.png';
 import Image from 'next/image';
 
@@ -57,13 +57,14 @@ export default function MainSection() {
       </section>
 
       <div className="flex justify-center">
-        <button
+        {/* TODO: 액티비티 페이지 개발 후 주석 해제하기 */}
+        {/* <button
           type="button"
           className="mt-[36px] flex items-center gap-x-[8px] rounded-[20px] bg-primary py-[6px] px-[48px] text-[14px] font-bold leading-[36px] text-white"
         >
           AUSG 활동 더 살펴보기
           <ArrowRightIcon className="h-[24px] w-[24px] text-white" />
-        </button>
+        </button> */}
       </div>
     </div>
   );

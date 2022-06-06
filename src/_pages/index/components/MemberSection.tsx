@@ -1,5 +1,5 @@
 import React from 'react';
-import ArrowRightIcon from 'public/icons/arrow_right.svg';
+// import ArrowRightIcon from 'public/icons/arrow_right.svg';
 import QuoteCard from './QuoteCard';
 
 export default function MemberSection() {
@@ -16,13 +16,14 @@ export default function MemberSection() {
       </section>
 
       <div className="flex justify-center">
-        <button
+        {/* TODO: member 페이지 개발 후 주석 해제하기 */}
+        {/* <button
           type="button"
           className="mt-[36px] flex items-center gap-x-[8px] rounded-[20px] bg-primary py-[6px] px-[48px] text-[14px] font-bold leading-[36px] text-white"
         >
           AUSG 멤버 더 살펴보기
           <ArrowRightIcon className="h-[24px] w-[24px] text-white" />
-        </button>
+        </button> */}
       </div>
     </div>
   );

@@ -1,5 +1,5 @@
 import Card from '@/components/Card';
-import ArrowRightIcon from 'public/icons/arrow_right.svg';
+// import ArrowRightIcon from 'public/icons/arrow_right.svg';
 import React from 'react';
 
 // TODO: fetch data from API server
@@ -43,13 +43,14 @@ export default function BlogSection() {
       </section>
 
       <div className="flex justify-center pr-[20px]">
-        <button
+        {/* TODO: 블로그 페이지 개발 후 주석 해제하기 */}
+        {/* <button
           type="button"
           className="mt-[36px] flex items-center gap-x-[8px] rounded-[20px] bg-white py-[6px] px-[48px] text-[14px] font-bold leading-[36px]"
         >
           더 보러가기
           <ArrowRightIcon className="h-[24px] w-[24px]" />
-        </button>
+        </button> */}
       </div>
     </div>
   );
