@@ -24,31 +24,39 @@ const questions = [
 
 export default function FAQSection() {
   return (
-    <div className="bg-gray-100 px-[20px] py-[48px]">
-      <h1 className="text-[24px] font-bold leading-[34px] text-gray-900">
-        FAQ
-      </h1>
+    <div className="bg-gray-100">
+      <div className="flex flex-col px-[20px] py-[48px] md:mx-auto md:max-w-screen-xl xl:flex-row xl:py-[100px]">
+        <h1 className="text-[24px] font-bold leading-[34px] text-gray-900 xl:mr-[128px] xl:text-[36px] xl:leading-[52px]">
+          FAQ
+        </h1>
 
-      <section className="mt-[36px] flex flex-col gap-[24px]">
-        {questions.map(question => (
-          <Dropdown
-            key={question.title}
-            title={question.title}
-            description={question.description}
-          />
-        ))}
-      </section>
+        <div className="mt-[36px] xl:mt-[14px]">
+          <section className="flex flex-col gap-[24px] xl:grid xl:grid-cols-2 xl:gap-y-[48px] xl:gap-x-[122px]">
+            {questions.map(question => (
+              <Dropdown
+                key={question.title}
+                title={question.title}
+                description={question.description}
+              />
+            ))}
+          </section>
 
-      <div className="flex justify-center">
-        <a href="https://tally.so/r/w447O5" target="_blank" rel="noreferrer">
-          <button
-            type="button"
-            className="mt-[36px] flex items-center gap-x-[8px] rounded-[20px] bg-primary py-[6px] px-[48px] text-[14px] font-bold leading-[36px] text-white"
-          >
-            아직 궁금한 점이 있다면
-            <ArrowRightIcon className="h-[24px] w-[24px] fill-white" />
-          </button>
-        </a>
+          <div className="flex justify-center xl:mr-[128px]">
+            <a
+              href="https://tally.so/r/w447O5"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <button
+                type="button"
+                className="mt-[36px] flex items-center gap-x-[8px] rounded-[20px] bg-primary py-[6px] px-[48px] text-[14px] font-bold leading-[36px] text-white xl:mt-[60px]"
+              >
+                아직 궁금한 점이 있다면
+                <ArrowRightIcon className="h-[24px] w-[24px] fill-white" />
+              </button>
+            </a>
+          </div>
+        </div>
       </div>
     </div>
   );
