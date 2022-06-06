@@ -1,8 +1,7 @@
 import Header from '@/components/Header';
 import React from 'react';
 import ArrowRightIcon from 'public/icons/arrow_right.svg';
-import CloudImage from 'public/images/cloud.png';
-import Image from 'next/image';
+import CloudImage from 'public/images/cloud.svg';
 
 export default function IntroSection() {
   return (
@@ -17,8 +16,12 @@ export default function IntroSection() {
           </h1>
         </div>
 
-        <div className="relative right-[-40px] h-[235px] w-[337px]">
-          <Image src={CloudImage} alt="cloud image" />
+        <div className="-mx-[20px] mt-[18px] flex justify-end">
+          <CloudImage
+            width="80%"
+            height="full"
+            className="right-0 animate-floating transition-[translate]"
+          />
         </div>
 
         <section className="flex flex-col items-center">
@@ -28,10 +31,12 @@ export default function IntroSection() {
           <a href="https://tally.so/r/3NpX7l" target="_blank" rel="noreferrer">
             <button
               type="button"
-              className="mt-[8px] flex items-center gap-[8px] rounded-[20px] bg-white py-[6px] px-[48px] font-bold leading-[36px]"
+              className="mt-[8px] flex items-center rounded-[20px] bg-white py-[6px] px-[48px]"
             >
-              AUSG 6기 지원하기
-              <ArrowRightIcon className="h-[24px] w-[24px]" />
+              <span className="mr-[8px] font-bold leading-[36px]">
+                AUSG 6기 지원하기
+              </span>
+              <ArrowRightIcon className="h-[24px] w-[24px] fill-black" />
             </button>
           </a>
         </section>

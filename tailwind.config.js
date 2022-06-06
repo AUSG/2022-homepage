@@ -14,6 +14,16 @@ module.exports = {
           900: '#141414',
         },
       },
+      keyframes: {
+        floating: {
+          '0%': { transform: 'translate(0,  0px)' },
+          '50%': { transform: 'translate(0, 15px)' },
+          '100%': { transform: 'translate(0, -0px)' },
+        },
+      },
+      animation: {
+        floating: 'floating 5s ease-in-out infinite',
+      },
     },
   },
   plugins: [],
