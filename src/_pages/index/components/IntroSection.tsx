@@ -17,7 +17,7 @@ export default function IntroSection() {
               className="animate-floating transition-[translate]"
             />
           </div>
-          <div className="mt-[8px] flex min-w-[400px] flex-col items-center md:flex-1">
+          <div className="mt-[8px] flex flex-col items-center md:min-w-[400px] md:flex-1">
             <h1 className="text-[28px] font-bold text-white md:text-center md:text-[48px]">
               대학생 개발자를 위한
               <br />
