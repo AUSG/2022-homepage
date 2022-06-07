@@ -1,7 +1,7 @@
 // 노션에서 내용 복사 => 아래 사이트에서 HTML로 변환 => 링크 밑줄 등 추가적인 스타일 적용이 필요하다면 HTML 태그 직접 수정
 // https://www.ttmkt.com/kr/tools/markdown-to-html/
 
-export const QUESTIONS = [
+const QUESTIONS = [
   {
     title: 'AUSG는 어떤 동아리인가요?',
     description:
@@ -67,3 +67,5 @@ export const QUESTIONS = [
       '<p><b>꼭 수도권 거주자만 참여할 수 있는 것은 아닙니다.</b> 다만, 격주 1회 정기 모임(빅챗)에 참여하셔야 하고, AUSG의 활동들에 적극적으로 참여하실 수 있어야 합니다.</p>',
   },
 ];
+
+export default QUESTIONS;
