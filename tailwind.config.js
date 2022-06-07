@@ -22,7 +22,7 @@ module.exports = {
         },
       },
       animation: {
-        floating: 'floating 5s ease-in-out infinite',
+        floating: 'floating 3s ease-in-out infinite',
       },
     },
   },
