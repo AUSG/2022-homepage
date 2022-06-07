@@ -11,9 +11,17 @@ export default function MemberSection() {
         전문가가 될 수 있다!
       </h1>
 
-      <section className="mt-[40px] flex flex-col gap-y-[24px] xl:mt-[60px] xl:flex-row xl:gap-x-[60px]">
+      <section
+        className="my-[36px] flex flex-col gap-y-[24px]
+          md:mt-[60px] md:block md:columns-2 md:gap-x-[48px] xl:gap-x-[60px]"
+      >
         {QUOTES.map(props => (
-          <QuoteCard key={props.profile} {...props} />
+          <div
+            key={props.profile}
+            className="md:mb-[24px] md:break-inside-avoid-column"
+          >
+            <QuoteCard {...props} />
+          </div>
         ))}
       </section>
 
