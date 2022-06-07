@@ -1,9 +1,12 @@
+import { useState } from 'react';
 import Header from '@/components/Header';
 import ContactImage from 'public/images/contact.png';
 import Image from 'next/image';
 import Head from 'next/head';
 
 const Contact = () => {
+  const [isLoaded, setIsLoaded] = useState(false);
+
   return (
     <>
       <Head>
@@ -37,12 +40,17 @@ const Contact = () => {
           </div>
         </div>
 
-        <div className="mx-5 my-6 md:my-10">
+        <div className="relative mx-5 my-6 md:my-10">
+          {isLoaded ? undefined : (
+            <div className="absolute inset-0 h-[440px] w-full bg-gray-100" />
+          )}
           <iframe
             src="https://tally.so/embed/w447O5?alignLeft=1&hideTitle=1&transparentBackground=1"
             width="100%"
             height="440"
             title="AUSG로 문의하기"
+            className="z-10"
+            onLoad={() => setIsLoaded(true)}
           />
         </div>
       </div>
