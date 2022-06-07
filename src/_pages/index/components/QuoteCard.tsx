@@ -22,7 +22,7 @@ export default function QuoteCard({
         {content}
       </div>
       <div className="mt-[26px] flex items-center xl:mt-[36px]">
-        <div className="mr-[8px] h-[48px] w-[48px] shrink-0 overflow-hidden rounded-full xl:mr-[30px] xl:w-[60px] xl:w-[60px]">
+        <div className="mr-[8px] h-[48px] w-[48px] shrink-0 overflow-hidden rounded-full xl:mr-[30px] xl:h-[60px] xl:w-[60px]">
           <Image src={imagePath} width="100%" height="100%" alt="" />
         </div>
         <div className="text-[14px] leading-[18px] xl:leading-[24px]">
