@@ -14,18 +14,17 @@ function App({ Component, pageProps }: AppProps) {
       </Head>
       <DefaultSeo
         title="AUSG"
-        description="압도적 쓱케일, 아우쓱 - AWSKRUG University Student Group"
+        description="AUSG는 대학생 개발자를 위한 클라우드 커뮤니티입니다."
         openGraph={{
           url: 'https://ausg.me',
           title: 'AUSG',
-          description:
-            '압도적 쓱케일, 아우쓱 - AWSKRUG University Student Group',
+          description: 'AUSG는 대학생 개발자를 위한 클라우드 커뮤니티입니다.',
           images: [
             {
               url: '/images/og.png',
               width: 1200,
               height: 600,
-              alt: 'Og Image Alt',
+              alt: 'AUSG',
               type: 'image/jpeg',
             },
           ],
