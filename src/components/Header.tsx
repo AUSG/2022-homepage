@@ -54,12 +54,12 @@ export default function Header({ theme = 'white' }: HeaderProps) {
             <a className="flex h-full items-center px-[20px] md:mr-[80px]">
               {theme === 'white' ? (
                 <LogoColor
-                  height="auto"
+                  height="100%"
                   className="aspect-[92/16] w-[92px] md:w-[200px]"
                 />
               ) : (
                 <LogoWhite
-                  height="auto"
+                  height="100%"
                   className="aspect-[92/16] w-[92px] md:w-[200px]"
                 />
               )}

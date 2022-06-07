@@ -13,8 +13,8 @@ export default function IntroSection() {
         <div className="flex items-center md:py-10">
           <div className="hidden flex-1 md:mt-24 md:block">
             <CloudImage
-              width="full"
-              height="full"
+              width="100%"
+              height="100%"
               className="animate-floating"
             />
           </div>
@@ -43,7 +43,7 @@ export default function IntroSection() {
         <div className="-mx-[20px] mt-[18px] flex justify-end md:hidden">
           <CloudTruncatedImage
             width="80%"
-            height="full"
+            height="100%"
             className="right-0 animate-floating transition-[translate]"
           />
         </div>
