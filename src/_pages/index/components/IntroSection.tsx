@@ -4,8 +4,18 @@ import ArrowRightIcon from 'public/icons/arrow_right.svg';
 import CloudImage from 'public/images/cloud.svg';
 import CloudTruncatedImage from 'public/images/cloud-truncated.svg';
 import Link from 'next/link';
+import { event } from '@/lib/gtag';
 
 export default function IntroSection() {
+  const handleClick = () => {
+    event({
+      action: 'apply',
+      category: 'click',
+      label: 'AUSG 6기 지원하기',
+      value: 1,
+    });
+  };
+
   return (
     <div className="bg-primary">
       <Header theme="colored" />
@@ -52,7 +62,12 @@ export default function IntroSection() {
           <p className="mt-[6px] text-white">
             클라우드 컴퓨팅에 관심 있는 개발자라면?
           </p>
-          <a href="https://tally.so/r/3NpX7l" target="_blank" rel="noreferrer">
+          <a
+            href="https://tally.so/r/3NpX7l"
+            target="_blank"
+            rel="noreferrer"
+            onClick={handleClick}
+          >
             <button
               type="button"
               className="mt-[8px] flex items-center rounded-[20px] bg-white py-[6px] px-[48px]"

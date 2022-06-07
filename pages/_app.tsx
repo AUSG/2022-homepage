@@ -2,8 +2,30 @@ import '../styles/globals.css';
 import Head from 'next/head';
 import type { AppProps } from 'next/app';
 import { DefaultSeo } from 'next-seo';
+import { useRouter } from 'next/router';
+import { useEffect } from 'react';
+import { pageview } from '@/lib/gtag';
+import GoogleAnalytics from '@/components/GoogleAnalytics';
 
 function App({ Component, pageProps }: AppProps) {
+  const router = useRouter();
+
+  useEffect(() => {
+    const handleRouteChange = (url: URL) => {
+      /* invoke analytics function only for production */
+      if (process.env.NODE_ENV !== 'production') {
+        return;
+      }
+      pageview(url);
+    };
+    router.events.on('routeChangeComplete', handleRouteChange);
+    router.events.on('hashChangeComplete', handleRouteChange);
+    return () => {
+      router.events.off('routeChangeComplete', handleRouteChange);
+      router.events.off('hashChangeComplete', handleRouteChange);
+    };
+  }, [router.events]);
+
   return (
     <>
       <Head>
@@ -31,6 +53,7 @@ function App({ Component, pageProps }: AppProps) {
           site_name: 'AUSG Homepage',
         }}
       />
+      <GoogleAnalytics />
       <Component {...pageProps} />
     </>
   );

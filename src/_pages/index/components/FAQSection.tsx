@@ -3,8 +3,18 @@ import ArrowRightIcon from 'public/icons/arrow_right.svg';
 import Dropdown from '@/components/Dropdown';
 import QUESTIONS from '@/constants/questions';
 import Link from 'next/link';
+import { event } from '@/lib/gtag';
 
 export default function FAQSection() {
+  const handleClick = () => {
+    event({
+      action: 'contact',
+      category: 'click',
+      label: '아직 궁금한 점이 있다면',
+      value: 1,
+    });
+  };
+
   return (
     <div className="bg-gray-100">
       <div className="relative flex flex-col px-[20px] py-[48px] xl:mx-auto xl:max-w-screen-xl xl:py-[100px]">
@@ -28,7 +38,7 @@ export default function FAQSection() {
           </div>
         </div>
 
-        <Link href="/contact">
+        <Link href="/contact" onClick={handleClick}>
           <a>
             <button
               type="button"
