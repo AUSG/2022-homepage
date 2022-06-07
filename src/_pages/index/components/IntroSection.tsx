@@ -3,6 +3,7 @@ import React from 'react';
 import ArrowRightIcon from 'public/icons/arrow_right.svg';
 import CloudImage from 'public/images/cloud.svg';
 import CloudTruncatedImage from 'public/images/cloud-truncated.svg';
+import Link from 'next/link';
 
 export default function IntroSection() {
   return (
@@ -27,21 +28,14 @@ export default function IntroSection() {
               <p className="mt-[60px] text-[24px] text-white">
                 클라우드 컴퓨팅에 관심 있는 개발자라면?
               </p>
-              <a
-                href="https://tally.so/r/3NpX7l"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <button
-                  type="button"
-                  className="mt-[36px] flex items-center rounded-[20px] bg-white px-[48px]"
-                >
+              <Link href="/apply">
+                <a className="mt-[36px] flex items-center rounded-[20px] bg-white px-[48px]">
                   <span className="mr-[8px] font-bold leading-[60px]">
                     AUSG 6기 지원하기
                   </span>
                   <ArrowRightIcon className="h-[24px] w-[24px] fill-black" />
-                </button>
-              </a>
+                </a>
+              </Link>
             </div>
           </div>
         </div>
