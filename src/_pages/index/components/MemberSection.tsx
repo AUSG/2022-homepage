@@ -1,5 +1,6 @@
 import React from 'react';
 // import ArrowRightIcon from 'public/icons/arrow_right.svg';
+import QUOTES from '@/constants/quotes';
 import QuoteCard from './QuoteCard';
 
 export default function MemberSection() {
@@ -11,8 +12,9 @@ export default function MemberSection() {
       </h1>
 
       <section className="mt-[40px] flex flex-col gap-y-[24px] xl:mt-[60px] xl:flex-row xl:gap-x-[60px]">
-        <QuoteCard />
-        <QuoteCard />
+        {QUOTES.map(props => (
+          <QuoteCard key={props.profile} {...props} />
+        ))}
       </section>
 
       <div className="flex justify-center">
