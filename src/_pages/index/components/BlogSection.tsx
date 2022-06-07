@@ -33,14 +33,21 @@ export default function BlogSection() {
           지식과 경험을 확인해보세요!
         </h1>
         <section className="mt-[36px] flex gap-[16px] overflow-x-auto xl:mt-[60px] xl:gap-[48px]">
-          {posts.map(post => (
-            <Card
-              key={post.url}
-              title={post.title}
-              url={post.url}
-              author={post.author}
-            />
-          ))}
+          <div className="w-full text-center text-[18px] font-bold text-white">
+            <span className="text-[30px]">🚧</span>
+            <br />
+            컨텐츠를 준비중이에요.
+            <br />
+            조금만 더 기다려주세요!
+          </div>
+          {/* {posts.map(post => ( */}
+          {/*  <Card */}
+          {/*    key={post.url} */}
+          {/*    title={post.title} */}
+          {/*    url={post.url} */}
+          {/*    author={post.author} */}
+          {/*  /> */}
+          {/* ))} */}
         </section>
 
         <div className="flex justify-center pr-[20px]">
