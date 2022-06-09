@@ -34,6 +34,13 @@ const QUOTES = [
     generation: 'AUSG 5기',
     imagePath: '/people/jianbae.jpeg',
   },
+  {
+    content:
+      'AUSG는 열정만 있다면, 자신이 하는 만큼 엄청나게 성장할 수 있는 곳입니다. 클라우드를 전혀 모르던 문과생 기획자로 합류했는데 스터디와 여러 활동들에 참여하면서 이제는 클라우드 개념들이 두렵지 않아요. 좋은 사람들과 즐겁게 성장할 수 있는 곳, AUSG에서 함께해요!',
+    profile: '우아한형제들 Frontend Developer, 이정민',
+    generation: 'AUSG 4기',
+    imagePath: '/people/jungminlee.jpg',
+  },
 ];
 
 export default QUOTES;
