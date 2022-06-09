@@ -41,6 +41,13 @@ const QUOTES = [
     generation: 'AUSG 4기',
     imagePath: '/people/jungminlee.jpg',
   },
+  {
+    content:
+      '클라우드뿐만 아니라 개발에 관심있는 대학생들이 모여서 정말 재밌는 것들을 만들어나가는 모임이에요. 덕분에 제 대학생활을 행복하게 보냈던 것 같아요! Join us!',
+    profile: 'NCSOFT Software Engineer, 윤서현',
+    generation: 'AUSG 1기',
+    imagePath: '/people/seohyunyoon.jpg',
+  },
 ];
 
 export default QUOTES;
