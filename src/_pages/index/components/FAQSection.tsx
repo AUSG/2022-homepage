@@ -38,18 +38,17 @@ export default function FAQSection() {
           </div>
         </div>
 
-        <Link href="/contact" onClick={handleClick}>
-          <a>
-            <button
-              type="button"
-              className="mx-auto mt-[36px] flex items-center rounded-[20px] bg-primary py-[6px] px-[48px] xl:mt-[60px]"
-            >
-              <span className="mr-[8px] text-[14px] font-bold leading-[36px] text-white xl:text-[16px] xl:leading-[48px]">
-                아직 궁금한 점이 있다면
-              </span>
-              <ArrowRightIcon className="h-[24px] w-[24px] fill-white" />
-            </button>
-          </a>
+        <Link href="/contact">
+          <button
+            type="button"
+            className="mx-auto mt-[36px] flex items-center rounded-[20px] bg-primary py-[6px] px-[48px] xl:mt-[60px]"
+            onClick={handleClick}
+          >
+            <span className="mr-[8px] text-[14px] font-bold leading-[36px] text-white xl:text-[16px] xl:leading-[48px]">
+              아직 궁금한 점이 있다면
+            </span>
+            <ArrowRightIcon className="h-[24px] w-[24px] fill-white" />
+          </button>
         </Link>
       </div>
     </div>
