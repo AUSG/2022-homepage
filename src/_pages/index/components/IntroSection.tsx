@@ -34,19 +34,6 @@ export default function IntroSection() {
               <br />
               클라우드 커뮤니티
             </h1>
-            <div className="hidden flex-col items-center md:flex">
-              <p className="mt-[60px] text-[24px] text-white">
-                클라우드 컴퓨팅에 관심 있는 개발자라면?
-              </p>
-              <Link href="/apply">
-                <a className="mt-[36px] flex items-center rounded-[20px] bg-white px-[48px]">
-                  <span className="mr-[8px] font-bold leading-[60px]">
-                    AUSG 6기 지원하기
-                  </span>
-                  <ArrowRightIcon className="h-[24px] w-[24px] fill-black" />
-                </a>
-              </Link>
-            </div>
           </div>
         </div>
 
@@ -57,28 +44,6 @@ export default function IntroSection() {
             className="right-0 animate-floating transition-[translate]"
           />
         </div>
-
-        <section className="flex flex-col items-center md:hidden">
-          <p className="mt-[6px] text-white">
-            클라우드 컴퓨팅에 관심 있는 개발자라면?
-          </p>
-          <a
-            href="https://tally.so/r/3NpX7l"
-            target="_blank"
-            rel="noreferrer"
-            onClick={handleClick}
-          >
-            <button
-              type="button"
-              className="mt-[8px] flex items-center rounded-[20px] bg-white py-[6px] px-[48px]"
-            >
-              <span className="mr-[8px] font-bold leading-[36px]">
-                AUSG 6기 지원하기
-              </span>
-              <ArrowRightIcon className="h-[24px] w-[24px] fill-black" />
-            </button>
-          </a>
-        </section>
       </main>
     </div>
   );
