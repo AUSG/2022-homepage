@@ -4,18 +4,8 @@ import ArrowRightIcon from 'public/icons/arrow_right.svg';
 import CloudImage from 'public/images/cloud.svg';
 import CloudTruncatedImage from 'public/images/cloud-truncated.svg';
 import Link from 'next/link';
-import { event } from '@/lib/gtag';
 
 export default function IntroSection() {
-  const handleClick = () => {
-    event({
-      action: 'apply',
-      category: 'click',
-      label: 'AUSG 6기 지원하기',
-      value: 1,
-    });
-  };
-
   return (
     <div className="bg-primary">
       <Header theme="colored" />
