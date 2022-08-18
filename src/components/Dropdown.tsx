@@ -22,7 +22,7 @@ export default function Dropdown({ title, description }: Props) {
         onClick={toggleContent}
       >
         <QuestionIcon className="fill-[#212121]" width="24" height="24" />
-        <span className="whitespace-pre-line text-[14px] leading-[22px] xl:text-[24px] xl:leading-[36px] ">
+        <span className="whitespace-pre-line text-[16px] leading-[20px] xl:text-[20px] xl:leading-[24px]">
           {title}
         </span>
         <ChevronUpIcon
@@ -40,7 +40,7 @@ export default function Dropdown({ title, description }: Props) {
         height={showContent ? 'auto' : 0}
       >
         <div
-          className="m-[16px] whitespace-pre-line text-[14px] leading-[22px] child:mb-[11px] xl:text-[16px] xl:leading-[28px] xl:child:mb-[14px]"
+          className="m-[20px] whitespace-pre-line text-[14px] leading-[22px] child:mb-[11px] xl:text-[16px] xl:leading-[28px] xl:child:mb-[14px]"
           // eslint-disable-next-line react/no-danger
           dangerouslySetInnerHTML={{ __html: description }}
         />
