@@ -25,7 +25,7 @@ const cards = [
 export default function MainSection() {
   return (
     <div className="flex flex-col px-[20px] pt-[48px] pb-[40px] md:mx-auto md:max-w-screen-xl xl:py-[100px]">
-      <h1 className="text-[24px] font-bold leading-[34px] text-gray-900 xl:text-[36px] xl:leading-[54px]">
+      <h1 className="text-[24px] font-bold leading-[34px] xl:text-[36px] xl:leading-[54px]">
         프로젝트, 교육이 아닌 <br className="xl:hidden" />
         서로 공유하는 커뮤니티
       </h1>
@@ -48,7 +48,7 @@ export default function MainSection() {
                 <h3 className="font-bold leading-[36px] xl:mb-[8px] xl:text-[24px]">
                   {card.title}
                 </h3>
-                <p className="text-[12px] leading-[18px] text-gray-900 xl:text-[14px] xl:leading-[24px]">
+                <p className="text-[12px] leading-[18px] xl:text-[14px] xl:leading-[24px]">
                   {card.description.map(desc => (
                     <Fragment key={desc}>
                       {desc}

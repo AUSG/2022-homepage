@@ -19,10 +19,7 @@ export default function FAQSection() {
     <div className="bg-gray-100">
       <div className="relative flex flex-col px-[20px] py-[48px] xl:mx-auto xl:max-w-screen-xl xl:py-[100px]">
         <div className="xl:flex-row">
-          <h1
-            className="text-[24px] font-bold leading-[34px] text-gray-900
-            xl:absolute xl:left-[20px] xl:text-[36px] xl:leading-[52px]"
-          >
+          <h1 className="text-[24px] font-bold leading-[34px] xl:absolute xl:left-[20px] xl:text-[36px] xl:leading-[52px]">
             FAQ
           </h1>
           <div className="mt-[36px] flex-1 xl:ml-[180px] xl:mt-[8px]">

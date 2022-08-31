@@ -22,7 +22,7 @@ const Contact = () => {
           className="mx-5 mt-[26px] overflow-hidden rounded-[20px] shadow-[0px_0px_8px_rgba(0,0,0,0.1)]
           md:mt-[100px] md:flex md:h-[286px] md:items-center md:justify-between"
         >
-          <div className="ml-4 mt-4 text-2xl font-bold text-gray-900 md:flex-1 md:text-center">
+          <div className="ml-4 mt-4 text-2xl font-bold md:flex-1 md:text-center">
             궁금한게 있다면 <br className="xl:hidden" />
             언제든지 + 24시간 <br className="xl:hidden" />
             질문 받습니다.
