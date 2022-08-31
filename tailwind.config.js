@@ -1,3 +1,5 @@
+const defaultTheme = require('tailwindcss/defaultTheme');
+
 module.exports = {
   content: [
     './src/**/*.{js,ts,jsx,tsx}',
@@ -24,6 +26,9 @@ module.exports = {
       animation: {
         floating: 'floating 3s ease-in-out infinite',
       },
+    },
+    fontFamily: {
+      sans: ['Pretendard', ...defaultTheme.fontFamily.sans],
     },
   },
   plugins: [
