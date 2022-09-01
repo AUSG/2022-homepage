@@ -10,6 +10,7 @@ import MediumIcon from 'public/icons/medium.svg';
 import YoutubeIcon from 'public/icons/youtube.svg';
 import ArrowRight from 'public/icons/arrow_right.svg';
 import Close from 'public/icons/close.svg';
+import clsx from 'clsx';
 
 interface HeaderProps {
   theme?: 'white' | 'colored';
@@ -47,52 +48,61 @@ export default function Header({ theme = 'white' }: HeaderProps) {
   );
 
   return (
-    <div className="relative md:mx-auto md:max-w-screen-xl">
-      <div className="flex h-[60px] items-center justify-between md:h-[120px]">
-        <div className="flex items-center">
+    <div className="relative lg:mx-auto lg:max-w-screen-xl">
+      <div className="flex h-[60px] items-center justify-between lg:h-[120px]">
+        <nav className="flex items-center">
           <Link href="/">
-            <a className="flex h-full items-center px-[20px] md:mr-[80px]">
+            <a className="flex h-full items-center px-5 lg:mr-4 lg:px-8">
               {theme === 'white' ? (
                 <LogoColor
                   height="100%"
-                  className="aspect-[92/16] w-[92px] md:w-[200px]"
+                  className="aspect-[92/16] w-[100px] md:w-[140px] lg:w-[200px]"
                 />
               ) : (
                 <LogoWhite
                   height="100%"
-                  className="aspect-[92/16] w-[92px] md:w-[200px]"
+                  className="aspect-[92/16] w-[100px] md:w-[140px] lg:w-[200px]"
                 />
               )}
             </a>
           </Link>
-          <div className="hidden items-center md:flex">
-            <Link href="/contact">
-              <a
-                className={`font-bold ${
-                  theme === 'white' ? 'text-primary' : 'text-white'
-                }`}
-              >
-                Contact
-              </a>
-            </Link>
-          </div>
-        </div>
+          <Link href="/people">
+            <a
+              className={clsx(
+                theme === 'white' ? 'text-primary' : 'text-white',
+                'mr-6 hidden items-center p-4 font-bold lg:flex'
+              )}
+            >
+              People
+            </a>
+          </Link>
+          <Link href="/contact">
+            <a
+              className={clsx(
+                theme === 'white' ? 'text-primary' : 'text-white',
+                'hidden items-center p-4 font-bold lg:flex'
+              )}
+            >
+              Contact
+            </a>
+          </Link>
+        </nav>
 
         <button
           type="button"
-          className="flex h-full items-center px-[20px] md:hidden"
+          className="flex h-full items-center px-[20px] lg:hidden"
           onClick={() => setShowSidemenu(true)}
         >
           <MenuIcon className={`h-[24px] w-[24px] ${fillColor}`} />
         </button>
-        <div className="-mr-[16px] hidden items-center md:flex">
+        <div className="mr-2 hidden items-center lg:flex">
           {externalLinks.map(({ url, icon }) => (
             <a
               key={url}
               href={url}
               target="_blank"
               rel="noopener noreferrer"
-              className={`mr-[36px] ${fillColor} h-[36px] w-[36px] `}
+              className={`mr-4 px-2 ${fillColor} h-[48px] w-[48px] `}
             >
               {icon}
             </a>
@@ -129,13 +139,22 @@ export default function Header({ theme = 'white' }: HeaderProps) {
                 href={url}
                 target="_blank"
                 rel="noopener noreferrer"
-                className={`mr-[24px] ${fillColor} h-[24px] w-[24px]`}
+                className={`mr-4 px-1 ${fillColor} h-[40px] w-[40px]`}
               >
                 {icon}
               </a>
             ))}
           </div>
-          <div className="mt-[50px]">
+          <nav className="mt-[50px] flex flex-col gap-4">
+            <Link href="/people">
+              <a className="flex items-center">
+                <span className="mr-[8px] text-[24px] font-bold text-white">
+                  People
+                </span>
+                <ArrowRight width="36" height="36" fill="white" />
+              </a>
+            </Link>
+
             <Link href="/contact">
               <a className="flex items-center">
                 <span className="mr-[8px] text-[24px] font-bold text-white">
@@ -144,7 +163,7 @@ export default function Header({ theme = 'white' }: HeaderProps) {
                 <ArrowRight width="36" height="36" fill="white" />
               </a>
             </Link>
-          </div>
+          </nav>
         </div>
       </ReactModal>
     </div>

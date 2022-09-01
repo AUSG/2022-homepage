@@ -1,0 +1,13 @@
+{
+  "people": [
+    {
+      "year": "4th",
+      "name_ko": "배진수",
+      "name_en": "Jinsu Bae",
+      "photo": "naru200.jpg",
+      "short_bio": "문제를 고민하고, 해결할 줄 아는 백엔드 개발자를 희망하고 있습니다. 사람 만나는 것을 좋아합니다.",
+      "linkedin_username": "naru200",
+      "github_username": "naru200"
+    }
+  ]
+}
