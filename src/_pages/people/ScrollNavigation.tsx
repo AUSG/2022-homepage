@@ -9,7 +9,7 @@ interface ScrollNavigationProps {
 
 const ScrollNavigation: FC<ScrollNavigationProps> = ({ currentTab }) => {
   return (
-    <div className="mx-6 mt-5 flex items-center gap-4">
+    <div className="mx-6 mt-5 flex items-center gap-4 lg:justify-center">
       {TAB.map(tab => (
         <div
           key={tab}
@@ -17,7 +17,7 @@ const ScrollNavigation: FC<ScrollNavigationProps> = ({ currentTab }) => {
             tab === currentTab
               ? 'border-b-primary text-primary'
               : 'border-b-gray-300 text-gray-300',
-            'cursor-pointer border-b-2 font-semibold'
+            'cursor-pointer border-b-2 font-semibold lg:text-2xl'
           )}
         >{`${parseInt(tab, 10)}기`}</div>
       ))}
