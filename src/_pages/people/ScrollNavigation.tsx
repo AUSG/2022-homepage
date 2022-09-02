@@ -9,17 +9,21 @@ interface ScrollNavigationProps {
 
 const ScrollNavigation: FC<ScrollNavigationProps> = ({ currentTab }) => {
   return (
-    <div className="mx-6 mt-5 flex items-center gap-4 lg:justify-center">
+    <div
+      className="mx-6 -mt-8 flex items-center gap-4 pt-12 lg:justify-center"
+      id={`tab_${currentTab}`}
+    >
       {TAB.map(tab => (
-        <div
+        <a
+          href={`#tab_${tab}`}
           key={tab}
           className={clsx(
             tab === currentTab
               ? 'border-b-primary text-primary'
               : 'border-b-gray-300 text-gray-300',
-            'cursor-pointer border-b-2 font-semibold lg:text-2xl'
+            'border-b-2 font-semibold lg:text-2xl'
           )}
-        >{`${parseInt(tab, 10)}기`}</div>
+        >{`${parseInt(tab, 10)}기`}</a>
       ))}
     </div>
   );
