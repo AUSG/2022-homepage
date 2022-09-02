@@ -1,7 +1,7 @@
 {
   "people": [
     {
-      "year": "6th",
+      "year": "4th",
       "name_ko": "배진수",
       "name_en": "Jinsu Bae",
       "photo": "naru200.jpg",
@@ -11,30 +11,59 @@
     },
     {
       "year": "6th",
-      "name_ko": "배진수",
-      "name_en": "Jinsu Bae",
-      "photo": "naru200.jpg",
-      "short_bio": "사람 만나는 것과 이것저것 새로운 경험을 해보는 걸 좋아하는 소프트웨어 엔지니어입니다.",
-      "linkedin_username": "naru200",
-      "github_username": "naru200"
+      "name_ko": "김수빈",
+      "name_en": "Subin Kim",
+      "photo": "sudosubin.png",
+      "short_bio": "$ sudo subin",
+      "linkedin_username": "sudosubin",
+      "github_username": "sudosubin"
+    },
+    {
+      "year": "4th",
+      "name_ko": "우수연",
+      "name_en": "Suyeon Woo",
+      "photo": "SuyeonWoo.jpg",
+      "short_bio": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "linkedin_username": "suyeon-woo",
+      "github_username": "suyeon96",
+      "homepage_url": "https://suyeon96.tistory.com"
+    },
+    {
+      "year": "4th",
+      "name_ko": "길재은",
+      "name_en": "Jaeeun Kil",
+      "photo": "kje.jpeg",
+      "short_bio": "삐약이 개발자",
+      "linkedin_username": "Jaeeun Kil",
+      "github_username": "KilJaeeun"
     },
     {
       "year": "6th",
-      "name_ko": "배진수",
-      "name_en": "Jinsu Bae",
-      "photo": "naru200.jpg",
-      "short_bio": "사람 만나는 것과 이것저것 새로운 경험을 해보는 걸 좋아하는 소프트웨어 엔지니어입니다.",
-      "linkedin_username": "naru200",
-      "github_username": "naru200"
+      "name_ko": "김수민",
+      "name_en": "Sumin Kim",
+      "photo": "Eeap.jpeg",
+      "short_bio": "새로운 것을 배우는걸 좋아하고 배우고 싶은게 많은 개발자입니다 \uD83D\uDE0A",
+      "linkedin_username": "sumin",
+      "github_username": "Eeap",
+      "homepage_url": "https://suminn0.tistory.com/"
+    },
+    {
+      "year": "4th",
+      "name_ko": "정승호",
+      "name_en": "Seungho Jeong",
+      "photo": "seungho.png",
+      "short_bio": "Super SRE Guy",
+      "linkedin_username": "seungho-jeong-79684b210",
+      "github_username": "Jeoungseungho"
     },
     {
       "year": "6th",
-      "name_ko": "배진수",
-      "name_en": "Jinsu Bae",
-      "photo": "naru200.jpg",
-      "short_bio": "사람 만나는 것과 이것저것 새로운 경험을 해보는 걸 좋아하는 소프트웨어 엔지니어입니다.",
-      "linkedin_username": "naru200",
-      "github_username": "naru200"
+      "name_ko": "박수호",
+      "name_en": "Suho Park",
+      "photo": "suhopark.png",
+      "short_bio": "DevOps/SRE 지망생",
+      "linkedin_username": "suhopark",
+      "github_username": "grand7070"
     }
   ]
 }

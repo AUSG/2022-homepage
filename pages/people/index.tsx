@@ -20,18 +20,21 @@ const People = () => {
           People
         </h1>
 
-        {TAB.map(tab => (
-          <>
-            <ScrollNavigation key={`tab_${tab}`} currentTab={tab} />
-            <div className="mt-8 mb-6 grid grid-cols-1 gap-y-4 px-5 lg:mt-20 lg:mb-[60px] lg:grid-cols-2 lg:gap-x-16 lg:gap-y-12 lg:px-8">
-              {peopleData.people
-                .filter(({ year }) => year === tab)
-                .map(person => (
-                  <IntroCard key={person.name_en} {...person} />
-                ))}
-            </div>
-          </>
-        ))}
+        {TAB.map(
+          tab =>
+            peopleData.people.filter(({ year }) => year === tab).length > 0 && (
+              <>
+                <ScrollNavigation key={`tab_${tab}`} currentTab={tab} />
+                <div className="mt-8 mb-6 grid grid-cols-1 gap-y-4 px-5 lg:mt-20 lg:mb-[60px] lg:grid-cols-2 lg:gap-x-16 lg:gap-y-12 lg:px-8">
+                  {peopleData.people
+                    .filter(({ year }) => year === tab)
+                    .map(person => (
+                      <IntroCard key={person.name_en} {...person} />
+                    ))}
+                </div>
+              </>
+            )
+        )}
       </div>
     </>
   );

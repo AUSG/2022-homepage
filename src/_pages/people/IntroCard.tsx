@@ -28,7 +28,12 @@ const IntroCard: FC<IntroCardProps> = ({
   return (
     <div className="flex flex-shrink-0 rounded-2xl p-3 shadow-[0px_0px_8px_rgba(0,0,0,0.1)] lg:p-4">
       <div className="relative mr-3 h-12 flex-shrink-0 basis-12 overflow-hidden rounded-full lg:mr-6 lg:h-24 lg:basis-24 ">
-        <Image src={`/people/${photo}`} alt={`${name_ko}_사진`} layout="fill" />
+        <Image
+          src={`/people/${photo}`}
+          alt={`${name_ko}_사진`}
+          layout="fill"
+          objectFit="contain"
+        />
       </div>
       <div>
         <div className="flex items-center">
