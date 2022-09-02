@@ -1,39 +1,38 @@
 {
   "people": [
     {
-      "year": "4th",
+      "year": "6th",
       "name_ko": "배진수",
       "name_en": "Jinsu Bae",
       "photo": "naru200.jpg",
-      "short_bio": "문제를 고민하고, 해결할 줄 아는 백엔드 개발자를 희망하고 있습니다. 사람 만나는 것을 좋아합니다.",
-      "linkedin_username": "naru200",
-      "github_username": "naru200",
-      "homepage_url": ""
-    },
-    {
-      "year": "4th",
-      "name_ko": "배진수",
-      "name_en": "Jinsu Bae",
-      "photo": "naru200.jpg",
-      "short_bio": "문제를 고민하고, 해결할 줄 아는 백엔드 개발자를 희망하고 있습니다. 사람 만나는 것을 좋아합니다.",
+      "short_bio": "사람 만나는 것과 이것저것 새로운 경험을 해보는 걸 좋아하는 소프트웨어 엔지니어입니다.",
       "linkedin_username": "naru200",
       "github_username": "naru200"
     },
     {
-      "year": "4th",
+      "year": "6th",
       "name_ko": "배진수",
       "name_en": "Jinsu Bae",
       "photo": "naru200.jpg",
-      "short_bio": "문제를 고민하고, 해결할 줄 아는 백엔드 개발자를 희망하고 있습니다. 사람 만나는 것을 좋아합니다.",
+      "short_bio": "사람 만나는 것과 이것저것 새로운 경험을 해보는 걸 좋아하는 소프트웨어 엔지니어입니다.",
       "linkedin_username": "naru200",
       "github_username": "naru200"
     },
     {
-      "year": "4th",
+      "year": "6th",
       "name_ko": "배진수",
       "name_en": "Jinsu Bae",
       "photo": "naru200.jpg",
-      "short_bio": "문제를 고민하고, 해결할 줄 아는 백엔드 개발자를 희망하고 있습니다. 사람 만나는 것을 좋아합니다.",
+      "short_bio": "사람 만나는 것과 이것저것 새로운 경험을 해보는 걸 좋아하는 소프트웨어 엔지니어입니다.",
+      "linkedin_username": "naru200",
+      "github_username": "naru200"
+    },
+    {
+      "year": "6th",
+      "name_ko": "배진수",
+      "name_en": "Jinsu Bae",
+      "photo": "naru200.jpg",
+      "short_bio": "사람 만나는 것과 이것저것 새로운 경험을 해보는 걸 좋아하는 소프트웨어 엔지니어입니다.",
       "linkedin_username": "naru200",
       "github_username": "naru200"
     }
