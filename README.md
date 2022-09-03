@@ -72,7 +72,7 @@ AUSG 구성원들은 [People 페이지](https://ausg.me/people)에 사진과 함
       }
     ```
     * `photo` 값은 반드시 업로드한 프로필 사진의 파일명과 동일하게 설정해야 합니다. (확장자까지!)
-    * `linkedin_username` `github_username` 값을 기반으로 Linkedin/Github 프로필 링크가 걸리게 됩니다.
+    * `linkedin_username` `github_username` `homepage_url` 값을 기반으로 Linkedin/Github 프로필 링크와 홈페이지(블로그) 링크가 걸리게 됩니다.
     * 링크가 걸리는 걸 원치 않는다면 `linkedin_username` `github_username` `homepage_url` 값은 입력하지 않아도 됩니다.
 
 
