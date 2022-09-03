@@ -75,6 +75,8 @@ AUSG 구성원들은 [People 페이지](https://ausg.me/people)에 사진과 함
     * `linkedin_username` `github_username` `homepage_url` 값을 기반으로 Linkedin/Github 프로필 링크와 홈페이지(블로그) 링크가 걸리게 됩니다.
     * 링크가 걸리는 걸 원치 않는다면 `linkedin_username` `github_username` `homepage_url` 값은 입력하지 않아도 됩니다.
 
+이미 등록된 정보를 수정하고 싶다면 data/people.json 의 JSON 객체를 수정하면 되고, 사진을 변경하고 싶다면 public/people 경로에 동일한 파일명으로 기존 사진을 덮어씌우면 됩니다.
+다른 사람의 정보를 수정하지 않도록 주의해 주세요.
 
 ## Contact
 
