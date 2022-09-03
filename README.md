@@ -46,9 +46,31 @@ npm run dev
 
 AUSG 구성원들은 [People 페이지](https://ausg.me/people)에 사진과 함께 간략한 자기소개를 등록할 수 있습니다.
 
-1. data/people.json 파일에 아래 형식의 자기소개 객체 추가
+1. public/people 경로에 본인 사진 업로드
+    * 만약 페이지에서 사진이 잘리거나 이상하게 나온다면, 사진을 잘라서 편집한 뒤에 업로드하면 됩니다.
 
-2. public/people 경로에 본인 사진 등록
+2. data/people.json 파일에 아래 형식의 자기소개 객체 추가
+    ```
+      {
+        people: [
+          ...
+          {
+            "year": "6th", // "6th", "5th", "4th", "3rd", "2nd", "1st" 중에서 본인 기수에 맞춰 입력
+            "name_ko": "배진수", // 한글 이름
+            "name_en": "Jinsu Bae", // 영어 이름
+            "photo": "naru200.jpg", // 프로필 사진 파일명(확장자 포함)
+            "short_bio": "짧은 소개 메시지. 공백 포함 100자 제한. 100자를 넘기면 표시되지 않음.",
+            "linkedin_username": "naru200", // Optional: 링크드인 유저네임 (본인 프로필 페이지 주소에서 확인 가능)
+            "github_username": "naru200", // Optional: Github 유저네임 (본인 프로필 페이지 주소에서 확인 가능)
+            "homepage_url": "https://exampleblog.com" // Optional: 홈페이지 또는 블로그 URL
+          }
+        ]
+      }
+    ```
+    * `photo` 값은 반드시 업로드한 프로필 사진의 파일명과 동일하게 설정해야 합니다. (확장자까지!)
+    * `linkedin_username` `github_username` 값을 기반으로 Linkedin/Github 프로필 링크가 걸리게 됩니다.
+    * 링크가 걸리는 걸 원치 않는다면 `linkedin_username` `github_username` `homepage_url` 값은 입력하지 않아도 됩니다.
+
 
 ## Contact
 
