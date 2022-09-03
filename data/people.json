@@ -71,12 +71,9 @@
       "photo": "yeongwoooo.jpg",
       "year": "5th",
       "short_bio": "프론트, 백, 인프라 팔방미인이 될래요",
-      "description": "I love sexy code.👨‍💻",
-      "email": "rdd9223@gmail.com",
-      "linkedin_username": "%EC%98%81%EC%9A%B0-%EA%B0%95-659a861ba/",
+      "linkedin_username": "%EC%98%81%EC%9A%B0-%EA%B0%95-659a861ba",
       "github_username": "rdd9223",
-      "homepage_url": "https://velog.io/@rdd9223",
-      "otherURL": "https://www.instagram.com/kang_0woo/"
+      "homepage_url": "https://velog.io/@rdd9223"
     },
     {
       "name_en": "cheongha",
@@ -84,12 +81,7 @@
       "photo": "cheongha.jpg",
       "year": "5th",
       "short_bio": "멋쟁이 백엔드 개발자가 될래요",
-      "description": "맑고 깨끗하게 💧",
-      "email": "sch7188@gmail.com",
-      "linkedin_username": "",
-      "github_username": "cheongha",
-      "homepage_url": "",
-      "otherURL": ""
+      "github_username": "cheongha"
     },
     {
       "name_en": "tape22",
@@ -97,12 +89,8 @@
       "photo": "tape22.jpg",
       "year": "5th",
       "short_bio": "문제를 고민하고, 해결할 줄 아는 백엔드 개발자를 희망하고 있습니다.",
-      "description": "🚀 도전과 재미를 찾아서!",
-      "email": "gjwjdlas@gmail.com",
-      "linkedin_username": "",
       "github_username": "tape22",
-      "homepage_url": "https://tape22.tistory.com/",
-      "otherURL": ""
+      "homepage_url": "https://tape22.tistory.com/"
     },
     {
       "name_en": "bluayer",
@@ -110,25 +98,18 @@
       "photo": "bluayer.jpg",
       "year": "5th",
       "short_bio": "다양한 사람들과 대화하는 것을 좋아하는 주니어 백엔드 개발자입니다 XD",
-      "description": "앗, 저랑 재밌게 놀아봐요 :)",
-      "email": "ijacsong98@gmail.com",
-      "linkedin_username": "%EC%A0%95%EC%9A%B0-%EC%86%A1-65a0b387/",
+      "linkedin_username": "%EC%A0%95%EC%9A%B0-%EC%86%A1-65a0b387",
       "github_username": "bluayer",
-      "homepage_url": "https://bluayer.com",
-      "otherURL": ""
+      "homepage_url": "https://bluayer.com"
     },
     {
       "name_en": "juno",
       "name_ko": "이준호",
       "photo": "juno.jpg",
       "year": "5th",
-      "short_bio": "인생 프론트엔드 개발자입니다!\n여러분과 함께 성장하고 싶어요🙌",
-      "description": "걱정말고 다가와 주세요!\n리액션은 제가 담당할게요😆",
-      "email": "junolee7803@gmail.com",
-      "linkedin_username": "",
+      "short_bio": "인생 프론트엔드 개발자입니다! 여러분과 함께 성장하고 싶어요🙌",
       "github_username": "juno7803",
-      "homepage_url": "https://velog.io/@juno7803",
-      "otherURL": ""
+      "homepage_url": "https://velog.io/@juno7803"
     },
     {
       "name_en": "yelly",
@@ -136,12 +117,8 @@
       "photo": "yelly.jpg",
       "year": "5th",
       "short_bio": "프론트와 백 모두 잘하고 싶은 욕심쟁이 개발자입니다",
-      "description": "work play coffee",
-      "email": "yejison98@gmail.com",
-      "linkedin_username": "",
       "github_username": "yezgoget",
-      "homepage_url": " https://velog.io/@yellyjelly",
-      "otherURL": ""
+      "homepage_url": "https://velog.io/@yellyjelly"
     },
     {
       "name_en": "dwp",
@@ -149,12 +126,7 @@
       "photo": "dwp.jpg",
       "year": "5th",
       "short_bio": "데이터 엔지니어를 꿈꾸는 다이버입니다. 배움과 사람을 좋아합니다.",
-      "description": "UNDER THE SEA!🎶",
-      "email": "workpanda.n@gmail.com",
-      "linkedin_username": "",
-      "github_username": "dawonparkk",
-      "homepage_url": "",
-      "otherURL": ""
+      "github_username": "dawonparkk"
     },
     {
       "name_en": "prayme",
@@ -162,12 +134,9 @@
       "photo": "prayme.jpg",
       "year": "5th",
       "short_bio": "예비 백엔드 개발자입니다. 함께 일하고 싶은 사람이 되고 싶습니다.",
-      "description": "저 오늘 한가해요 ~ 😘",
-      "email": "dbfpzk142@gmail.com",
-      "linkedin_username": "prayme/",
+      "linkedin_username": "prayme",
       "github_username": "plzprayme",
-      "homepage_url": "https://velog.io/@prayme",
-      "otherURL": ""
+      "homepage_url": "https://velog.io/@prayme"
     },
     {
       "name_en": "gineepark",
@@ -175,38 +144,25 @@
       "photo": "gineepark.jpg",
       "year": "5th",
       "short_bio": "Do What You Can't",
-      "description": "클라우드와 보안을 공부하는 중입니다:)",
-      "email": "bluejinhee@gmail.com",
-      "linkedin_username": "",
       "github_username": "gineepark",
-      "homepage_url": "https://velog.io/@ginee_park",
-      "otherURL": ""
+      "homepage_url": "https://velog.io/@ginee_park"
     },
     {
       "name_en": "sulmo",
       "name_ko": "정성모",
       "photo": "sulmo.jpg",
       "year": "5th",
-      "short_bio": "웹에 관심이 있습니다.앞으로 프론트엔드를 많이 파보려 합니다!",
-      "description": "넘모 행보카고!!",
-      "email": "tjdah0853@gmail.com",
-      "linkedin_username": "",
+      "short_bio": "웹에 관심이 있습니다. 앞으로 프론트엔드를 많이 파보려 합니다!",
       "github_username": "JeoungSulMo",
-      "homepage_url": "https://jeoungsulmo.github.io/",
-      "otherURL": ""
+      "homepage_url": "https://jeoungsulmo.github.io/"
     },
     {
       "name_en": "nanaeu",
       "name_ko": "이유진",
       "photo": "nanaeu.jpg",
       "year": "5th",
-      "short_bio": "백엔드 개발자를 희망하고 있어요!,\n다같이 즐겁게 활동해보아요😊",
-      "description": "🐣🐣🐣",
-      "email": "lyubliss@gmail.com",
-      "linkedin_username": "",
-      "github_username": "nanaeu",
-      "homepage_url": "",
-      "otherURL": ""
+      "short_bio": "백엔드 개발자를 희망하고 있어요! 다같이 즐겁게 활동해보아요😊",
+      "github_username": "nanaeu"
     },
     {
       "name_en": "say-young",
@@ -214,12 +170,9 @@
       "photo": "say-young.jpg",
       "year": "5th",
       "short_bio": "지금처럼 계속해서 즐겁게 개발하고 싶습니다.",
-      "description": "🔥프로 재미사냥꾼🔥",
-      "email": "sayer.dev@gmail.com",
-      "linkedin_username": "seyoung-jang-9400bb206/",
+      "linkedin_username": "seyoung-jang-9400bb206",
       "github_username": "say-young",
-      "homepage_url": "https://say-young.tistory.com/",
-      "otherURL": ""
+      "homepage_url": "https://say-young.tistory.com/"
     },
     {
       "name_en": "devwithpug",
@@ -227,12 +180,8 @@
       "photo": "devwithpug.jpg",
       "year": "5th",
       "short_bio": "백엔드 개발자를 꿈꾸고 있어요. Spring, MSA, DevOps에 관심이 많습니다.",
-      "description": "강아지 퍼그 귀엽지 않나요? 🐶",
-      "email": "zmfjscl789@gmail.com",
-      "linkedin_username": "",
       "github_username": "devwithpug",
-      "homepage_url": "https://devwithpug.github.io",
-      "otherURL": ""
+      "homepage_url": "https://devwithpug.github.io"
     },
     {
       "name_en": "baejiann",
@@ -240,12 +189,8 @@
       "photo": "baejiann.jpg",
       "year": "5th",
       "short_bio": "서비스 기획으로 문제를 해결하는 사람이 되고 싶습니다.",
-      "description": "파도가 와요. 서핑을 해야겠네요.",
-      "email": "baejiann120@naver.com",
-      "linkedin_username": "jian-bae-117756201/",
-      "github_username": "BAEJIANN",
-      "homepage_url": "",
-      "otherURL": ""
+      "linkedin_username": "jian-bae-117756201",
+      "github_username": "BAEJIANN"
     },
     {
       "name_en": "ohyes",
@@ -253,12 +198,7 @@
       "photo": "ohyes.jpg",
       "year": "5th",
       "short_bio": "아직은 배울게 많은 저의 목표는 '재밌고 즐겁게 개발하자'입니다. 모두 함께하시죠~",
-      "description": "오예스~✨",
-      "email": "npr05080@gmail.com",
-      "linkedin_username": "",
-      "github_username": "Ohyaelim",
-      "homepage_url": "",
-      "otherURL": ""
+      "github_username": "Ohyaelim"
     },
     {
       "name_en": "gimquokka",
@@ -266,12 +206,9 @@
       "photo": "gimquokka.jpg",
       "year": "5th",
       "short_bio": "Spring, Cloud, DevOps 등에 관심이 많고 잘하는 Backend Software Engineer가 되고 싶습니다.",
-      "description": "Learning by Doing 💻",
-      "email": "gimquokka@gmail.com",
-      "linkedin_username": "gimquokka/",
+      "linkedin_username": "gimquokka",
       "github_username": "gimquokka",
-      "homepage_url": "https://gimquokka.github.io/",
-      "otherURL": "https://kwize.com/pics/Linus-Torvalds-quote-about-talking-2a9797.jpg"
+      "homepage_url": "https://gimquokka.github.io/"
     },
     {
       "name_en": "sangwoo",
@@ -279,12 +216,8 @@
       "photo": "sangwoo.jpg",
       "year": "5th",
       "short_bio": "백엔드, 프론트, 인프라 모두 다 좋아해요~!",
-      "description": "칼퇴하는 개발자가 되자.",
-      "email": "robbyra@gmail.com",
-      "linkedin_username": "sangwoo-ra-845529202/",
-      "github_username": "sang-w0o",
-      "homepage_url": "sang-w0o/Study",
-      "otherURL": ""
+      "linkedin_username": "sangwoo-ra-845529202",
+      "github_username": "sang-w0o"
     },
     {
       "name_en": "ywoosang",
@@ -292,12 +225,7 @@
       "photo": "ywoosang.jpg",
       "year": "5th",
       "short_bio": "'시너지'와 '인사이트'를 제공할 수 있는 개발자가 되고 싶습니다.",
-      "description": "당신처럼 아름다운 하루에요 🌈",
-      "email": "opellong13@gmail.com",
-      "linkedin_username": "",
-      "github_username": "Ywoosang",
-      "homepage_url": "",
-      "otherURL": ""
+      "github_username": "Ywoosang"
     },
     {
       "name_en": "jinseok",
@@ -305,12 +233,9 @@
       "photo": "jinseok.jpg",
       "year": "5th",
       "short_bio": "데이터가 움직이는 것을 다루고 바라보는 일을 굉장히 좋아합니다👻",
-      "description": "안녕하세요🙂",
-      "email": "jinseock95@gmail.com",
-      "linkedin_username": "진석-오-6894841a7/",
+      "linkedin_username": "진석-오-6894841a7",
       "github_username": "jinseock95",
-      "homepage_url": "https://velog.io/@jinseock95",
-      "otherURL": ""
+      "homepage_url": "https://velog.io/@jinseock95"
     },
     {
       "name_en": "namrmino",
@@ -318,12 +243,9 @@
       "photo": "namrmino.jpg",
       "year": "5th",
       "short_bio": "End to End 프로젝트 리더가 되는 날까지 🌻🌻🌻",
-      "description": "백패킹 캠퍼 갬성",
-      "email": "njj97@naver.com",
-      "linkedin_username": "jeongjaenam/",
+      "linkedin_username": "jeongjaenam",
       "github_username": "namrmino",
-      "homepage_url": "https://namrmino.tistory.com/",
-      "otherURL": ""
+      "homepage_url": "https://namrmino.tistory.com/"
     },
     {
       "name_en": "zion",
@@ -331,12 +253,7 @@
       "photo": "zion.jpg",
       "year": "5th",
       "short_bio": "재밌는 것들을 쫓아 가는 사람",
-      "description": "노력하겠습니다..",
-      "email": "sju0924@khu.ac.kr",
-      "linkedin_username": "",
-      "github_username": "sju0924",
-      "homepage_url": "",
-      "otherURL": "https://www.instagram.com/zzioni._.bears/"
+      "github_username": "sju0924"
     },
     {
       "name_en": "gyunny",
@@ -344,12 +261,8 @@
       "photo": "gyunny.jpg",
       "year": "5th",
       "short_bio": "늦더라도 꾸준히 원칙을 지키며 올바른 방향으로 가고자 합니다~",
-      "description": "겉차속따,,",
-      "email": "wjdrbs966@naver.com",
-      "linkedin_username": "",
       "github_username": "wjdrbs96",
-      "homepage_url": "https://devlog-wjdrbs96.tistory.com/",
-      "otherURL": ""
+      "homepage_url": "https://devlog-wjdrbs96.tistory.com/"
     },
     {
       "name_en": "injeong",
@@ -357,12 +270,7 @@
       "photo": "injeong.jpg",
       "year": "5th",
       "short_bio": "🍎를 좋아하는 iOS 개발자 최인정입니다",
-      "description": "ㅇㅈ? 최인정 😉",
-      "email": "idinjeong@gmail.com",
-      "linkedin_username": "",
-      "github_username": "inddoni",
-      "homepage_url": "",
-      "otherURL": ""
+      "github_username": "inddoni"
     },
     {
       "name_en": "tony",
@@ -370,9 +278,7 @@
       "photo": "tony.jpg",
       "year": "5th",
       "short_bio": "배우고 적용하는 것을 좋아합니다",
-      "description": "블로그 시작했습니다 😀😀",
-      "email": "ddr04014@gmail.com",
-      "linkedin_username": "yunjegal/",
+      "linkedin_username": "yunjegal",
       "github_username": "freedom07",
       "homepage_url": "https://loggg.tistory.com/"
     },
@@ -382,8 +288,6 @@
       "photo": "seongbin9786.jpg",
       "year": "5th",
       "short_bio": "팀에게, 소비자에게 좋은 사람이 되고 싶습니다.",
-      "description": "공부합시다",
-      "email": "seongbin9786@gmail.com",
       "github_username": "seongbin9786",
       "homepage_url": "https://jsqna.com/"
     },
@@ -393,8 +297,6 @@
       "photo": "enif.lee.jpg",
       "year": "5th",
       "short_bio": "같이 코딩해요!",
-      "description": "Use `import` for Boosting your company! 😁",
-      "email": "enif.lee@gmail.com",
       "github_username": "enif-lee",
       "homepage_url": "https://sticky32.tistory.com/"
     },
@@ -403,33 +305,26 @@
       "name_ko": "김민태",
       "photo": "connor614.jpeg",
       "year": "4th",
-      "email": "k.connor614@gmail.com",
       "short_bio": "어.. 4기 오거나이저 입니다 반갑습니다 :)",
-      "description": "햄버거는 최대 3개",
       "github_username": "14km",
-      "linkedin_username": "mintae-kim-b1a627187/"
+      "linkedin_username": "mintae-kim-b1a627187"
     },
     {
       "name_en": "akrso06197",
       "name_ko": "권주희",
       "photo": "akrso06197.jpg",
       "year": "4th",
-      "email": "akrso06197@naver.com",
       "short_bio": "안녕하세요. 권주희입니다. 아직 배울 게 많은 주니어 개발자입니다. 항상 겸손한 자세로 더욱 성장하는 개발자가 되겠습니다.",
-      "description": "Once and For All",
       "github_username": "victoriagjh",
-      "linkedin_username": "victoriagjh/",
-      "homepage_url": "https://victoria-k.tistory.com/",
-      "otherURL": "https://www.instagram.com/vic._.toree"
+      "linkedin_username": "victoriagjh",
+      "homepage_url": "https://victoria-k.tistory.com/"
     },
     {
       "name_en": "kpic1638",
       "name_ko": "김성익",
       "photo": "kpic1638.jpg",
       "year": "4th",
-      "email": "kpic1638@gmail.com",
       "short_bio": "욕심과 기울기가 큰 사람이 되고 싶습니다. AIOps, DevOps, Backend, 무엇보다 스타트업계와 사람에 관심이 많습니다.",
-      "description": "AI 하지마\\n그게 뭔데\\nAI 하지말라고\\n그거 어떻게 하는건데",
       "github_username": "SeongIkKim",
       "homepage_url": "https://blogik.netlify.app/"
     },
@@ -438,11 +333,9 @@
       "name_ko": "김은수",
       "photo": "eunsukimme.jpg",
       "year": "4th",
-      "email": "eunsu.dev@gmail.com",
       "short_bio": "배우고 성장하는 것을 좋아하는 프론트엔드 개발자입니다. 클라우드에 관심이 많습니다 :)",
-      "description": "while(true) { coding(); coffee(); sleep(); }",
       "github_username": "eunsukimme",
-      "linkedin_username": "eunsukimme/",
+      "linkedin_username": "eunsukimme",
       "homepage_url": "https://blog.eunsukim.me/"
     },
     {
@@ -450,11 +343,9 @@
       "name_ko": "오규태",
       "photo": "einokt.jpg",
       "year": "4th",
-      "email": "einokt@naver.com",
       "short_bio": "현재 컴퓨터공학과 3학년으로 대학교를 다니고 있는 오규태라고 합니다. 영상스트리밍이나 영상처리에 관심을 많이 갖고있습니다.",
-      "description": "행운은 용감한 자를 돕는다",
       "github_username": "RustShark",
-      "linkedin_username": "규태-오-b26582189/",
+      "linkedin_username": "규태-오-b26582189",
       "homepage_url": "https://blog.naver.com/einokt"
     },
     {
@@ -463,9 +354,7 @@
       "photo": "jsh.jpg",
       "year": "4th",
       "short_bio": "Python, Cloud, 맛집을 사랑하는 개발자.",
-      "description": "더 넓은 세상 밖으로 🚀",
-      "email": "wony9795@gmail.com",
-      "linkedin_username": "seungho-jeong-79684b210/",
+      "linkedin_username": "seungho-jeong-79684b210",
       "github_username": "Jeoungseungho"
     },
     {
@@ -473,24 +362,19 @@
       "name_ko": "문성혁",
       "photo": "roeniss2.jpg",
       "year": "3rd",
-      "email": "roeniss2@gmail.com",
       "short_bio": "alias cd='rm -rf /'",
-      "description": "이 사이트의 이스터에그를 모두 찾아보세요",
       "github_username": "roeniss",
-      "linkedin_username": "roenissmoon/",
-      "homepage_url": "https://velog.io/@roeniss",
-      "otherURL": "https://roeniss.tistory.com/"
+      "linkedin_username": "roenissmoon",
+      "homepage_url": "https://velog.io/@roeniss"
     },
     {
       "name_en": "cadenzah93",
       "name_ko": "김정모",
       "photo": "cadenzah93.jpg",
       "year": "3rd",
-      "email": "cadenzah93@gmail.com",
       "short_bio": "주로 웹을 다룹니다. 콘솔 게임과 해산물을 좋아합니다. 따릉이 정기권 있습니다. INFJ.",
-      "description": "두둥실",
       "github_username": "cadenzah",
-      "linkedin_username": "cadenzah/",
+      "linkedin_username": "cadenzah",
       "homepage_url": "https://velog.io/@cadenzah"
     },
     {
@@ -498,11 +382,9 @@
       "name_ko": "이시연",
       "photo": "siyeons.jpg",
       "year": "3rd",
-      "email": "siyeonleeme@gmail.com",
       "short_bio": "클라우드 회사에서 일하는 프론트엔드 개발자입니다.",
-      "description": "저는 사실 골든리트리버",
       "github_username": "siyeons",
-      "linkedin_username": "siyeon-lee-3b082b160/",
+      "linkedin_username": "siyeon-lee-3b082b160",
       "homepage_url": "https://velog.io/@sian"
     },
     {
@@ -510,9 +392,7 @@
       "name_ko": "김초희",
       "photo": "chchgml10.jpg",
       "year": "3rd",
-      "email": "chchgml10@gmail.com",
       "short_bio": "Kotlin을 주로 사용하고 Android Architecture에 관심이 많습니다!",
-      "description": "마우스 올리신거 딱 걸림!",
       "github_username": "choheeis",
       "homepage_url": "https://choheeis.github.io/newblog/"
     },
@@ -521,11 +401,9 @@
       "name_ko": "변준석",
       "photo": "byunjuneseok.jpg",
       "year": "3rd",
-      "email": "byunjuneseok@gmail.com",
       "short_bio": "Passion for learning and adopting new technologies with a focus on finding the right tool for the job.",
-      "description": "“WE GON MAKE IT”",
       "github_username": "byunjuneseok",
-      "linkedin_username": "byunjuneseok/",
+      "linkedin_username": "byunjuneseok",
       "homepage_url": "https://binaryflavor.com"
     },
     {
@@ -533,9 +411,7 @@
       "name_ko": "박상훈",
       "photo": "p4rksh.jpg",
       "year": "3rd",
-      "email": "p4rksh@kakao.com",
       "short_bio": "안녕하세요! 백엔드 개발자 박상훈입니다.",
-      "description": "김병규 사랑해",
       "github_username": "p4rksh",
       "homepage_url": "https://velog.io/@p4rksh"
     },
@@ -544,9 +420,7 @@
       "name_ko": "김병규",
       "photo": "beygee.jpg",
       "year": "3rd",
-      "email": "doug0476@naver.com",
       "short_bio": "React, Flutter, Nest.js, Typescript 좋아해요",
-      "description": "이때다 싶을때 도망쳐",
       "github_username": "beygee"
     },
     {
@@ -554,9 +428,7 @@
       "name_ko": "신동선",
       "photo": "sds.jpg",
       "year": "3rd",
-      "email": "sds111888@gmail.com",
       "short_bio": "주니어 백엔드 개발자입니다 :)",
-      "description": "포세이동선입니다",
       "github_username": "shindongsun0",
       "homepage_url": "https://gasungbilife.tistory.com/"
     },
@@ -565,11 +437,9 @@
       "name_ko": "박진수",
       "photo": "umi0410.jpg",
       "year": "3rd",
-      "email": "dev.umijs@gmail.com",
       "short_bio": "Go, Spring, Container, Cloud 등에 관심이 많은 백엔드 개발자입니다! 다양한 기술 얘기와 완성도 있는 아키텍쳐 설계를 좋아하고 개발 말고도 이것 저것 좋아하는 에너지 있는 녀석입니다~!",
-      "description": "시대를 앞서가는(?) 고독한 Go 러버...",
-      "github_username": "umi0410/",
-      "linkedin_username": "jinsu-park-63a7b2179/",
+      "github_username": "umi0410",
+      "linkedin_username": "jinsu-park-63a7b2179",
       "homepage_url": "https://umi0410.github.io"
     },
     {
@@ -577,11 +447,9 @@
       "name_ko": "김예본",
       "photo": "yebon.jpg",
       "year": "2nd",
-      "email": "v954242@gmail.com",
       "short_bio": "가뭄에 콩나듯한 AUSG 안드 개발자",
-      "description": "맥주마실 때 불러주세요🍻",
       "github_username": "yebonkim",
-      "linkedin_username": "yebon-kim-196986175/",
+      "linkedin_username": "yebon-kim-196986175",
       "homepage_url": "https://yebon-kim.tistory.com/"
     },
     {
@@ -589,24 +457,19 @@
       "name_ko": "고명진",
       "photo": "rayleighko.jpg",
       "year": "2nd",
-      "email": "ray@scentlab.kr",
       "short_bio": "고양이 중독",
-      "description": "아아 오늘도 평안한 하루 보내고 계실런지요. 다름이 아니라 오늘은 저를 소개해보려 합니다. 우선 저는",
       "github_username": "rayleighko",
       "linkedin_username": "rayle",
-      "homepage_url": "https://k-dev.medium.com",
-      "otherURL": "https://i.pinimg.com/originals/69/0d/28/690d288b651b78ecf09e776c05d977e3.jpg"
+      "homepage_url": "https://k-dev.medium.com"
     },
     {
       "name_en": "lylisha",
       "name_ko": "고윤호",
       "photo": "lylisha.jpg",
       "year": "2nd",
-      "email": "lylisha@gmail.com",
       "short_bio": "AUSG 2기 멤버입니다. TS가 주 언어입니다. 보안에 관심이 많습니다. 잘 부탁해요.",
-      "description": "진리가 너희를 자유케 하리라",
-      "github_username": "yoonhoGo/",
-      "linkedin_username": "%EC%9C%A4%ED%98%B8-%EA%B3%A0-006099161/",
+      "github_username": "yoonhoGo",
+      "linkedin_username": "%EC%9C%A4%ED%98%B8-%EA%B3%A0-006099161",
       "homepage_url": "https://yoonhogo.github.io/blog"
     },
     {
@@ -614,11 +477,9 @@
       "name_ko": "김상렬",
       "photo": "yorr.jpg",
       "year": "2nd",
-      "email": "twysg@likelion.org",
       "short_bio": "이것저것 좋아하는 서버 개발자입니다.",
-      "description": "늦었다고 생각할 때가 마지막 기회다 😋",
       "github_username": "sangyeol-kim",
-      "linkedin_username": "https://kr.linkedin.com/in/sangyeol-kim-a33b90192",
+      "linkedin_username": "sangyeol-kim-a33b90192",
       "homepage_url": "https://yorr.tistory.com"
     },
     {
@@ -626,9 +487,7 @@
       "name_ko": "김재희",
       "photo": "jaehee.jpg",
       "year": "2nd",
-      "email": "jaeheekim970327@gmail.com",
-      "short_bio": "스타트업에서 일하며 성장하고 있는 iOS 개발자입니다. ",
-      "description": "You Only Live Once",
+      "short_bio": "스타트업에서 일하며 성장하고 있는 iOS 개발자입니다.",
       "github_username": "jaehui327"
     },
     {
@@ -636,9 +495,7 @@
       "name_ko": "정초이",
       "photo": "cho2.jpg",
       "year": "2nd",
-      "email": "thecho2cho2@gmail.com",
       "short_bio": "안녕하세요 iOS 개발 공부중인 정초이라고 합니다 ~! 자는 시간 빼고 음악을 틀고 있을 정도로 음악듣기를 좋아합니다 🎧",
-      "description": "노래 추천 받습니다 ~.~",
       "github_username": "iamcho2",
       "homepage_url": "https://iamcho2.github.io/"
     },
@@ -647,33 +504,26 @@
       "name_ko": "조민지",
       "photo": "minji.jpg",
       "year": "2nd",
-      "email": "jominjimail@naver.com",
       "short_bio": "안녕하세요 건강하게 오래 살고 싶은 초록공장 직원입니다. 🌱",
-      "description": "룰루~",
       "github_username": "jominjimail",
-      "linkedin_username": "minji-jo-269b38184/"
+      "linkedin_username": "minji-jo-269b38184"
     },
     {
       "name_en": "nks",
       "name_ko": "남궁선",
       "photo": "nks.jpg",
       "year": "1st",
-      "email": "nkseon@gmail.com",
       "short_bio": "Cloud기술과 DevOps에 관심이 많은 개발자 입니다!",
-      "description": "Enjoy and Smile",
       "github_username": "whitesoil",
-      "linkedin_username": "seon-namkung/",
-      "homepage_url": "http://bit.ly/2Oxp8OK",
-      "otherURL": "https://www.facebook.com/seon.namkung/"
+      "linkedin_username": "seon-namkung",
+      "homepage_url": "https://bit.ly/2Oxp8OK"
     },
     {
       "name_en": "wjh",
       "name_ko": "원지혁",
       "photo": "wjh.jpg",
       "year": "1st",
-      "email": "tony.w@hey.com",
       "short_bio": "JavaScript to Infinity 🚀",
-      "description": "Move fast and ship high-quality",
       "github_username": "tonyfromundefined",
       "homepage_url": "https://read.cv/tonyfromundefined"
     },
@@ -682,11 +532,9 @@
       "name_ko": "윤서현",
       "photo": "sarahseohyun.jpg",
       "year": "1st",
-      "email": "sarahseohyun@gmail.com",
       "short_bio": "음악을 좋아하고 다양한 분야를 두루 공부하는 백엔드 개발자입니다.",
-      "description": "Whatever - oasis",
       "github_username": "seohyun0120",
-      "linkedin_username": "seohyunyoon/",
+      "linkedin_username": "seohyunyoon",
       "homepage_url": "https://seohyun0120.tistory.com/"
     },
     {
@@ -694,10 +542,8 @@
       "name_ko": "류다윤",
       "photo": "rdy.jpg",
       "year": "1st",
-      "email": "ekdbs3675@gmail.com",
       "short_bio": "안녕하세요. 안드로이드 개발자 류다윤입니다.",
-      "description": "주식 부자 되자",
-      "linkedin_username": "dayun-ryu-4272aa171/",
+      "linkedin_username": "dayun-ryu-4272aa171",
       "homepage_url": "https://ddayunee.tistory.com/"
     },
     {
@@ -705,28 +551,22 @@
       "name_ko": "박소정",
       "photo": "psj.jpg",
       "year": "1st",
-      "email": "luna.sojeong.park@gmail.com",
-      "short_bio": "모든 분위기는 제가 살립니다! 잘 부탁드려요!",
-      "description": "♥♥♥"
+      "short_bio": "모든 분위기는 제가 살립니다! 잘 부탁드려요!"
     },
     {
       "name_en": "hms",
       "name_ko": "한민수",
       "photo": "hms.jpg",
       "year": "1st",
-      "email": "mshan1218@naver.com",
       "short_bio": "Partner Manager @Microsoft",
-      "description": "깃헙말고 깃랩도 사랑해주세요",
-      "linkedin_username": "minsu-han/"
+      "linkedin_username": "minsu-han"
     },
     {
       "name_en": "yhk",
       "name_ko": "유호균",
       "photo": "yhk.jpg",
       "year": "1st",
-      "email": "yoohoogun114@naver.com",
       "short_bio": "스스로 문제를 정의하고, 그 문제를 해결해나가는 과정을 즐기는 평범한 개발자입니다.",
-      "description": "Fail fast, learn faster",
       "linkedin_username": "https://kr.linkedin.com/in/yuhogyun"
     },
     {
@@ -734,9 +574,7 @@
       "name_ko": "정소원",
       "photo": "jsw.jpg",
       "year": "1st",
-      "email": "swj960515@gmail.com",
       "short_bio": "Javascript Full Stack Developer",
-      "description": "(구) AUSG 1기 회식 프로 참석러",
       "github_username": "ss-won"
     },
     {
@@ -744,9 +582,7 @@
       "name_ko": "한만혁",
       "photo": "hmh.jpg",
       "year": "1st",
-      "email": "rnanhyuk@gmail.com",
       "short_bio": "Node.js 많이 사랑해 주세요",
-      "description": "디지털 노마드",
       "github_username": "ManHyuk",
       "homepage_url": "https://manhyuk.github.io/"
     },
@@ -755,9 +591,7 @@
       "name_ko": "김현중",
       "photo": "khj.jpg",
       "year": "1st",
-      "email": "henrynicholas09@gmail.com",
       "short_bio": "Data Engineering도 관심이 많은 SRE 개발자 입니다 :)",
-      "description": "AUSG 1기 비쥬얼 담당",
       "github_username": "Exubient"
     },
     {
@@ -766,7 +600,6 @@
       "photo": "lck.jpg",
       "year": "1st",
       "short_bio": "게임회사 PM을 하고 있습니다. 게임하시면서 제 생각 해주세요!",
-      "description": "For fun",
       "homepage_url": "https://www.instagram.com/lcgkiller/"
     },
     {
@@ -774,8 +607,7 @@
       "name_ko": "김종찬",
       "photo": "kjc.jpg",
       "year": "1st",
-      "short_bio": "Android Fanatic",
-      "description": "AUSG였지만 AWS보다 안드로이드와 친한 개발자"
+      "short_bio": "Android Fanatic"
     }
   ]
 }
