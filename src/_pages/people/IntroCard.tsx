@@ -32,7 +32,7 @@ const IntroCard: FC<IntroCardProps> = ({
           src={`/people/${photo}`}
           alt={`${name_ko}_사진`}
           layout="fill"
-          objectFit="contain"
+          objectFit="cover"
         />
       </div>
       <div>
