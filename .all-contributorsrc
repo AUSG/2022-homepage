@@ -13,6 +13,15 @@
       "contributions": [
         "maintenance"
       ]
+    },
+    {
+      "login": "eunsukimme",
+      "name": "Eunsu(Daniel) Kim",
+      "avatar_url": "https://avatars.githubusercontent.com/u/31213226?v=4",
+      "profile": "http://blog.eunsukim.me",
+      "contributions": [
+        "maintenance"
+      ]
     }
   ],
   "contributorsPerLine": 7,
