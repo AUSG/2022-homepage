@@ -22,6 +22,15 @@
       "contributions": [
         "maintenance"
       ]
+    },
+    {
+      "login": "14km",
+      "name": "MinTae Kim",
+      "avatar_url": "https://avatars.githubusercontent.com/u/45898974?v=4",
+      "profile": "https://github.com/14km",
+      "contributions": [
+        "code"
+      ]
     }
   ],
   "contributorsPerLine": 7,
