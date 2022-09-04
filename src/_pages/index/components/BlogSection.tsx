@@ -1,6 +1,8 @@
+import Link from 'next/link';
 import Card from '@/components/Card';
 // import ArrowRightIcon from 'public/icons/arrow_right.svg';
 import React from 'react';
+import ArrowRight from '../../../../public/icons/arrow_right.svg';
 
 // TODO: fetch data from API server
 const posts = [
@@ -29,16 +31,23 @@ export default function BlogSection() {
     <div className="bg-primary">
       <div className="py-[48px] pl-[20px] md:mx-auto md:max-w-screen-xl xl:py-[100px]">
         <h1 className="text-[24px] font-bold leading-[34px] text-white xl:text-[36px] xl:leading-[52px]">
-          멤버들이 공유한 <br className="xl:hidden" />
+          AUSG 멤버들이 공유한 <br className="xl:hidden" />
           지식과 경험을 확인해보세요!
         </h1>
         <section className="mt-[36px] flex gap-[16px] overflow-x-auto xl:mt-[60px] xl:gap-[48px]">
-          <div className="w-full text-center text-[18px] font-bold text-white">
-            <span className="text-[30px]">🚧</span>
-            <br />
-            컨텐츠를 준비중이에요.
-            <br />
-            조금만 더 기다려주세요!
+          <div className="w-full pl-8 text-center text-[18px] font-bold text-white">
+            <Link href="/activities">
+              <a className="flex items-center">
+                <span className="mr-[8px] text-[20px] font-bold text-white md:text-2xl">
+                  BIG CHAT 영상들 보러가기
+                </span>
+                <ArrowRight
+                  width="36"
+                  height="36"
+                  className="h-9 w-9 fill-white"
+                />
+              </a>
+            </Link>
           </div>
           {/* {posts.map(post => ( */}
           {/*  <Card */}
