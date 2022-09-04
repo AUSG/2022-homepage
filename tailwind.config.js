@@ -15,6 +15,7 @@ module.exports = {
           100: '#F8F8F8',
           900: '#141414',
         },
+        sub: '#FF4433',
       },
       keyframes: {
         floating: {
@@ -25,6 +26,9 @@ module.exports = {
       },
       animation: {
         floating: 'floating 3s ease-in-out infinite',
+      },
+      wordBreak: {
+        keep: 'keep-all',
       },
     },
     fontFamily: {
