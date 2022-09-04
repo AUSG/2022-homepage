@@ -66,6 +66,16 @@ export default function Header({ theme = 'white' }: HeaderProps) {
               )}
             </a>
           </Link>
+          <Link href="/activities">
+            <a
+              className={clsx(
+                theme === 'white' ? 'text-primary' : 'text-white',
+                'mr-6 hidden items-center p-4 font-bold lg:flex'
+              )}
+            >
+              Activities
+            </a>
+          </Link>
           <Link href="/people">
             <a
               className={clsx(
@@ -146,6 +156,14 @@ export default function Header({ theme = 'white' }: HeaderProps) {
             ))}
           </div>
           <nav className="mt-[50px] flex flex-col gap-4">
+            <Link href="/activities">
+              <a className="flex items-center">
+                <span className="mr-[8px] text-[24px] font-bold text-white">
+                  Activities
+                </span>
+                <ArrowRight width="36" height="36" fill="white" />
+              </a>
+            </Link>
             <Link href="/people">
               <a className="flex items-center">
                 <span className="mr-[8px] text-[24px] font-bold text-white">
@@ -154,7 +172,6 @@ export default function Header({ theme = 'white' }: HeaderProps) {
                 <ArrowRight width="36" height="36" fill="white" />
               </a>
             </Link>
-
             <Link href="/contact">
               <a className="flex items-center">
                 <span className="mr-[8px] text-[24px] font-bold text-white">
