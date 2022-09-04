@@ -40,15 +40,18 @@ npm run dev
 
 현재 [Fly.io](https://fly.io)의 AUSG Organization에 배포되어 있습니다.
 
-어플리케이션 배포 또는 Fly.io 권한이 필요하다면 슬랙에서 [배진수(naru200)](https://au-sg.slack.com/team/U01AG7SQVEH)에게 문의해 주세요.
+main 브랜치에 코드 변경사항이 푸쉬되면 Github Action에 의해 자동으로 배포됩니다. 
+<br /> 
+단, main 브랜치는 보호되고 있기 때문에, PR을 통해 코드를 병합해야 합니다.
+
+
+브랜치 이름이나 PR에 대한 규칙은 특별하게 정해져 있지 않습니다.
 
 ## How to add yourself to the People page
 
 AUSG 구성원들은 [People 페이지](https://ausg.me/people)에 사진과 함께 간략한 자기소개를 등록할 수 있습니다.
 
 1. 새로운 브랜치를 생성한 뒤 작업하기
-    * 브랜치를 만들고 PR을 올리는 게 필수는 아니지만, 강력하게 권장됩니다.
-    * 브랜치 이름이나 PR에 대한 규칙은 특별하게 정해져 있지 않습니다.
 
 2. public/people 경로에 본인 사진 업로드
     * 만약 페이지에서 사진이 잘리거나 이상하게 나온다면, 사진을 잘라서 편집한 뒤에 업로드하면 됩니다.
