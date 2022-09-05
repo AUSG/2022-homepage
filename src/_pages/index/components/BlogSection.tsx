@@ -3,6 +3,8 @@ import Card from '@/components/Card';
 // import ArrowRightIcon from 'public/icons/arrow_right.svg';
 import React from 'react';
 import ArrowRight from '../../../../public/icons/arrow_right.svg';
+import videoData from '../../../../data/videos.json';
+import BigChatBackground from '../../../../public/images/2021-bigchat-background.svg';
 
 // TODO: fetch data from API server
 const posts = [
@@ -34,12 +36,34 @@ export default function BlogSection() {
           AUSG 멤버들이 공유한 <br className="xl:hidden" />
           지식과 경험을 확인해보세요!
         </h1>
-        <section className="mt-[36px] flex gap-[16px] overflow-x-auto xl:mt-[60px] xl:gap-[48px]">
-          <div className="w-full pl-8 text-center text-[18px] font-bold text-white">
+        <section className="mt-6 flex gap-[16px] xl:mt-12 xl:gap-[48px]">
+          <div className="w-full text-center text-[18px] font-bold text-white">
+            <div className="flex overflow-x-scroll pb-4">
+              {videoData.videos.slice(0, 5).map((video: any) => (
+                <a
+                  key={video.title}
+                  href={video.url}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="relative mr-4 flex-shrink-0 flex-grow basis-36 overflow-hidden rounded-[20px]"
+                >
+                  <BigChatBackground width="100%" height="100%" />
+                  <div className="absolute inset-x-1 bottom-1 rounded-[20px] bg-gray-900 bg-opacity-70 p-2.5 text-white">
+                    <div className="text-xs">{video.speaker}</div>
+                    <div
+                      className="mt-0.5 text-sm font-semibold"
+                      style={{ wordBreak: 'keep-all' }}
+                    >
+                      {video.title}
+                    </div>
+                  </div>
+                </a>
+              ))}
+            </div>
             <Link href="/activities">
-              <a className="flex items-center">
+              <a className="mt-6 flex items-center">
                 <span className="mr-[8px] text-[20px] font-bold text-white md:text-2xl">
-                  BIG CHAT 영상들 보러가기
+                  모든 BIG CHAT 영상들 보러가기
                 </span>
                 <ArrowRight
                   width="36"
