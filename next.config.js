@@ -3,6 +3,7 @@ module.exports = {
   images: {
     domains: ['placeimg.com'],
   },
+  output: 'standalone',
   reactStrictMode: true,
   webpack: (config, { buildId, dev, isServer, defaultLoaders, webpack }) => {
     // Important: return the modified config

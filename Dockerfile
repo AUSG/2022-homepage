@@ -1,40 +1,43 @@
 FROM node:16-alpine AS deps
 
-# If you need libc for any of your deps, uncomment this line:
-# RUN apk add --no-cache libc6-compat
+RUN apk add --no-cache libc6-compat
 
 WORKDIR /app
 
-COPY package.json package-lock.json ./
+COPY package.json package-lock.json* ./
 RUN npm ci
 
+# Rebuild the source code only when needed
 FROM node:16-alpine AS builder
-
 WORKDIR /app
-
-COPY . .
 COPY --from=deps /app/node_modules ./node_modules
+COPY . .
+
+ENV NEXT_TELEMETRY_DISABLED 1
 
 RUN npm run build
-RUN npm ci --production
 
+# Production image, copy all the files and run next
 FROM node:16-alpine AS runner
-
-ENV NODE_ENV production
-
-RUN addgroup -g 1001 -S nodejs
-RUN adduser -S nextjs -u 1001
-
 WORKDIR /app
 
-COPY --from=builder --chown=nextjs:nodejs /app/next.config.js  ./
-COPY --from=builder --chown=nextjs:nodejs /app/package.json /app/package-lock.json ./
-COPY --from=builder --chown=nextjs:nodejs /app/node_modules ./node_modules
-COPY --from=builder --chown=nextjs:nodejs /app/public ./public
-COPY --from=builder --chown=nextjs:nodejs /app/.next ./.next
+ENV NODE_ENV production
+ENV NEXT_TELEMETRY_DISABLED 1
+
+RUN addgroup --system --gid 1001 nodejs
+RUN adduser --system --uid 1001 nextjs
+
+COPY --from=builder /app/public ./public
+
+# Automatically leverage output traces to reduce image size
+# https://nextjs.org/docs/advanced-features/output-file-tracing
+COPY --from=builder --chown=nextjs:nodejs /app/.next/standalone ./
+COPY --from=builder --chown=nextjs:nodejs /app/.next/static ./.next/static
 
 USER nextjs
 
 EXPOSE 3000
 
-CMD [ "npm", "start" ]
+ENV PORT 3000
+
+CMD ["node", "server.js"]
