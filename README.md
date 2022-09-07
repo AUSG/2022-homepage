@@ -21,7 +21,7 @@
 ## Contributors
 
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-4-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-5-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
@@ -33,6 +33,7 @@
     <td align="center"><a href="http://blog.eunsukim.me"><img src="https://avatars.githubusercontent.com/u/31213226?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Eunsu(Daniel) Kim</b></sub></a><br /><a href="#maintenance-eunsukimme" title="Maintenance">🚧</a></td>
     <td align="center"><a href="https://github.com/14km"><img src="https://avatars.githubusercontent.com/u/45898974?v=4?s=100" width="100px;" alt=""/><br /><sub><b>MinTae Kim</b></sub></a><br /><a href="https://github.com/AUSG/2022-homepage/commits?author=14km" title="Code">💻</a></td>
     <td align="center"><a href="https://suyeon96.tistory.com/"><img src="https://avatars.githubusercontent.com/u/64878866?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Suyeon Woo</b></sub></a><br /><a href="https://github.com/AUSG/2022-homepage/commits?author=suyeon96" title="Code">💻</a></td>
+    <td align="center"><a href="http://roeniss.tistory.com"><img src="https://avatars.githubusercontent.com/u/26613280?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Roeniss Moon</b></sub></a><br /><a href="https://github.com/AUSG/2022-homepage/commits?author=roeniss" title="Code">💻</a></td>
   </tr>
 </table>
 
