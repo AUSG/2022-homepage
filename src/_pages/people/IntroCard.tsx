@@ -31,7 +31,8 @@ const IntroCard: FC<IntroCardProps> = ({
         <Image
           src={`/people/${photo}`}
           alt={`${name_ko}_사진`}
-          layout="fill"
+          width={96}
+          height={96}
           objectFit="cover"
         />
       </div>
