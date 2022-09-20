@@ -39,7 +39,7 @@ const QUOTES = [
       'AUSG는 AWS뿐만 아니라 IT에 관심있는 사람들이 모여있는 곳입니다. 덕분에 다방면으로 시야를 넓힐 수 있었어요. AUSG 멤버들과 함께 하며 얻은 지식들은 알게 모르게 저에게 큰 밑바탕이 되어주었습니다. AUSG에서 함께 놀고 공부해요!',
     profile: '우아한형제들 Frontend Developer, 이정민',
     generation: 'AUSG 4기',
-    imagePath: '/people/jungminlee.jpg',
+    imagePath: '/people/leejeongmin.jpg',
   },
   {
     content:
