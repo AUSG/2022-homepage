@@ -2,6 +2,16 @@
   "people": [
     {
       "year": "4th",
+      "name_ko": "이정민",
+      "name_en": "danmin",
+      "photo": "leejeongmin.jpg",
+      "short_bio": "신생아 프론트 개발자",
+      "linkedin_username": "jeonming-lee",
+      "github_username": "danmin20",
+      "homepage_url": "https://jeong-min.com/"
+    },
+    {
+      "year": "4th",
       "name_ko": "배진수",
       "name_en": "Jinsu Bae",
       "photo": "naru200.jpg",
