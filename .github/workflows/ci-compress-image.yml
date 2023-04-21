@@ -1,10 +1,6 @@
 name: Compress Image
 
 on:
-  push:
-    branches:
-      - feature/add-ci-compress-image-pipeline
-
   pull_request:
     paths:
       - public/people/*.jpg
