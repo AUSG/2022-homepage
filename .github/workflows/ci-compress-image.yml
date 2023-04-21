@@ -2,8 +2,6 @@ name: Compress Image
 
 on:
   pull_request:
-    branches:
-      - main
     paths:
       - /public/people/*.jpg
       - /public/people/*.jpeg
