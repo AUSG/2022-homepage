@@ -2,6 +2,15 @@
   "people": [
     {
       "year": "6th",
+      "name_ko": "정지우",
+      "name_en": "Jiwoo Jeong",
+      "photo": "ziwoo.jpeg",
+      "short_bio": "네트워킹을 좋아하고, 바쁜 일상 속의 여유로움을 즐기는 엔지니어를 꿈꿔요 👀",
+      "linkedin_username": "zwjeong",
+      "github_username": "ziwooda"
+    },
+    {
+      "year": "6th",
       "name_ko": "오예진",
       "name_en": "Yejin Oh",
       "photo": "yexjin.png",
