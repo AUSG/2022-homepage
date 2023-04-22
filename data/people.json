@@ -2,6 +2,16 @@
   "people": [
     {
       "year": "6th",
+      "name_ko": "오예진",
+      "name_en": "Yejin Oh",
+      "photo": "yexjin.png",
+      "short_bio": "클라우드 기술과 서비스에 관심이 많습니다 ✨",
+      "linkedin_username": "yexjin",
+      "github_username": "yexjin",
+      "homepage_url": "https://yexjinitlog.tistory.com/"
+    },
+    {
+      "year": "6th",
       "name_ko": "김윤서",
       "name_en": "Yoonseo Kim",
       "photo": "yoonseo.jpg",
