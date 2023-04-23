@@ -2,6 +2,16 @@
   "people": [
     {
       "year": "6th",
+      "name_ko": "윤가영",
+      "name_en": "Kayoung Yoon",
+      "photo": "kyy00n.jpeg",
+      "short_bio": "AUSG 멤버들과 함께 자라고 있는 학생 개발자입니다 🍄",
+      "linkedin_username": "kayoung-yoon",
+      "github_username": "kyy00n",
+      "homepage_url": "https://velog.io/@kyy00n"
+    },
+    {
+      "year": "6th",
       "name_ko": "정지우",
       "name_en": "Jiwoo Jeong",
       "photo": "ziwoo.jpeg",
