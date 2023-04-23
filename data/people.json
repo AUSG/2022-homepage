@@ -2,6 +2,16 @@
   "people": [
     {
       "year": "6th",
+      "name_ko": "박나희",
+      "name_en": "Nahee Park",
+      "photo": "nahee.jpeg",
+      "short_bio": "분야를 가리지 않고 배움을 좋아합니다",
+      "linkedin_username": "park-nahee-100890218",
+      "github_username": "Nahee-Park",
+      "homepage_url": "https://velog.io/@devstone"
+    },
+    {
+      "year": "6th",
       "name_ko": "윤가영",
       "name_en": "Kayoung Yoon",
       "photo": "kyy00n.jpeg",
