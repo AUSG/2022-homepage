@@ -168,6 +168,14 @@
     },
     {
       "year": "6th",
+      "name_ko": "박지수",
+      "name_en": "Ji-Soo Park",
+      "photo": "jisoo.jpeg",
+      "short_bio": "안녕하세요. 같이 성장하고 싶은 백엔드 개발자 박지수입니다!",
+      "github_username": "ritty27"
+    },
+    {
+      "year": "6th",
       "name_ko": "이서우",
       "name_en": "seowoo",
       "photo": "seowoo.jpg",
