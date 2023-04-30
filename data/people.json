@@ -2,6 +2,16 @@
   "people": [
     {
       "year": "6th",
+      "name_ko": "김혜성",
+      "name_en": "Ally Hyeseong Kim",
+      "photo": "ally.jpeg",
+      "short_bio": "성장을 좋아합니다 🚀",
+      "linkedin_username": "allyhyeseongkim",
+      "github_username": "AllyHyeseongKim",
+      "homepage_url": "http://allyhyeseongkim.com"
+    },
+    {
+      "year": "6th",
       "name_ko": "박나희",
       "name_en": "Nahee Park",
       "photo": "nahee.jpeg",
