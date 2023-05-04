@@ -2,6 +2,13 @@
   "people": [
     {
       "year": "6th",
+      "name_ko": "전혜수",
+      "name_en": "hyesu jeon",
+      "photo": "hyesu.jpeg",
+      "short_bio": "안녕하세요, 도전을 좋아하는 예비 개발자 전혜수입니다. 🙋🏻‍♀️"
+    },
+    {
+      "year": "6th",
       "name_ko": "김혜성",
       "name_en": "Ally Hyeseong Kim",
       "photo": "ally.jpeg",
