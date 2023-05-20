@@ -4,15 +4,15 @@ import QuoteIcon from 'public/icons/quote.svg';
 
 interface QuoteCardType {
   content: string;
+  name: string;
   profile: string;
-  generation: string;
   imagePath: string;
 }
 
 export default function QuoteCard({
   content,
+  name,
   profile,
-  generation,
   imagePath,
 }: QuoteCardType) {
   return (
@@ -26,9 +26,9 @@ export default function QuoteCard({
           <Image src={imagePath} width="100%" height="100%" alt="" />
         </div>
         <div className="text-[14px]">
-          <strong>{profile}</strong>
+          <strong>{name}</strong>
           <br />
-          <span className="text-[12px]">{generation}</span>
+          <span className="text-[12px]">{profile}</span>
         </div>
       </div>
     </div>
