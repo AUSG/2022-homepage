@@ -63,7 +63,7 @@ export default function IntroSection() {
             클라우드 컴퓨팅에 관심 있는 대학생 개발자라면?
           </p>
           <a
-            href="https://tally.so/r/3NpX7l"
+            href="https://tally.so/r/3NrKyO"
             target="_blank"
             rel="noreferrer"
             onClick={handleClick}
