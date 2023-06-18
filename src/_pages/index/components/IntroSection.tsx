@@ -1,21 +1,9 @@
 import Header from '@/components/Header';
 import React from 'react';
-import ArrowRightIcon from 'public/icons/arrow_right.svg';
 import CloudImage from 'public/images/cloud.svg';
 import CloudTruncatedImage from 'public/images/cloud-truncated.svg';
-import Link from 'next/link';
-import { event } from '@/lib/gtag';
 
 export default function IntroSection() {
-  const handleClick = () => {
-    event({
-      action: 'apply',
-      category: 'click',
-      label: 'AUSG 7기 지원하기',
-      value: 1,
-    });
-  };
-
   return (
     <div className="bg-primary">
       <Header theme="colored" />
@@ -34,19 +22,6 @@ export default function IntroSection() {
               <br />
               클라우드 커뮤니티
             </h1>
-            <div className="hidden flex-col items-center md:flex">
-              <p className="mt-[60px] text-[24px] text-white">
-                클라우드 컴퓨팅에 관심 있는 대학생 개발자라면?
-              </p>
-              <Link href="/apply">
-                <a className="mt-[36px] flex items-center rounded-[20px] bg-white px-[48px]">
-                  <span className="mr-[8px] font-bold leading-[60px]">
-                    AUSG 7기 지원하기
-                  </span>
-                  <ArrowRightIcon className="h-[24px] w-[24px] fill-black" />
-                </a>
-              </Link>
-            </div>
           </div>
         </div>
 
@@ -57,28 +32,6 @@ export default function IntroSection() {
             className="right-0 animate-floating transition-[translate]"
           />
         </div>
-
-        <section className="flex flex-col items-center md:hidden">
-          <p className="mt-[6px] text-white">
-            클라우드 컴퓨팅에 관심 있는 대학생 개발자라면?
-          </p>
-          <a
-            href="https://tally.so/r/3NrKyO"
-            target="_blank"
-            rel="noreferrer"
-            onClick={handleClick}
-          >
-            <button
-              type="button"
-              className="mt-[8px] flex items-center rounded-[20px] bg-white py-[6px] px-[48px]"
-            >
-              <span className="mr-[8px] font-bold leading-[36px]">
-                AUSG 7기 지원하기
-              </span>
-              <ArrowRightIcon className="h-[24px] w-[24px] fill-black" />
-            </button>
-          </a>
-        </section>
       </main>
     </div>
   );
