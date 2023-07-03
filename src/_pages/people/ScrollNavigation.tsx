@@ -1,7 +1,7 @@
 import { FC } from 'react';
 import clsx from 'clsx';
 
-const TAB = ['6th', '5th', '4th', '3rd', '2nd', '1st'];
+const TAB = ['7th', '6th', '5th', '4th', '3rd', '2nd', '1st'];
 
 interface ScrollNavigationProps {
   currentTab: typeof TAB[number];

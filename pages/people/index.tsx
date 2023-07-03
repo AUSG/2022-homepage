@@ -24,7 +24,7 @@ const shuffle = (array: any[], randomNumber: number) => {
 
   return array;
 };
-const TAB = ['6th', '5th', '4th', '3rd', '2nd', '1st'];
+const TAB = ['7th', '6th', '5th', '4th', '3rd', '2nd', '1st'];
 
 const People = ({ randomNumber }: { randomNumber: number }) => {
   return (
