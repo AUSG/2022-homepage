@@ -1,6 +1,14 @@
 {
   "people": [
     {
+      "year": "7th",
+      "name_ko": "송승호",
+      "name_en": "Seungho Song",
+      "photo": "seungho.jpg",
+      "short_bio": "아쉬움은 있을지언정 후회는 하지 않는 삶을 추구합니다.",
+      "github_username": "SeungHo0422"
+    },
+    {
         "year": "7th", 
         "name_ko": "유하준", 
         "name_en": "Hajun Yoo", 
