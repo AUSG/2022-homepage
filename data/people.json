@@ -1,6 +1,16 @@
 {
   "people": [
     {
+        "year": "7th", 
+        "name_ko": "유하준", 
+        "name_en": "Hajun Yoo", 
+        "photo": "yuki.jpg", 
+        "short_bio": "데이터 엔지니어를 꿈꾸는 유키입니다. Bit slow But Steady.",
+        "linkedin_username": "yuki-hajun", 
+        "github_username": "HaJunYoo", 
+        "homepage_url": "https://hajunyoo.oopy.io/"
+    },
+    {
       "year": "6th",
       "name_ko": "전혜수",
       "name_en": "hyesu jeon",
