@@ -48,6 +48,14 @@
     },
     {
       "year": "7th",
+      "name_ko": "이태현", 
+      "name_en": "Taehyun Lee",
+      "photo": "taehyun.lee.jpeg",
+      "short_bio": "Be Happy 😆",
+      "github_username": "0417taehyun"
+    },    
+    {
+      "year": "7th",
       "name_ko": "송승호",
       "name_en": "Seungho Song",
       "photo": "seungho.jpg",
