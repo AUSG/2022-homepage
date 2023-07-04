@@ -1,6 +1,16 @@
 {
   "people": [
     {
+      "year": "7th", 
+      "name_ko": "권기호",
+      "name_en": "Kiho Kwoun", 
+      "photo": "chocochip.jpg", 
+      "short_bio": "기술로 사용자들에게 가치를 주고 싶습니다 🍪",
+      "linkedin_username": "chocochip101",
+      "github_username": "Chocochip101", 
+      "homepage_url": "https://velog.io/@chocochip" 
+    },
+    {
       "year": "7th",
       "name_ko": "송승호",
       "name_en": "Seungho Song",
