@@ -1,5 +1,15 @@
 {
   "people": [
+          {
+        "year": "7th",
+        "name_ko": "오형근",
+        "name_en": "Hyeonggeun Oh",
+        "photo": "hyeonggeun.jpg",
+        "short_bio": "폭넓은 시야로 보고 성장해요!",
+        "linkedin_username": "hyeonggeun-oh",
+        "github_username": "Geun-Oh",
+        "homepage_url": "https://velog.io/@kandy1002"
+      },
     {
         "year": "7th", 
         "name_ko": "유하준", 
