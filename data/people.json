@@ -30,6 +30,16 @@
     },
     {
       "year": "7th",
+      "name_ko": "이해송",
+      "name_en": "Haesong Lee",
+      "photo": "haesong.jpg",
+      "short_bio": "ausg 의 인간 바오밥 나무로 성장하고싶어요.",
+      "linkedin_username": "haesonglee",
+      "github_username": "pinetree2",
+      "homepage_url": "https://velog.io/@pinetree2"
+    },
+    {
+      "year": "7th",
       "name_ko": "송승호",
       "name_en": "Seungho Song",
       "photo": "seungho.jpg",
