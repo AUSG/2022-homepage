@@ -39,6 +39,15 @@
     },
     {
       "year": "7th",
+      "name_ko": "김유빈",
+      "name_en": "Yubin Kim",
+      "photo": "yubin.jpg",
+      "short_bio": "배움과 성장을 사랑합니다 🥰",
+      "linkedin_username": "dev-yubin",
+      "github_username": "yubin21"
+    },
+    {
+      "year": "7th",
       "name_ko": "송승호",
       "name_en": "Seungho Song",
       "photo": "seungho.jpg",
