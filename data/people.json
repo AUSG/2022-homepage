@@ -2,6 +2,16 @@
   "people": [
     {
       "year": "7th",
+      "name_ko": "최우석",
+      "name_en": "Wooseok Choe",
+      "photo": "wooseok.jpeg",
+      "short_bio": "Impossibe is nothing",
+      "linkedin_username": "wooseok-choe-b2949922b",
+      "github_username": "Sith-call",
+      "homepage_url": "https://velog.io/@chldntjr0425"
+    },
+    {
+      "year": "7th",
       "name_ko": "송승호",
       "name_en": "Seungho Song",
       "photo": "seungho.jpg",
