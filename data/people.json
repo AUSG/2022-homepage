@@ -20,6 +20,16 @@
     },
     {
       "year": "7th",
+      "name_ko": "김록원",
+      "name_en": "Rokwon Kim",
+      "photo": "rokwon.jpeg",
+      "short_bio": "태어난 김에 다 해보고 싶습니다~ 🤜",
+      "linkedin_username": "%EB%A1%9D%EC%9B%90-%EA%B9%80-b6917419a",
+      "github_username": "RokwonK",
+      "homepage_url": "https://rokwonk.github.io/"
+    },
+    {
+      "year": "7th",
       "name_ko": "송승호",
       "name_en": "Seungho Song",
       "photo": "seungho.jpg",
@@ -27,6 +37,7 @@
       "github_username": "SeungHo0422"
     },
     {
+      "year": "7th",
       "name_ko": "김태강",
       "name_en": "grayash",
       "photo": "taekang.jpg",
