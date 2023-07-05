@@ -1,15 +1,15 @@
 {
   "people": [
-          {
-        "year": "7th",
-        "name_ko": "오형근",
-        "name_en": "Hyeonggeun Oh",
-        "photo": "hyeonggeun.jpg",
-        "short_bio": "폭넓은 시야로 보고 성장해요!",
-        "linkedin_username": "hyeonggeun-oh",
-        "github_username": "Geun-Oh",
-        "homepage_url": "https://velog.io/@kandy1002"
-      },
+    {
+      "year": "7th",
+      "name_ko": "오형근",
+      "name_en": "Hyeonggeun Oh",
+      "photo": "hyeonggeun.jpg",
+      "short_bio": "폭넓은 시야로 보고 성장해요!",
+      "linkedin_username": "hyeonggeun-oh",
+      "github_username": "Geun-Oh",
+      "homepage_url": "https://velog.io/@kandy1002"
+    },
     {
       "year": "7th",
       "name_ko": "김연수",
@@ -48,21 +48,21 @@
     },
     {
       "year": "7th",
-      "name_ko": "이태현", 
+      "name_ko": "이태현",
       "name_en": "Taehyun Lee",
       "photo": "taehyun.lee.jpeg",
       "short_bio": "Be Happy 😆",
       "github_username": "0417taehyun"
-    },    
+    },
     {
-      "year": "7th", 
+      "year": "7th",
       "name_ko": "권기호",
-      "name_en": "Kiho Kwoun", 
-      "photo": "chocochip.jpg", 
+      "name_en": "Kiho Kwoun",
+      "photo": "chocochip.jpg",
       "short_bio": "기술로 사용자들에게 가치를 주고 싶습니다 🍪",
       "linkedin_username": "chocochip101",
-      "github_username": "Chocochip101", 
-      "homepage_url": "https://velog.io/@chocochip" 
+      "github_username": "Chocochip101",
+      "homepage_url": "https://velog.io/@chocochip"
     },
     {
       "year": "7th",
@@ -79,7 +79,7 @@
       "name_ko": "최예원",
       "name_en": "Yewon Choi",
       "photo": "yewon.jpeg",
-      "short_bio": "사람과 기술을 좋아하는 개발자:D",
+      "short_bio": "사람과 기술을 좋아하는 개발자:D"
     },
     {
       "year": "7th",
