@@ -2,6 +2,16 @@
   "people": [
     {
       "year": "7th",
+      "name_ko": "김수경", 
+      "name_en": "Sugyeong Kim",
+      "photo": "sugyeong.jpg",
+      "short_bio": "All rounder software engineer🌱",
+      "linkedin_username": "olive-su",
+      "github_username": "olive-su",
+      "homepage_url": "https://olive-su.tistory.com"
+    },
+    {
+      "year": "7th",
       "name_ko": "정진철",
       "name_en": "Jincheol Jung",
       "photo": "jincheol.png",
