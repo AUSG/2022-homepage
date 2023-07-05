@@ -76,6 +76,13 @@
     },
     {
       "year": "7th",
+      "name_ko": "최예원",
+      "name_en": "Yewon Choi",
+      "photo": "yewon.jpeg",
+      "short_bio": "사람과 기술을 좋아하는 개발자:D",
+    },
+    {
+      "year": "7th",
       "name_ko": "송승호",
       "name_en": "Seungho Song",
       "photo": "seungho.jpg",
