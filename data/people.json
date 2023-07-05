@@ -2,6 +2,15 @@
   "people": [
     {
       "year": "7th",
+      "name_ko": "정진철",
+      "name_en": "Jincheol Jung",
+      "photo": "jincheol.png",
+      "short_bio": "WILL is ALL",
+      "github_username": "bik1111",
+      "homepage_url": "https://velog.io/@bik1111"
+    },
+    {
+      "year": "7th",
       "name_ko": "오형근",
       "name_en": "Hyeonggeun Oh",
       "photo": "hyeonggeun.jpg",
