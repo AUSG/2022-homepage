@@ -2,6 +2,14 @@
   "people": [
     {
       "year": "7th",
+      "name_ko": "오동재",
+      "name_en": "Dongjae Oh",
+      "photo": "dongjaeOh.jpg",
+      "short_bio": "Non-fungible Developer",
+      "linkedin_username": "dongjae-oh",
+      "github_username": "donggni0712"
+    },
+    {
       "name_ko": "윤종원",
       "name_en": "Jongwon Youn",
       "photo": "jongwonyoun.jpg",
@@ -12,7 +20,7 @@
     },
     {
       "year": "7th",
-      "name_ko": "김수경", 
+      "name_ko": "김수경",
       "name_en": "Sugyeong Kim",
       "photo": "sugyeong.jpg",
       "short_bio": "All rounder software engineer🌱",
