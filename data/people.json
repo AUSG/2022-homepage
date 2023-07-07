@@ -2,6 +2,16 @@
   "people": [
     {
       "year": "7th",
+      "name_ko": "윤종원",
+      "name_en": "Jongwon Youn",
+      "photo": "jongwonyoun.jpg",
+      "short_bio": "책📚과 커피☕️️를 사랑하는 개발자",
+      "linkedin_username": "jongwon-youn-ecm",
+      "github_username": "korECM",
+      "homepage_url": "https://bit.ly/44f5YBZ"
+    },
+    {
+      "year": "7th",
       "name_ko": "김수경", 
       "name_en": "Sugyeong Kim",
       "photo": "sugyeong.jpg",
