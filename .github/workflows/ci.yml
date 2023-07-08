@@ -1,0 +1,9 @@
+name: CI
+
+on:
+  - push
+
+jobs:
+  test:
+    name: Test
+    run: npm run test
