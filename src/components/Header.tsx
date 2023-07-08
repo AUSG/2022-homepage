@@ -1,16 +1,16 @@
 import React, { useMemo, useState, useCallback } from 'react';
 import Link from 'next/link';
 import ReactModal from 'react-modal';
-import MenuIcon from 'public/icons/menu.svg';
-import LogoWhite from 'public/images/logo-white.svg';
-import LogoColor from 'public/images/logo-color.svg';
+import MenuIcon from '@/public/icons/menu.svg';
+import LogoWhite from '@/public/images/logo-white.svg';
+import LogoColor from '@/public/images/logo-color.svg';
 import InstagramIcon from '@/public/icons/instagram.svg';
-import FacebookIcon from 'public/icons/facebook.svg';
-import GithubIcon from 'public/icons/github.svg';
-import MediumIcon from 'public/icons/medium.svg';
-import YoutubeIcon from 'public/icons/youtube.svg';
-import ArrowRight from 'public/icons/arrow_right.svg';
-import Close from 'public/icons/close.svg';
+import FacebookIcon from '@/public/icons/facebook.svg';
+import GithubIcon from '@/public/icons/github.svg';
+import MediumIcon from '@/public/icons/medium.svg';
+import YoutubeIcon from '@/public/icons/youtube.svg';
+import ArrowRight from '@/public/icons/arrow_right.svg';
+import Close from '@/public/icons/close.svg';
 import clsx from 'clsx';
 
 interface HeaderProps {
