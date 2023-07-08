@@ -1,4 +1,4 @@
-import Header from '@/components/Header';
+import Header from '@/src/components/Header';
 import React from 'react';
 import CloudImage from 'public/images/cloud.svg';
 import CloudTruncatedImage from 'public/images/cloud-truncated.svg';

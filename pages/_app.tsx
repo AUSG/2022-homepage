@@ -4,8 +4,8 @@ import type { AppProps } from 'next/app';
 import { DefaultSeo } from 'next-seo';
 import { useRouter } from 'next/router';
 import { useEffect } from 'react';
-import { pageview } from '@/lib/gtag';
-import GoogleAnalytics from '@/components/GoogleAnalytics';
+import { pageview } from '@/src/lib/gtag';
+import GoogleAnalytics from '@/src/components/GoogleAnalytics';
 
 function App({ Component, pageProps }: AppProps) {
   const router = useRouter();

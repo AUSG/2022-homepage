@@ -1,11 +1,10 @@
 import { Fragment } from 'react';
 import Head from 'next/head';
 
-import Header from '@/components/Header';
-import ScrollNavigation from '@/_pages/people/ScrollNavigation';
-import IntroCard from '@/_pages/people/IntroCard';
-
+import Header from '@/src/components/Header';
 import peopleData from 'data/people.json';
+import ScrollNavigation from '@/src/_pages/people/ScrollNavigation';
+import IntroCard from '@/src/_pages/people/IntroCard';
 
 const shuffle = (array: any[], randomNumber: number) => {
   let currentIndex = array.length;
