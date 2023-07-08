@@ -1,4 +1,4 @@
-import peopleJson from './people.json';
+import peopleJson from 'data/people.json';
 
 interface Person {
   year: string;
