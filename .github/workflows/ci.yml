@@ -6,4 +6,7 @@ on:
 jobs:
   test:
     name: Test
-    run: npm run test
+    runs-on: ubuntu-latest
+    steps:
+      - name: Test
+        run: npm run test
