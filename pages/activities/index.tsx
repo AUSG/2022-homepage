@@ -2,9 +2,9 @@ import { useState } from 'react';
 import Head from 'next/head';
 import clsx from 'clsx';
 
-import Header from '@/components/Header';
-import AboutBigChat from '@/_pages/Activities/AboutBigChat';
-import AboutStudy from '@/_pages/Activities/AboutStudy';
+import AboutBigChat from '@/src/_pages/Activities/AboutBigChat';
+import AboutStudy from '@/src/_pages/Activities/AboutStudy';
+import Header from '@/src/components/Header';
 
 const Activities = () => {
   const [currentTab, setCurrentTab] = useState<'bigchat' | 'study'>('bigchat');

@@ -1,9 +1,9 @@
 import React from 'react';
 import ArrowRightIcon from 'public/icons/arrow_right.svg';
-import Dropdown from '@/components/Dropdown';
-import QUESTIONS from '@/constants/questions';
+import Dropdown from '@/src/components/Dropdown';
+import QUESTIONS from '@/src/constants/questions';
 import Link from 'next/link';
-import { event } from '@/lib/gtag';
+import { event } from '@/src/lib/gtag';
 
 export default function FAQSection() {
   const handleClick = () => {
