@@ -1,6 +1,6 @@
 import React from 'react';
 // import ArrowRightIcon from 'public/icons/arrow_right.svg';
-import QUOTES from '@/constants/quotes';
+import QUOTES from '@/src/constants/quotes';
 import QuoteCard from './QuoteCard';
 
 export default function MemberSection() {
