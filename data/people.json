@@ -10,6 +10,16 @@
     },
     {
       "year": "7th",
+      "name_ko": "김동주",
+      "name_en": "Dongjoo Kim",
+      "photo": "kimdongjoo.png",
+      "short_bio": "개발이 취미가 되어버린 백엔드 개발자",
+      "linkedin_username": "hephier",
+      "github_username": "hepheir",
+      "homepage_url": "https://hepheir.github.io"
+    },
+    {
+      "year": "7th",
       "name_ko": "오형근",
       "name_en": "Hyeonggeun Oh",
       "photo": "hyeonggeun.jpg",
