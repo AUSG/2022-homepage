@@ -2,6 +2,16 @@
   "people": [
     {
       "year": "7th",
+      "name_ko": "박지윤",
+      "name_en": "Jiyun Park",
+      "photo": "jiyunpark.jpg",
+      "short_bio": "배우고 싶은게 많은 주니어 개발자",
+      "linkedin_username": "Jiyun Park",
+      "github_username": "PrimWILL",
+      "homepage_url": "https://daydreamx.tistory.com/"
+    },
+    {
+      "year": "7th",
       "name_ko": "강다현",
       "name_en": "Dahyeon Kang",
       "photo": "dusdjhyeon.jpg",
