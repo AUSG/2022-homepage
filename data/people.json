@@ -2,6 +2,14 @@
   "people": [
     {
       "year": "7th",
+      "name_ko": "강다현",
+      "name_en": "Dahyeon Kang",
+      "photo": "dusdjhyeon.jpg",
+      "short_bio": "제 힘으로 할 수 있는 모든 것을 좋아합니다✋",
+      "github_username": "dusdjhyeon"
+    },
+    {
+      "year": "7th",
       "name_ko": "오형근",
       "name_en": "Hyeonggeun Oh",
       "photo": "hyeonggeun.jpg",
