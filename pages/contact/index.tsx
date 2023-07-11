@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import Header from '@/components/Header';
+import Header from '@/src/components/Header';
 import ContactImage from 'public/images/contact.png';
 import Image from 'next/image';
 import Head from 'next/head';

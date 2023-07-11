@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import Card from '@/components/Card';
+import Card from '@/src/components/Card';
 // import ArrowRightIcon from 'public/icons/arrow_right.svg';
 import React from 'react';
 import ArrowRight from '../../../../public/icons/arrow_right.svg';
