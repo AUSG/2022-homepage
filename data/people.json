@@ -2,6 +2,14 @@
   "people": [
     {
       "year": "7th",
+      "name_ko": "김정우",
+      "name_en": "JungWoo Kim",
+      "photo": "jungwoo.png",
+      "short_bio": "LGTM",
+      "github_username": "jung-woo-kim"
+    },
+    {
+      "year": "7th",
       "name_ko": "이선의", 
       "name_en": "SeonUi Lee",
       "photo": "sunnylee.jpg",
