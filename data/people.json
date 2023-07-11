@@ -2,6 +2,16 @@
   "people": [
     {
       "year": "7th",
+      "name_ko": "최재민",
+      "name_en": "Jaemin Choi",
+      "photo": "jaemin.jpg",
+      "short_bio": "하루하루는 성실하게, 인생 전체는 되는대로",
+      "linkedin_username": "dotoleeoak",
+      "github_username": "dotoleeoak",
+      "homepage_url": "https://www.dotoleeoak.me/"
+    },
+    {
+      "year": "7th",
       "name_ko": "현석훈",
       "name_en": "SeokHun Hyeon",
       "photo": "hyeon-stone.jpg",
