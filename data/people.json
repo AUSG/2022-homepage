@@ -2,20 +2,166 @@
   "people": [
     {
       "year": "7th",
+      "name_ko": "최가희",
+      "name_en": "Gahee Choi",
+      "photo": "gahee.jpg",
+      "short_bio": "시니어 개발자 폼을 꿈꾸는 주니어 개발자",
+      "github_username": "GaHee99"
+    },
+    {
+      "year": "7th",
+      "name_ko": "박지윤",
+      "name_en": "Jiyun Park",
+      "photo": "jiyunpark.jpg",
+      "short_bio": "배우고 싶은게 많은 주니어 개발자",
+      "linkedin_username": "Jiyun Park",
+      "github_username": "PrimWILL",
+      "homepage_url": "https://daydreamx.tistory.com/"
+    },
+    {
+      "year": "7th",
+      "name_ko": "강다현",
+      "name_en": "Dahyeon Kang",
+      "photo": "dusdjhyeon.jpg",
+      "short_bio": "제 힘으로 할 수 있는 모든 것을 좋아합니다✋",
+      "github_username": "dusdjhyeon"
+    },
+    {
+      "year": "7th",
+      "name_ko": "김동주",
+      "name_en": "Dongjoo Kim",
+      "photo": "kimdongjoo.png",
+      "short_bio": "개발이 취미가 되어버린 백엔드 개발자",
+      "linkedin_username": "hephier",
+      "github_username": "hepheir",
+      "homepage_url": "https://hepheir.github.io"
+    },
+    {
+      "year": "7th",
+      "name_ko": "오형근",
+      "name_en": "Hyeonggeun Oh",
+      "photo": "hyeonggeun.jpg",
+      "short_bio": "폭넓은 시야로 보고 성장해요!",
+      "linkedin_username": "hyeonggeun-oh-760a5b240",
+      "github_username": "Geun-Oh",
+      "homepage_url": "https://velog.io/@kandy1002"
+    },
+    {
+      "year": "7th",
+      "name_ko": "오동재",
+      "name_en": "Dongjae Oh",
+      "photo": "dongjaeOh.jpg",
+      "short_bio": "Non-fungible Developer",
+      "linkedin_username": "dongjae-oh",
+      "github_username": "donggni0712"
+    },
+    {
+      "year": "7th",
+      "name_ko": "윤종원",
+      "name_en": "Jongwon Youn",
+      "photo": "jongwonyoun.jpg",
+      "short_bio": "책📚과 커피☕️️를 사랑하는 개발자",
+      "linkedin_username": "jongwon-youn-ecm",
+      "github_username": "korECM",
+      "homepage_url": "https://bit.ly/44f5YBZ"
+    },
+    {
+      "year": "7th",
+      "name_ko": "김수경",
+      "name_en": "Sugyeong Kim",
+      "photo": "sugyeong.jpg",
+      "short_bio": "All rounder software engineer🌱",
+      "linkedin_username": "olive-su",
+      "github_username": "olive-su",
+      "homepage_url": "https://olive-su.tistory.com"
+    },
+    {
+      "year": "7th",
+      "name_ko": "정진철",
+      "name_en": "Jincheol Jung",
+      "photo": "jincheol.png",
+      "short_bio": "WILL is ALL",
+      "github_username": "bik1111",
+      "homepage_url": "https://velog.io/@bik1111"
+    },
+    {
+      "year": "7th",
+      "name_ko": "김연수",
+      "name_en": "Yeonsu Kim",
+      "photo": "yeonsu.jpg",
+      "short_bio": "파이어토네이도 입니다. 잘부탁드립니다!!",
+      "github_username": "dustnehowl"
+    },
+    {
+      "year": "7th",
+      "name_ko": "김록원",
+      "name_en": "Rokwon Kim",
+      "photo": "rokwon.jpeg",
+      "short_bio": "태어난 김에 다 해보고 싶습니다~ 🤜",
+      "linkedin_username": "rokwon",
+      "github_username": "RokwonK",
+      "homepage_url": "https://rokwonk.github.io/"
+    },
+    {
+      "year": "7th",
+      "name_ko": "이해송",
+      "name_en": "Haesong Lee",
+      "photo": "haesong.jpg",
+      "short_bio": "ausg 의 인간 바오밥 나무로 성장하고싶어요.",
+      "github_username": "pinetree2",
+      "homepage_url": "https://velog.io/@pinetree2"
+    },
+    {
+      "year": "7th",
+      "name_ko": "김유빈",
+      "name_en": "Yubin Kim",
+      "photo": "yubin.jpg",
+      "short_bio": "배움과 성장을 사랑합니다 🥰",
+      "linkedin_username": "dev-yubin",
+      "github_username": "yubin21"
+    },
+    {
+      "year": "7th",
+      "name_ko": "이태현",
+      "name_en": "Taehyun Lee",
+      "photo": "taehyun.lee.jpeg",
+      "short_bio": "Be Happy 😆",
+      "github_username": "0417taehyun"
+    },
+    {
+      "year": "7th",
+      "name_ko": "권기호",
+      "name_en": "Kiho Kwoun",
+      "photo": "chocochip.jpg",
+      "short_bio": "기술로 사용자들에게 가치를 주고 싶습니다 🍪",
+      "linkedin_username": "chocochip101",
+      "github_username": "Chocochip101",
+      "homepage_url": "https://velog.io/@chocochip"
+    },
+    {
+      "year": "7th",
+      "name_ko": "최우석",
+      "name_en": "Wooseok Choe",
+      "photo": "wooseok.jpeg",
+      "short_bio": "Impossibe is nothing",
+      "linkedin_username": "wooseok-choe-b2949922b",
+      "github_username": "Sith-call",
+      "homepage_url": "https://velog.io/@chldntjr0425"
+    },
+    {
+      "year": "7th",
+      "name_ko": "최예원",
+      "name_en": "Yewon Choi",
+      "photo": "yewon.jpeg",
+      "short_bio": "사람과 기술을 좋아하는 개발자:D"
+    },
+    {
+      "year": "7th",
       "name_ko": "송승호",
       "name_en": "Seungho Song",
       "photo": "seungho.jpg",
       "short_bio": "아쉬움은 있을지언정 후회는 하지 않는 삶을 추구합니다.",
       "github_username": "SeungHo0422"
-    },
-    {
-      "year": "7th",
-      "name_ko": "현석훈",
-      "name_en": "Seokhun Hyeon",
-      "photo": "Hyeon-Stone.jpg",
-      "short_bio": "1 ^ N < 1.01 ^ N",
-      "github_username": "Hyeon-Stone",
-      "homepage_url": "https://hyeon-stone.com"
     },
     {
       "name_ko": "김태강",
@@ -35,6 +181,16 @@
       "linkedin_username": "yuki-hajun",
       "github_username": "HaJunYoo",
       "homepage_url": "https://hajunyoo.oopy.io/"
+    },
+    {
+      "year": "7th",
+      "name_ko": "박성진",
+      "name_en": "Sungjin Park",
+      "photo": "sungjin.jpg",
+      "short_bio": "Learn and Share",
+      "linkedin_username": "sungjin--park",
+      "github_username": "xylogan",
+      "homepage_url": "https://xylogan.github.io/"
     },
     {
       "year": "6th",
