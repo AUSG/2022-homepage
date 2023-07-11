@@ -2,6 +2,15 @@
   "people": [
     {
       "year": "7th",
+      "name_ko": "이선의", 
+      "name_en": "SeonUi Lee",
+      "photo": "sunnylee.jpg",
+      "short_bio": "",
+      "linkedin_username": "seon-ui-lee-a5a538265",
+      "github_username": "sunnyineverywhere",
+      "homepage_url": "https://sunnyineverywhere.tistory.com"
+    },
+    {
       "name_ko": "최재민",
       "name_en": "Jaemin Choi",
       "photo": "jaemin.jpg",
