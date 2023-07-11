@@ -2,6 +2,16 @@
   "people": [
     {
       "year": "7th",
+      "name_ko": "최가희",
+      "name_en": "Gahee Choi",
+      "photo": "gahee.jpg",
+      "short_bio": "시니어 개발자 폼을 꿈꾸는 주니어 개발자",
+      "linkedin_username": "",
+      "github_username": "GaHee99",
+      "homepage_url": ""
+    },
+    {
+      "year": "7th",
       "name_ko": "박지윤",
       "name_en": "Jiyun Park",
       "photo": "jiyunpark.jpg",
