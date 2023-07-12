@@ -2,6 +2,16 @@
   "people": [
     {
       "year": "7th",
+      "name_ko": "이다은",
+      "name_en": "Danna Lee",
+      "photo": "danna.jpg",
+      "short_bio": "toward, dannaward. 다나의 방향으로🗽",
+      "github_username": "dannaward",
+      "linkedin_username": "danna-lee-65aa731b7",
+      "homepage_url": "https://welcometodannas.tistory.com/"
+    },
+    {
+      "year": "7th",
       "name_ko": "김정우",
       "name_en": "JungWoo Kim",
       "photo": "jungwoo.png",
