@@ -2,6 +2,71 @@
   "people": [
     {
       "year": "7th",
+      "name_ko": "이다은",
+      "name_en": "Danna Lee",
+      "photo": "danna.jpg",
+      "short_bio": "toward, dannaward. 다나의 방향으로🗽",
+      "github_username": "dannaward",
+      "linkedin_username": "danna-lee-65aa731b7",
+      "homepage_url": "https://welcometodannas.tistory.com/"
+    },
+    {
+      "year": "7th",
+      "name_ko": "김정우",
+      "name_en": "JungWoo Kim",
+      "photo": "jungwoo.png",
+      "short_bio": "LGTM",
+      "github_username": "jung-woo-kim"
+    },
+    {
+      "year": "7th",
+      "name_ko": "이선의",
+      "name_en": "SeonUi Lee",
+      "photo": "sunnylee.jpg",
+      "short_bio": "",
+      "linkedin_username": "seon-ui-lee-a5a538265",
+      "github_username": "sunnyineverywhere",
+      "homepage_url": "https://sunnyineverywhere.tistory.com"
+    },
+    {
+      "year": "7th",
+      "name_ko": "최재민",
+      "name_en": "Jaemin Choi",
+      "photo": "jaemin.jpg",
+      "short_bio": "하루하루는 성실하게, 인생 전체는 되는대로",
+      "linkedin_username": "dotoleeoak",
+      "github_username": "dotoleeoak",
+      "homepage_url": "https://www.dotoleeoak.me/"
+    },
+    {
+      "year": "7th",
+      "name_ko": "현석훈",
+      "name_en": "SeokHun Hyeon",
+      "photo": "hyeon-stone.jpg",
+      "short_bio": "1 ^ N < 1.01 ^ N",
+      "github_username": "Hyeon-Stone",
+      "homepage_url": "https://hyeon-stone.com/"
+    },
+    {
+      "year": "7th",
+      "name_ko": "최가희",
+      "name_en": "Gahee Choi",
+      "photo": "gahee.jpg",
+      "short_bio": "시니어 개발자 폼을 꿈꾸는 주니어 개발자",
+      "github_username": "GaHee99"
+    },
+    {
+      "year": "7th",
+      "name_ko": "박지윤",
+      "name_en": "Jiyun Park",
+      "photo": "jiyunpark.jpg",
+      "short_bio": "배우고 싶은게 많은 주니어 개발자",
+      "linkedin_username": "Jiyun Park",
+      "github_username": "PrimWILL",
+      "homepage_url": "https://daydreamx.tistory.com/"
+    },
+    {
+      "year": "7th",
       "name_ko": "강다현",
       "name_en": "Dahyeon Kang",
       "photo": "dusdjhyeon.jpg",
@@ -174,6 +239,14 @@
       "linkedin_username": "sungjin--park",
       "github_username": "xylogan",
       "homepage_url": "https://xylogan.github.io/"
+    },
+    {
+      "year": "7th",
+      "name_ko": "박지환",
+      "name_en": "JiHwan Park",
+      "photo": "kevin.jpeg",
+      "short_bio": "Open source Lover",
+      "github_username": "krapie"
     },
     {
       "year": "6th",
