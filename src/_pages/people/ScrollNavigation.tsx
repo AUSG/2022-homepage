@@ -1,10 +1,9 @@
 import { FC } from 'react';
 import clsx from 'clsx';
-
-const TAB = ['7th', '6th', '5th', '4th', '3rd', '2nd', '1st'];
+import { VISIBLE_PEOPLE_YEARS_ORDER } from '@/src/lib/config';
 
 interface ScrollNavigationProps {
-  currentTab: typeof TAB[number];
+  currentTab: typeof VISIBLE_PEOPLE_YEARS_ORDER[number];
 }
 
 const ScrollNavigation: FC<ScrollNavigationProps> = ({ currentTab }) => {
@@ -13,7 +12,7 @@ const ScrollNavigation: FC<ScrollNavigationProps> = ({ currentTab }) => {
       className="mx-6 -mt-8 flex items-center gap-4 pt-12 lg:justify-center"
       id={`tab_${currentTab}`}
     >
-      {TAB.map(tab => (
+      {VISIBLE_PEOPLE_YEARS_ORDER.map(tab => (
         <a
           href={`#tab_${tab}`}
           key={tab}
