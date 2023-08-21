@@ -31,12 +31,6 @@ jobs:
             ${{ runner.os }}-build-
             ${{ runner.os }}-
 
-      # 캐시 히트 실패 시 로그로 module 상태 출력
-      - if: ${{ steps.cache-npm.outputs.cache-hit != 'true' }}
-        name: List the state of node modules
-        continue-on-error: true
-        run: npm list
-
       - if: ${{ steps.cache-npm.outputs.cache-hit != 'true' }}
         name: Install Dependencies
         run: npm ci
