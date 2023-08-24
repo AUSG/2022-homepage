@@ -1,15 +1,6 @@
-import peopleJson from '@/data/people.json';
-
-interface Person {
-  year: string;
-  name_ko: string;
-  name_en: string;
-  photo: string;
-  short_bio: string;
-  github_username?: string;
-  linkedin_username?: string;
-  homepage_url?: string;
-}
+import { getPeopleData } from './people';
+import { VISIBLE_PEOPLE_YEARS_ORDER } from './../src/lib/config';
+import { Person } from '@/data/people';
 
 const isValidPersonData = (person: Person): boolean => {
   return (
@@ -23,8 +14,14 @@ const isValidPersonData = (person: Person): boolean => {
 
 describe('validate people.json', () => {
   it('필수 데이터가 모두 채워져 있어야 합니다.', () => {
-    peopleJson.people.forEach(person => {
-      expect(isValidPersonData(person));
+    getPeopleData().people.forEach(person => {
+      expect(isValidPersonData(person)).toBeTruthy();
+    });
+  });
+
+  it('허용된 year 데이터만 존재해야 합니다.', () => {
+    getPeopleData().people.forEach(person => {
+      expect(VISIBLE_PEOPLE_YEARS_ORDER).toContain(person.year);
     });
   });
 });

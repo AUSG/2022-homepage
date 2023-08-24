@@ -2,9 +2,10 @@ import { Fragment } from 'react';
 import Head from 'next/head';
 
 import Header from '@/src/components/Header';
-import peopleData from 'data/people.json';
 import ScrollNavigation from '@/src/_pages/people/ScrollNavigation';
 import IntroCard from '@/src/_pages/people/IntroCard';
+import { getPeopleData } from '@/data/people';
+import { VISIBLE_PEOPLE_YEARS_ORDER } from '@/src/lib/config';
 
 const shuffle = (array: any[], randomNumber: number) => {
   let currentIndex = array.length;
@@ -23,9 +24,10 @@ const shuffle = (array: any[], randomNumber: number) => {
 
   return array;
 };
-const TAB = ['7th', '6th', '5th', '4th', '3rd', '2nd', '1st'];
 
 const People = ({ randomNumber }: { randomNumber: number }) => {
+  const peopleData = getPeopleData();
+
   return (
     <>
       <Head>
@@ -37,7 +39,7 @@ const People = ({ randomNumber }: { randomNumber: number }) => {
           People
         </h1>
 
-        {TAB.map(
+        {VISIBLE_PEOPLE_YEARS_ORDER.map(
           tab =>
             peopleData.people.filter(({ year }) => year === tab).length > 0 && (
               <Fragment key={tab}>
