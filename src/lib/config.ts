@@ -7,4 +7,4 @@ export const VISIBLE_PEOPLE_YEARS_ORDER = [
   '3rd',
   '2nd',
   '1st',
-];
+] as const;
