@@ -16,5 +16,5 @@ export interface PeopleData {
 }
 
 export const getPeopleData = (): PeopleData => {
-  return peopleJson as unknown as PeopleData;
+  return peopleJson;
 };
