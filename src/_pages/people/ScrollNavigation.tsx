@@ -1,4 +1,3 @@
-import { FC } from 'react';
 import clsx from 'clsx';
 import { VISIBLE_PEOPLE_YEARS_ORDER } from '@/src/lib/config';
 
@@ -6,7 +5,7 @@ interface ScrollNavigationProps {
   currentTab: typeof VISIBLE_PEOPLE_YEARS_ORDER[number];
 }
 
-const ScrollNavigation: FC<ScrollNavigationProps> = ({ currentTab }) => {
+const ScrollNavigation = ({ currentTab }: ScrollNavigationProps) => {
   return (
     <div
       className="mx-6 -mt-8 flex items-center gap-4 pt-12 lg:justify-center"
