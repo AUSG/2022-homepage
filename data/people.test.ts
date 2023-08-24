@@ -21,7 +21,7 @@ describe('validate people.json', () => {
 
   it('허용된 year 데이터만 존재해야 합니다.', () => {
     getPeopleData().people.forEach(person => {
-      expect(VISIBLE_PEOPLE_YEARS_ORDER.includes(person.year)).toBeTruthy();
+      expect(VISIBLE_PEOPLE_YEARS_ORDER).toContain(person.year);
     });
   });
 });
