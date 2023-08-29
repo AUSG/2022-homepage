@@ -33,7 +33,7 @@ export default function IntroSection() {
                     isLoading,
                     isCounterVisible,
                   }) => (
-                    <div className="mt-[24px] flex flex-row items-center justify-center gap-4 text-white md:min-w-[400px] md:flex-1">
+                    <div className="mt-[24px] flex items-center gap-4">
                       <button
                         type="button"
                         onClick={handlePress}
