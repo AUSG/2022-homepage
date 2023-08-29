@@ -24,7 +24,7 @@ export default function IntroSection() {
               클라우드 커뮤니티
             </h1>
             <div>
-              <Provider apiKey="pt_5a9c4059fce90df5f406e6b77045c0 ">
+              <Provider apiKey="pt_42fe46c843e030ddadfb059b67c6dd ">
                 <LikeButton id="like" namespace="intro-section">
                   {({
                     handlePress,
