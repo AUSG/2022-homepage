@@ -2,6 +2,7 @@ import Header from '@/src/components/Header';
 import React from 'react';
 import CloudImage from 'public/images/cloud.svg';
 import CloudTruncatedImage from 'public/images/cloud-truncated.svg';
+import { Provider, LikeButton } from '@lyket/react';
 
 export default function IntroSection() {
   return (
@@ -22,6 +23,35 @@ export default function IntroSection() {
               <br />
               클라우드 커뮤니티
             </h1>
+            <div>
+              <Provider apiKey="pt_42fe46c843e030ddadfb059b67c6dd ">
+                <LikeButton id="like" namespace="intro-section">
+                  {({
+                    handlePress,
+                    totalLikes,
+                    userLiked,
+                    isLoading,
+                    isCounterVisible,
+                  }) => (
+                    <div className="mt-[24px] flex items-center gap-4">
+                      <button
+                        type="button"
+                        onClick={handlePress}
+                        disabled={isLoading}
+                        className="text-[48px] transition duration-300 ease-in-out hover:scale-125"
+                      >
+                        {userLiked ? '🌩' : '☁️'}
+                      </button>
+                      {isCounterVisible && (
+                        <p className="text-[20px] font-bold text-white md:text-center md:text-[34px]">
+                          {totalLikes}
+                        </p>
+                      )}
+                    </div>
+                  )}
+                </LikeButton>
+              </Provider>
+            </div>
           </div>
         </div>
 
