@@ -1,29 +1,42 @@
+import dayjs from 'dayjs';
+import utc from 'dayjs/plugin/utc';
+import timezone from 'dayjs/plugin/timezone';
+
+dayjs.extend(utc);
+dayjs.extend(timezone);
+
+const targetDate = dayjs('2024-06-27 23:59:59').tz('Asia/Seoul').toDate(); // 8기 지원 마감일 (KST)
+const krCurrentDate = dayjs().tz('Asia/Seoul').toDate(); // 한국 시간 기준 현재 시간
+
+const isClosed = krCurrentDate > targetDate;
+
 // 노션에서 내용 복사 => 아래 사이트에서 HTML로 변환 => 링크 밑줄 등 추가적인 스타일 적용이 필요하다면 HTML 태그 직접 수정
 // https://www.ttmkt.com/kr/tools/markdown-to-html/
-
 const QUESTIONS = [
-  // TODO 리크루팅 끝나면 주석 해제
-  // {
-  //   title: '현재 모집 중인가요?',
-  //   description:
-  //     '<p>2023년 7기 모집은 종료되었어요. 2024년 하반기에 찾아올 8기 모집을 기대해 주세요!</p>',
-  // },
-  // TODO 리크루팅 끝나면 삭제
+  {
+    title: '현재 모집 중인가요?',
+    description:
+      '<p>2024년 8기 모집은 종료되었어요. 2025년 하반기에 찾아올 9기 모집을 기대해 주세요!</p>',
+    isHidden: !isClosed,
+  },
   {
     title: '지원 마감은 언제인가요?',
     description:
       '<p>한국 시간 기준 <b>6월 27일 목요일 23:59:59</b> 까지 지원을 받을 예정이에요.</p>',
+    isHidden: isClosed,
   },
   {
     title: '선발 절차는 어떻게 되나요?',
     description:
       '<p><b>1차 서류 전형, 2차 면접 전형이 있습니다.</b></p>' +
       '<p>자기소개서와 면접은 지원자 분을 보다 잘 알아가기 위해 진행합니다. 여러분이 어떤 경험을 가지고 있는지, 어떤 고민과 노력을 해오셨는지 궁금합니다. 그 과정에 AUSG가 왜 필요한 지도요! 평가로 생각하기보다는 여러분의 이야기를 들려주세요 :)</p>',
+    isHidden: isClosed,
   },
   {
     title: 'AUSG 8기 활동 기간은 얼마나 되나요?',
     description:
       '<p>필수 활동 기간은 <b>1년</b>입니다. 이후에는 자율로 참여 가능합니다 :)</p>',
+    isHidden: isClosed,
   },
   {
     title: 'AUSG는 어떤 동아리인가요?',

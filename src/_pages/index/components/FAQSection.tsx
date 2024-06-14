@@ -24,13 +24,15 @@ export default function FAQSection() {
           </h1>
           <div className="mt-[36px] flex-1 xl:ml-[180px] xl:mt-[8px]">
             <section className="flex flex-col gap-[24px] xl:grid xl:grid-cols-2 xl:gap-y-[48px] xl:gap-x-[80px]">
-              {QUESTIONS.map(question => (
-                <Dropdown
-                  key={question.title}
-                  title={question.title}
-                  description={question.description}
-                />
-              ))}
+              {QUESTIONS.filter(question => !question.isHidden).map(
+                question => (
+                  <Dropdown
+                    key={question.title}
+                    title={question.title}
+                    description={question.description}
+                  />
+                )
+              )}
             </section>
           </div>
         </div>
