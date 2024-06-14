@@ -1,7 +1,7 @@
 import React from 'react';
 import ArrowRightIcon from 'public/icons/arrow_right.svg';
 import Dropdown from '@/src/components/Dropdown';
-import QUESTIONS from '@/src/constants/questions';
+import { QUESTIONS, RECRUIT_QUESTIONS } from '@/src/constants/questions';
 import Link from 'next/link';
 import { event } from '@/src/lib/gtag';
 
@@ -15,6 +15,11 @@ export default function FAQSection() {
     });
   };
 
+  const faqQuestions = [
+    ...RECRUIT_QUESTIONS.filter(question => !question.isHidden),
+    ...QUESTIONS,
+  ];
+
   return (
     <div className="bg-gray-100">
       <div className="relative flex flex-col px-[20px] py-[48px] xl:mx-auto xl:max-w-screen-xl xl:py-[100px]">
@@ -24,15 +29,13 @@ export default function FAQSection() {
           </h1>
           <div className="mt-[36px] flex-1 xl:ml-[180px] xl:mt-[8px]">
             <section className="flex flex-col gap-[24px] xl:grid xl:grid-cols-2 xl:gap-y-[48px] xl:gap-x-[80px]">
-              {QUESTIONS.filter(question => !question.isHidden).map(
-                question => (
-                  <Dropdown
-                    key={question.title}
-                    title={question.title}
-                    description={question.description}
-                  />
-                )
-              )}
+              {faqQuestions.map(question => (
+                <Dropdown
+                  key={question.title}
+                  title={question.title}
+                  description={question.description}
+                />
+              ))}
             </section>
           </div>
         </div>
