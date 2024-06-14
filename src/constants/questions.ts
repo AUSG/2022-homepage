@@ -12,7 +12,7 @@ const isClosed = krCurrentDate > targetDate;
 
 // 노션에서 내용 복사 => 아래 사이트에서 HTML로 변환 => 링크 밑줄 등 추가적인 스타일 적용이 필요하다면 HTML 태그 직접 수정
 // https://www.ttmkt.com/kr/tools/markdown-to-html/
-const QUESTIONS = [
+const RECRUIT_QUESTIONS = [
   {
     title: '현재 모집 중인가요?',
     description:
@@ -38,6 +38,9 @@ const QUESTIONS = [
       '<p>필수 활동 기간은 <b>1년</b>입니다. 이후에는 자율로 참여 가능합니다 :)</p>',
     isHidden: isClosed,
   },
+];
+
+const QUESTIONS = [
   {
     title: 'AUSG는 어떤 동아리인가요?',
     description:
@@ -82,4 +85,4 @@ const QUESTIONS = [
   },
 ];
 
-export default QUESTIONS;
+export { RECRUIT_QUESTIONS, QUESTIONS };
