@@ -97,10 +97,20 @@ export default function Header({ theme = 'white' }: HeaderProps) {
             <a
               className={clsx(
                 theme === 'white' ? 'text-primary' : 'text-white',
-                'hidden items-center p-4 font-bold lg:flex'
+                'mr-6 hidden items-center p-4 font-bold lg:flex'
               )}
             >
               Contact
+            </a>
+          </Link>
+          <Link href="/apply">
+            <a
+              className={clsx(
+                theme === 'white' ? 'text-primary' : 'text-yellow-200',
+                'hidden items-center p-4 font-bold lg:flex'
+              )}
+            >
+              Apply
             </a>
           </Link>
         </nav>
@@ -185,6 +195,18 @@ export default function Header({ theme = 'white' }: HeaderProps) {
                   Contact
                 </span>
                 <ArrowRight width="36" height="36" fill="white" />
+              </a>
+            </Link>
+            <Link href="/apply">
+              <a className="flex items-center">
+                <span className="mr-[8px] text-[24px] font-bold text-yellow-200">
+                  Apply
+                </span>
+                <ArrowRight
+                  width="36"
+                  height="36"
+                  className="fill-yellow-200"
+                />
               </a>
             </Link>
           </nav>
