@@ -1,5 +1,5 @@
 import Header from '@/src/components/Header';
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import CloudImage from 'public/images/cloud.svg';
 import CloudTruncatedImage from 'public/images/cloud-truncated.svg';
 import { useRouter } from 'next/router';
@@ -14,6 +14,7 @@ dayjs.extend(utc);
 dayjs.extend(timezone);
 
 export default function IntroSection() {
+  const [isClient, setIsClient] = useState(false);
   const router = useRouter();
 
   const targetDate = dayjs('2024-06-27 23:59:59').tz('Asia/Seoul').toDate(); // 8기 지원 마감일 (KST)
@@ -32,6 +33,10 @@ export default function IntroSection() {
     });
     router.push('/apply');
   };
+
+  useEffect(() => {
+    setIsClient(true);
+  }, []);
 
   return (
     <div className="bg-primary">
@@ -68,7 +73,9 @@ export default function IntroSection() {
             {isClosed ? null : (
               <div className="flex items-center gap-4">
                 <p className="text-[18px] font-bold text-white md:text-[24px]">
-                  {`지원 마감까지 ${days}일 ${hours}시간 ${minutes}분 ${seconds}초`}
+                  {isClient
+                    ? `지원 마감까지 ${days}일 ${hours}시간 ${minutes}분 ${seconds}초`
+                    : null}
                 </p>
               </div>
             )}
