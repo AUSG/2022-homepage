@@ -2,7 +2,6 @@ import Header from '@/src/components/Header';
 import React from 'react';
 import CloudImage from 'public/images/cloud.svg';
 import CloudTruncatedImage from 'public/images/cloud-truncated.svg';
-import { Provider, LikeButton } from '@lyket/react';
 
 export default function IntroSection() {
   return (
@@ -23,34 +22,16 @@ export default function IntroSection() {
               <br />
               클라우드 커뮤니티
             </h1>
-            <div>
-              <Provider apiKey="pt_42fe46c843e030ddadfb059b67c6dd ">
-                <LikeButton id="like" namespace="intro-section">
-                  {({
-                    handlePress,
-                    totalLikes,
-                    userLiked,
-                    isLoading,
-                    isCounterVisible,
-                  }) => (
-                    <div className="mt-[24px] flex items-center gap-4">
-                      <button
-                        type="button"
-                        onClick={handlePress}
-                        disabled={isLoading}
-                        className="text-[48px] transition duration-300 ease-in-out hover:scale-125"
-                      >
-                        {userLiked ? '🌩' : '☁️'}
-                      </button>
-                      {isCounterVisible && (
-                        <p className="text-[20px] font-bold text-white md:text-center md:text-[34px]">
-                          {totalLikes}
-                        </p>
-                      )}
-                    </div>
-                  )}
-                </LikeButton>
-              </Provider>
+            <div className="mt-[24px] hidden items-center gap-4 md:flex">
+              <p className="text-[28px] font-bold text-white md:text-center md:text-[40px]">
+                ☁️ 11기 모집중 ☁️
+              </p>
+              <button
+                type="button"
+                className="rounded-md bg-white px-6 py-2 text-[18px] font-bold text-primary hover:bg-white/90"
+              >
+                지원하기
+              </button>
             </div>
           </div>
         </div>
@@ -61,6 +42,17 @@ export default function IntroSection() {
             height="100%"
             className="right-0 animate-floating transition-[translate]"
           />
+        </div>
+        <div className="mt-[24px] flex items-center justify-center gap-4 md:hidden">
+          <p className="text-[28px] font-bold text-white md:text-center md:text-[40px]">
+            ☁️ 11기 모집중 ☁️
+          </p>
+          <button
+            type="button"
+            className="rounded-md bg-white px-6 py-2 text-[18px] font-bold text-primary hover:bg-white/90"
+          >
+            지원하기
+          </button>
         </div>
       </main>
     </div>
