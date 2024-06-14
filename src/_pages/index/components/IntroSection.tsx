@@ -4,9 +4,24 @@ import CloudImage from 'public/images/cloud.svg';
 import CloudTruncatedImage from 'public/images/cloud-truncated.svg';
 import { useRouter } from 'next/router';
 import { event } from '@/src/lib/gtag';
+import useCountdown from '@/src/_pages/hooks/useCountdown';
+
+import dayjs from 'dayjs';
+import utc from 'dayjs/plugin/utc';
+import timezone from 'dayjs/plugin/timezone';
+
+dayjs.extend(utc);
+dayjs.extend(timezone);
 
 export default function IntroSection() {
   const router = useRouter();
+
+  const targetDate = dayjs('2024-06-27 23:59:59').tz('Asia/Seoul').toDate(); // 8기 지원 마감일 (KST)
+  const krCurrentDate = dayjs().tz('Asia/Seoul').toDate(); // 한국 시간 기준 현재 시간
+
+  const isClosed = krCurrentDate > targetDate;
+
+  const [days, hours, minutes, seconds] = useCountdown(targetDate);
 
   const handleApplyClick = () => {
     event({
@@ -38,16 +53,25 @@ export default function IntroSection() {
             </h1>
             <div className="mt-[24px] hidden items-center gap-4 md:flex">
               <p className="text-[28px] font-bold text-white md:text-center md:text-[40px]">
-                ☁️ 8기 모집중 ☁️
+                {isClosed ? '8기 모집이 마감되었습니다.' : '☁️ 8기 모집중 ☁️'}
               </p>
-              <button
-                type="button"
-                onClick={handleApplyClick}
-                className="rounded-md bg-white px-6 py-2 text-[18px] font-bold text-primary hover:bg-white/90"
-              >
-                지원하기
-              </button>
+              {isClosed ? null : (
+                <button
+                  type="button"
+                  onClick={handleApplyClick}
+                  className="rounded-md bg-white px-6 py-2 text-[18px] font-bold text-primary hover:bg-white/90"
+                >
+                  지원하기
+                </button>
+              )}
             </div>
+            {isClosed ? null : (
+              <div className="flex items-center gap-4">
+                <p className="text-[18px] font-bold text-white md:text-[24px]">
+                  {`지원 마감까지 ${days}일 ${hours}시간 ${minutes}분 ${seconds}초`}
+                </p>
+              </div>
+            )}
           </div>
         </div>
 
@@ -60,15 +84,17 @@ export default function IntroSection() {
         </div>
         <div className="mt-[24px] flex items-center justify-center gap-4 md:hidden">
           <p className="text-[28px] font-bold text-white md:text-center md:text-[40px]">
-            ☁️ 8기 모집중 ☁️
+            {isClosed ? '8기 모집이 마감되었습니다.' : '☁️ 8기 모집중 ☁️'}
           </p>
-          <button
-            type="button"
-            onClick={handleApplyClick}
-            className="rounded-md bg-white px-6 py-2 text-[18px] font-bold text-primary hover:bg-white/90"
-          >
-            지원하기
-          </button>
+          {isClosed ? null : (
+            <button
+              type="button"
+              onClick={handleApplyClick}
+              className="rounded-md bg-white px-6 py-2 text-[18px] font-bold text-primary hover:bg-white/90"
+            >
+              지원하기
+            </button>
+          )}
         </div>
       </main>
     </div>
