@@ -27,7 +27,7 @@ export default function IntroSection() {
             </h1>
             <div className="mt-[24px] hidden items-center gap-4 md:flex">
               <p className="text-[28px] font-bold text-white md:text-center md:text-[40px]">
-                ☁️ 11기 모집중 ☁️
+                ☁️ 8기 모집중 ☁️
               </p>
               <button
                 type="button"
@@ -51,7 +51,7 @@ export default function IntroSection() {
         </div>
         <div className="mt-[24px] flex items-center justify-center gap-4 md:hidden">
           <p className="text-[28px] font-bold text-white md:text-center md:text-[40px]">
-            ☁️ 11기 모집중 ☁️
+            ☁️ 8기 모집중 ☁️
           </p>
           <button
             type="button"
