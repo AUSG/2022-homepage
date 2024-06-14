@@ -2,8 +2,11 @@ import Header from '@/src/components/Header';
 import React from 'react';
 import CloudImage from 'public/images/cloud.svg';
 import CloudTruncatedImage from 'public/images/cloud-truncated.svg';
+import { useRouter } from 'next/router';
 
 export default function IntroSection() {
+  const router = useRouter();
+
   return (
     <div className="bg-primary">
       <Header theme="colored" />
@@ -28,6 +31,9 @@ export default function IntroSection() {
               </p>
               <button
                 type="button"
+                onClick={() => {
+                  router.push('/apply');
+                }}
                 className="rounded-md bg-white px-6 py-2 text-[18px] font-bold text-primary hover:bg-white/90"
               >
                 지원하기
@@ -49,6 +55,9 @@ export default function IntroSection() {
           </p>
           <button
             type="button"
+            onClick={() => {
+              router.push('/apply');
+            }}
             className="rounded-md bg-white px-6 py-2 text-[18px] font-bold text-primary hover:bg-white/90"
           >
             지원하기
