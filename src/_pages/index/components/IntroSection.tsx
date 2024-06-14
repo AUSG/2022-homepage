@@ -1,10 +1,43 @@
 import Header from '@/src/components/Header';
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import CloudImage from 'public/images/cloud.svg';
 import CloudTruncatedImage from 'public/images/cloud-truncated.svg';
-import { Provider, LikeButton } from '@lyket/react';
+import { useRouter } from 'next/router';
+import { event } from '@/src/lib/gtag';
+import useCountdown from '@/src/_pages/hooks/useCountdown';
+
+import dayjs from 'dayjs';
+import utc from 'dayjs/plugin/utc';
+import timezone from 'dayjs/plugin/timezone';
+
+dayjs.extend(utc);
+dayjs.extend(timezone);
 
 export default function IntroSection() {
+  const [isClient, setIsClient] = useState(false);
+  const router = useRouter();
+
+  const targetDate = dayjs('2024-06-27 23:59:59').tz('Asia/Seoul').toDate(); // 8기 지원 마감일 (KST)
+  const krCurrentDate = dayjs().tz('Asia/Seoul').toDate(); // 한국 시간 기준 현재 시간
+
+  const isClosed = krCurrentDate > targetDate;
+
+  const [days, hours, minutes, seconds] = useCountdown(targetDate);
+
+  const handleApplyClick = () => {
+    event({
+      action: 'apply',
+      category: 'click',
+      label: 'AUSG 8기 지원하기',
+      value: 1,
+    });
+    router.push('/apply');
+  };
+
+  useEffect(() => {
+    setIsClient(true);
+  }, []);
+
   return (
     <div className="bg-primary">
       <Header theme="colored" />
@@ -23,35 +56,29 @@ export default function IntroSection() {
               <br />
               클라우드 커뮤니티
             </h1>
-            <div>
-              <Provider apiKey="pt_42fe46c843e030ddadfb059b67c6dd ">
-                <LikeButton id="like" namespace="intro-section">
-                  {({
-                    handlePress,
-                    totalLikes,
-                    userLiked,
-                    isLoading,
-                    isCounterVisible,
-                  }) => (
-                    <div className="mt-[24px] flex items-center gap-4">
-                      <button
-                        type="button"
-                        onClick={handlePress}
-                        disabled={isLoading}
-                        className="text-[48px] transition duration-300 ease-in-out hover:scale-125"
-                      >
-                        {userLiked ? '🌩' : '☁️'}
-                      </button>
-                      {isCounterVisible && (
-                        <p className="text-[20px] font-bold text-white md:text-center md:text-[34px]">
-                          {totalLikes}
-                        </p>
-                      )}
-                    </div>
-                  )}
-                </LikeButton>
-              </Provider>
+            <div className="mt-[24px] hidden items-center gap-4 md:flex">
+              <p className="text-[28px] font-bold text-white md:text-center md:text-[40px]">
+                {isClosed ? '8기 모집이 마감되었습니다.' : '☁️ 8기 모집중 ☁️'}
+              </p>
+              {isClosed ? null : (
+                <button
+                  type="button"
+                  onClick={handleApplyClick}
+                  className="rounded-md bg-white px-6 py-2 text-[18px] font-bold text-primary hover:bg-white/90"
+                >
+                  지원하기
+                </button>
+              )}
             </div>
+            {isClosed ? null : (
+              <div className="flex items-center gap-4">
+                <p className="text-[18px] font-bold text-white md:text-[24px]">
+                  {isClient
+                    ? `지원 마감까지 ${days}일 ${hours}시간 ${minutes}분 ${seconds}초`
+                    : null}
+                </p>
+              </div>
+            )}
           </div>
         </div>
 
@@ -61,6 +88,20 @@ export default function IntroSection() {
             height="100%"
             className="right-0 animate-floating transition-[translate]"
           />
+        </div>
+        <div className="mt-[24px] flex items-center justify-center gap-4 md:hidden">
+          <p className="text-[28px] font-bold text-white md:text-center md:text-[40px]">
+            {isClosed ? '8기 모집이 마감되었습니다.' : '☁️ 8기 모집중 ☁️'}
+          </p>
+          {isClosed ? null : (
+            <button
+              type="button"
+              onClick={handleApplyClick}
+              className="rounded-md bg-white px-6 py-2 text-[18px] font-bold text-primary hover:bg-white/90"
+            >
+              지원하기
+            </button>
+          )}
         </div>
       </main>
     </div>
