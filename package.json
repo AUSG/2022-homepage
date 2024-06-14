@@ -13,6 +13,7 @@
   "dependencies": {
     "@types/react-modal": "^3.13.1",
     "clsx": "^1.2.1",
+    "dayjs": "^1.11.11",
     "embla-carousel-react": "^7.0.2",
     "next": "^12.2.5",
     "next-seo": "^5.4.0",
