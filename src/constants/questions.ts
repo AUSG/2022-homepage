@@ -2,11 +2,12 @@
 // https://www.ttmkt.com/kr/tools/markdown-to-html/
 
 const QUESTIONS = [
-  {
-    title: '현재 모집 중인가요?',
-    description:
-      '<p>2023년 7기 모집은 종료되었어요. 2024년 하반기에 찾아올 8기 모집을 기대해 주세요!</p>',
-  },
+  // 리크루팅 끝나면 주석 해제
+  // {
+  //   title: '현재 모집 중인가요?',
+  //   description:
+  //     '<p>2023년 7기 모집은 종료되었어요. 2024년 하반기에 찾아올 8기 모집을 기대해 주세요!</p>',
+  // },
   {
     title: '문의사항이 있어요.',
     description:
