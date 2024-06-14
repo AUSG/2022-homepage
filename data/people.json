@@ -217,7 +217,7 @@
       "name_ko": "김태강",
       "name_en": "grayash",
       "photo": "taekang.jpg",
-      "short_bio": "const career = destiny => {return destiny ? 'developer' : null}",
+      "short_bio": "const career = destiny => destiny ? 'developer' : null",
       "linkedin_username": "grayash",
       "github_username": "grayashh",
       "homepage_url": "https://grayash.vercel.app"
