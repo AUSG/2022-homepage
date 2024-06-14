@@ -2,7 +2,7 @@
 // https://www.ttmkt.com/kr/tools/markdown-to-html/
 
 const QUESTIONS = [
-  // 리크루팅 끝나면 주석 해제
+  // TODO 리크루팅 끝나면 주석 해제
   // {
   //   title: '현재 모집 중인가요?',
   //   description:
