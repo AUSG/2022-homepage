@@ -3,11 +3,13 @@ import Head from 'next/head';
 import clsx from 'clsx';
 
 import AboutBigChat from '@/src/_pages/Activities/AboutBigChat';
-import AboutStudy from '@/src/_pages/Activities/AboutStudy';
 import Header from '@/src/components/Header';
+import AboutAusgCon from '@/src/_pages/Activities/AboutAusgCon';
 
 const Activities = () => {
-  const [currentTab, setCurrentTab] = useState<'bigchat' | 'study'>('bigchat');
+  const [currentTab, setCurrentTab] = useState<'bigchat' | 'ausgcon'>(
+    'bigchat'
+  );
 
   return (
     <>
@@ -22,27 +24,29 @@ const Activities = () => {
           </h1>
         </div>
 
-        {/* <div className="mt-6 flex items-center"> */}
-        {/*  <div */}
-        {/*    className={clsx( */}
-        {/*      currentTab === 'bigchat' && 'border-b-[6px] border-b-gray-800', */}
-        {/*      'flex-1 cursor-pointer p-1 text-center font-semibold' */}
-        {/*    )} */}
-        {/*  > */}
-        {/*    BIG CHAT */}
-        {/*  </div> */}
-        {/*  <div */}
-        {/*    className={clsx( */}
-        {/*      currentTab === 'study' && 'border-b-[6px] border-b-gray-800', */}
-        {/*      'flex-1 cursor-pointer p-1 text-center font-semibold' */}
-        {/*    )} */}
-        {/*  > */}
-        {/*    STUDY */}
-        {/*  </div> */}
-        {/* </div> */}
+        <div className="mt-6 flex items-center">
+          <div
+            className={clsx(
+              currentTab === 'bigchat' && 'border-b-[6px] border-b-gray-800',
+              'flex-1 cursor-pointer p-1 text-center font-semibold'
+            )}
+            onClick={() => setCurrentTab('bigchat')}
+          >
+            BIG CHAT
+          </div>
+          <div
+            className={clsx(
+              currentTab === 'ausgcon' && 'border-b-[6px] border-b-gray-800',
+              'flex-1 cursor-pointer p-1 text-center font-semibold'
+            )}
+            onClick={() => setCurrentTab('ausgcon')}
+          >
+            AUSGCON
+          </div>
+        </div>
 
         {currentTab === 'bigchat' && <AboutBigChat />}
-        {currentTab === 'study' && <AboutStudy />}
+        {currentTab === 'ausgcon' && <AboutAusgCon />}
       </main>
     </>
   );

@@ -3,5 +3,18 @@
 @tailwind utilities;
 
 html {
-  @apply text-gray-800 scroll-smooth
+  @apply scroll-smooth text-gray-800;
+}
+
+.embla {
+  --slide-height: 30rem;
+  --slide-spacing: 1rem;
+  --slide-size: 100%;
+}
+.embla__container {
+  @apply ml-[calc(var(--slide-spacing)_*_-1)] flex;
+  backface-visibility: hidden;
+}
+.embla__slide {
+  @apply min-w-0 flex-[0_0_var(--slide-size)] pl-[var(--slide-spacing)];
 }
