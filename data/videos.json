@@ -65,5 +65,23 @@
       "title": "코드 첨삭 부탁드립니다! Sonarlint, Tabnine, Codota 그리고 Amazon CodeGuru",
       "url": "https://youtu.be/N1oU4NPUEfM"
     }
+  ],
+
+  "ausgconVideos": [
+    {
+      "speaker": "박진수",
+      "title": "[AUSGCON 2023] Istio와Cognito를 통한 인증, 인가 및 유저 관리 - 박진수 (데브시스터즈 / AUSG)",
+      "embedUrl": "https://www.youtube.com/embed/0FkNzFYUgtc?si=XwQpaZUbXUhU-NIQ"
+    },
+    {
+      "speaker": "배진수",
+      "title": "[AUSGCON 2023] 이력서를 빛내주는 사이드프로젝트 노하우 - 배진수 (당근마켓 / AUSG)",
+      "embedUrl": "https://www.youtube.com/embed/tnyR9e_aYLk?si=d_Ucnfm_ESX-nnRJ"
+    },
+    {
+      "speaker": "문성혁",
+      "title": "[AUSGCON 2023] 인증의 오아시스, ODIC를 아시나요 - 문성혁(데브시스터즈 / AUSG)",
+      "embedUrl": "https://www.youtube.com/embed/ARmGdX0Gcxg?si=3jOKZFk5rInP4joV"
+    }
   ]
 }
