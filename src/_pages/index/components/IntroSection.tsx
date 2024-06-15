@@ -64,17 +64,17 @@ export default function IntroSection() {
                 <button
                   type="button"
                   onClick={handleApplyClick}
-                  className="rounded-md bg-white px-6 py-2 text-[18px] font-bold text-primary hover:bg-white/90"
+                  className="rounded-md bg-white px-6 py-2 text-[18px] font-bold text-primary duration-200 hover:bg-white/90"
                 >
                   지원하기
                 </button>
               )}
             </div>
             {isClosed ? null : (
-              <div className="flex items-center gap-4">
+              <div className="hidden items-center gap-4 md:flex">
                 <p className="text-[18px] font-bold text-white md:text-[24px]">
                   {isClient
-                    ? `지원 마감까지 ${days}일 ${hours}시간 ${minutes}분 ${seconds}초`
+                    ? `🔥 지원 마감까지 ${days}일 ${hours}시간 ${minutes}분 ${seconds}초 🔥`
                     : null}
                 </p>
               </div>
@@ -89,18 +89,29 @@ export default function IntroSection() {
             className="right-0 animate-floating transition-[translate]"
           />
         </div>
-        <div className="mt-[24px] flex items-center justify-center gap-4 md:hidden">
-          <p className="text-[28px] font-bold text-white md:text-center md:text-[40px]">
-            {isClosed ? '8기 모집이 마감되었습니다.' : '☁️ 8기 모집중 ☁️'}
-          </p>
+        <div className="mt-[24px] flex flex-col items-center justify-center gap-4 md:hidden">
+          <div className="flex gap-4">
+            <p className="text-[28px] font-bold text-white md:text-center md:text-[40px]">
+              {isClosed ? '8기 모집이 마감되었습니다.' : '☁️ 8기 모집중 ☁️'}
+            </p>
+            {isClosed ? null : (
+              <button
+                type="button"
+                onClick={handleApplyClick}
+                className="rounded-md bg-white px-6 py-2 text-[18px] font-bold text-primary hover:bg-white/90"
+              >
+                지원하기
+              </button>
+            )}
+          </div>
           {isClosed ? null : (
-            <button
-              type="button"
-              onClick={handleApplyClick}
-              className="rounded-md bg-white px-6 py-2 text-[18px] font-bold text-primary hover:bg-white/90"
-            >
-              지원하기
-            </button>
+            <div className="flex items-center gap-4 md:hidden">
+              <p className="text-[18px] font-bold text-white md:text-[24px]">
+                {isClient
+                  ? `🔥지원 마감까지 ${days}일 ${hours}시간 ${minutes}분 ${seconds}초🔥`
+                  : null}
+              </p>
+            </div>
           )}
         </div>
       </main>
