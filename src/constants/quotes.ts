@@ -57,6 +57,13 @@ const QUOTES = [
   },
   {
     content:
+      '지금껏 많은 개발 동아리, 커뮤니티 활동을 해왔지만 결국 AUSG에 정착했습니다. 묵직한 머리와 소중한 사람들을 동시에 얻을 수 있는 곳!',
+    name: '이다은',
+    profile: 'AUSG 7기, 카카오 Backend Engineer',
+    imagePath: '/people/danna.jpg',
+  },
+  {
+    content:
       '대학생 때 AUSG에 합류해 좋은 사람들을 만나고 성장할 수 있었던 건 큰 행운이었어요. 다양한 분야의 학생 개발자들과 네트워킹할 수 있는 AUSG 활동은 제가 첫 커리어를 정하는 데나 기술 공부를 할 때 좋은 밑바탕이 되어주었어요. 지금도 항상 좋은 영향을 받고 있네요 ㅎㅎ 우리 AUSG에서 같이 놀아요!',
     name: '김윤서',
     profile: 'AUSG 6기, AWS Solutions Architect',
@@ -68,6 +75,13 @@ const QUOTES = [
     name: '황성찬',
     profile: 'AUSG 5기, 네이버 클라우드',
     imagePath: '/people/prayme.jpg',
+  },
+  {
+    content:
+      '개발과 클라우드라는 세상을 얼마나 좁게 보고있었는지 여기서 깨달았습니다. 아우쓱을 통해 시야를 넓히고 멋진 인연들을 만들 수 있었습니다!',
+    name: '오규태',
+    profile: 'AUSG 4기, 국방통합데이터센터',
+    imagePath: '/people/einokt.jpg',
   },
   {
     content:
