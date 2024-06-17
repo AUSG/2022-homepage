@@ -1,19 +1,27 @@
 import useEmblaCarousel from 'embla-carousel-react';
 
-import BigChatBackground from 'public/images/2021-bigchat-background.svg';
 import YoutubeIcon from 'public/icons/youtube.svg';
 import ArrowRightIcon from 'public/icons/arrow_right.svg';
 import ShareImage from 'public/images/share.svg';
 import BooksImage from 'public/images/books.svg';
 
 import videoData from 'data/videos.json';
+import { usePrevNextButtons } from '../hooks/usePrevNextButton';
+import BigChatBackground from '../index/components/BigChatBackground';
 
 const AboutBigChat = () => {
-  const [emblaRef] = useEmblaCarousel();
+  const [emblaRef, emblaApi] = useEmblaCarousel();
+
+  const {
+    prevBtnDisabled,
+    nextBtnDisabled,
+    onPrevButtonClick,
+    onNextButtonClick,
+  } = usePrevNextButtons(emblaApi);
 
   return (
     <>
-      <div className="bg-primary p-5 md:py-20 md:text-center">
+      <div className="h-[280px] bg-primary p-5 md:py-20 md:text-center">
         <h2 className="text-2xl font-semibold text-white md:text-4xl">
           경험과 노하우를 공유하는 <br className="md:hidden" />
           BIG CHAT
@@ -63,7 +71,6 @@ const AboutBigChat = () => {
             </div>
           </div>
         </div>
-
         <div className="mx-8 mt-16 hidden select-none gap-12 lg:flex">
           <div className="flex flex-1 justify-between rounded-3xl bg-gray-100 p-5">
             <div className="mr-6">
@@ -93,6 +100,57 @@ const AboutBigChat = () => {
         </div>
 
         <h3 className="ml-5 mt-8 text-lg font-bold md:ml-8 md:text-2xl lg:mt-16">
+          Latest Big Chat Videos
+        </h3>
+        <div className="embla mt-3">
+          <div className="overflow-hidden" ref={emblaRef}>
+            <div className="embla__container touch-pan-x">
+              {videoData.bigChatVideos.map(video => (
+                <div className="embla__slide" key={video.speaker}>
+                  <iframe
+                    className="flex h-[var(--slide-height)] w-full"
+                    src={video.embedUrl}
+                    title="YouTube video player"
+                    frameBorder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowFullScreen
+                  />
+                </div>
+              ))}
+            </div>
+          </div>
+          <div className="flex w-full justify-end p-4">
+            <div className="flex gap-6">
+              <button
+                className="disabled:text-gray-200"
+                type="button"
+                onClick={onPrevButtonClick}
+                disabled={prevBtnDisabled}
+              >
+                <svg width={32} height={32} viewBox="0 0 532 532">
+                  <path
+                    fill="currentColor"
+                    d="M355.66 11.354c13.793-13.805 36.208-13.805 50.001 0 13.785 13.804 13.785 36.238 0 50.034L201.22 266l204.442 204.61c13.785 13.805 13.785 36.239 0 50.044-13.793 13.796-36.208 13.796-50.002 0a5994246.277 5994246.277 0 0 0-229.332-229.454 35.065 35.065 0 0 1-10.326-25.126c0-9.2 3.393-18.26 10.326-25.2C172.192 194.973 332.731 34.31 355.66 11.354Z"
+                  />
+                </svg>
+              </button>
+              <button
+                className="disabled:text-gray-200"
+                type="button"
+                onClick={onNextButtonClick}
+                disabled={nextBtnDisabled}
+              >
+                <svg width={32} height={32} viewBox="0 0 532 532">
+                  <path
+                    fill="currentColor"
+                    d="M176.34 520.646c-13.793 13.805-36.208 13.805-50.001 0-13.785-13.804-13.785-36.238 0-50.034L330.78 266 126.34 61.391c-13.785-13.805-13.785-36.239 0-50.044 13.793-13.796 36.208-13.796 50.002 0 22.928 22.947 206.395 206.507 229.332 229.454a35.065 35.065 0 0 1 10.326 25.126c0 9.2-3.393 18.26-10.326 25.2-45.865 45.901-206.404 206.564-229.332 229.52Z"
+                  />
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+        <h3 className="ml-5 mt-8 text-lg font-bold md:ml-8 md:text-2xl lg:mt-16">
           BIG CHAT Featured
         </h3>
         <div className="mt-3 flex overflow-x-scroll px-5 pb-4 md:mt-12 md:grid md:grid-cols-4 md:gap-4 md:px-8 lg:grid-cols-5">
@@ -105,7 +163,7 @@ const AboutBigChat = () => {
               className="relative mr-4 h-[240px] flex-shrink-0 basis-[180px] overflow-hidden rounded-[20px]
                 md:h-auto md:basis-auto"
             >
-              <BigChatBackground width="100%" height="100%" />
+              <BigChatBackground year={video.year} />
               <div className="absolute inset-x-1 bottom-1 rounded-[20px] bg-gray-900 bg-opacity-70 p-2.5 text-white">
                 <div className="text-xs">{video.speaker}</div>
                 <div className="mt-0.5 text-sm font-semibold">
@@ -115,7 +173,6 @@ const AboutBigChat = () => {
             </a>
           ))}
         </div>
-
         <div className="mb-16 mt-4 flex justify-center md:mt-8">
           <a
             href="https://www.youtube.com/channel/UCaN1L9bj7pCuv1PiKzx-2rQ"
