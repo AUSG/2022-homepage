@@ -150,6 +150,7 @@ const AboutBigChat = () => {
             </div>
           </div>
         </div>
+
         <h3 className="ml-5 mt-8 text-lg font-bold md:ml-8 md:text-2xl lg:mt-16">
           BIG CHAT Featured
         </h3>
