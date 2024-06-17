@@ -1,69 +1,100 @@
 {
   "videos": [
     {
+      "speaker": "강시온",
+      "title": "피할 수 없으면 즐겨라! - 강시온 (AUSG)",
+      "url": "https://www.youtube.com/watch?v=-vJlD6ISKuU",
+      "year": 2023
+    },
+    {
+      "speaker": "김수경",
+      "title": "머지몬 3단 진화 : 영상 병합 SSE 적용기 - 김수경 (AUSG)",
+      "url": "https://www.youtube.com/watch?v=Ga2ju4emxk0",
+      "year": 2023
+    },
+    {
+      "speaker": "오형근",
+      "title": "와일드카드 서브도메인을 향한 여정 - 오형근(AUSG)",
+      "url": "https://www.youtube.com/watch?v=wOCS-AVNl4Y",
+      "year": 2023
+    },
+    {
       "speaker": "배진수",
       "title": "AWS Amplify로 BaaS 빠르게 맛보기",
-      "url": "https://youtu.be/PXJ2B9XhnJw"
+      "url": "https://youtu.be/PXJ2B9XhnJw",
+      "year": 2021
     },
     {
       "speaker": "정승호",
       "title": "Terraform을 이용한 IaC 찍먹해보기",
-      "url": "https://youtu.be/DZqw2IhEDy8"
+      "url": "https://youtu.be/DZqw2IhEDy8",
+      "year": 2021
     },
     {
       "speaker": "길재은",
       "title": "나의 작고 귀여운 Load Balancer",
-      "url": "https://youtu.be/5MpzLkxYJMc"
+      "url": "https://youtu.be/5MpzLkxYJMc",
+      "year": 2021
     },
     {
       "speaker": "우수연",
       "title": "AWS Auto Scaling으로 리소스 사용률 최적화",
-      "url": "https://youtu.be/ExgIxqltp88"
+      "url": "https://youtu.be/ExgIxqltp88",
+      "year": 2021
     },
     {
       "speaker": "박재균",
       "title": "AWS가 돈을 복사해준다니까? High frequency trading with Kinesis Data Analytics",
-      "url": "https://youtu.be/0TPKlOSmE0I"
+      "url": "https://youtu.be/0TPKlOSmE0I",
+      "year": 2021
     },
     {
       "speaker": "김은수",
       "title": "AWS IVS로 Live Streaming 웹 앱 만들기",
-      "url": "https://youtu.be/3KYfaop7Mgg"
+      "url": "https://youtu.be/3KYfaop7Mgg",
+      "year": 2021
     },
     {
       "speaker": "김민태",
       "title": "허리를 피세요! 척추요청 feat. AWS Lambda + EventBridge",
-      "url": "https://youtu.be/m9ZwHqHK2yA"
+      "url": "https://youtu.be/m9ZwHqHK2yA",
+      "year": 2021
     },
     {
       "speaker": "권주희",
       "title": "EKS란 무엇인가.",
-      "url": "https://youtu.be/vXHK8wEdmUM"
+      "url": "https://youtu.be/vXHK8wEdmUM",
+      "year": 2021
     },
     {
       "speaker": "김성익",
       "title": "Pulumi로 시작하는 IaC",
-      "url": "https://youtu.be/GMbVfdDNdiU"
+      "url": "https://youtu.be/GMbVfdDNdiU",
+      "year": 2021
     },
     {
       "speaker": "오규태",
       "title": "라즈베리파이로 Kinesis Video Stream 사용하기",
-      "url": "https://youtu.be/Rfy_NO0uBLo"
+      "url": "https://youtu.be/Rfy_NO0uBLo",
+      "year": 2021
     },
     {
       "speaker": "김다롬",
       "title": "VPC가 뭐지?",
-      "url": "https://youtu.be/-4VzzqMBw-E"
+      "url": "https://youtu.be/-4VzzqMBw-E",
+      "year": 2021
     },
     {
       "speaker": "김정모",
       "title": "Amazon CloudFront로 간단하게 CDN 배포하기",
-      "url": "https://youtu.be/chrCUQvzAZg"
+      "url": "https://youtu.be/chrCUQvzAZg",
+      "year": 2021
     },
     {
       "speaker": "문성혁",
       "title": "코드 첨삭 부탁드립니다! Sonarlint, Tabnine, Codota 그리고 Amazon CodeGuru",
-      "url": "https://youtu.be/N1oU4NPUEfM"
+      "url": "https://youtu.be/N1oU4NPUEfM",
+      "year": 2021
     }
   ],
 
@@ -82,6 +113,24 @@
       "speaker": "문성혁",
       "title": "[AUSGCON 2023] 인증의 오아시스, ODIC를 아시나요 - 문성혁(데브시스터즈 / AUSG)",
       "embedUrl": "https://www.youtube.com/embed/ARmGdX0Gcxg?si=3jOKZFk5rInP4joV"
+    }
+  ],
+
+  "bigChatVideos": [
+    {
+      "speaker": "강시온",
+      "title": "[BIGCHAT 2023] 피할 수 없으면 즐겨라! - 강시온 (AUSG)",
+      "embedUrl": "https://www.youtube.com/embed/-vJlD6ISKuU?si=FO0cjYUZ97F_A_H6"
+    },
+    {
+      "speaker": "김수경",
+      "title": "[BIGCHAT 2023] 머지몬 3단 진화 : 영상 병합 SSE 적용기 - 김수경 (AUSG)",
+      "embedUrl": "https://www.youtube.com/embed/Ga2ju4emxk0?si=YhQEAPKP-TiDjid8"
+    },
+    {
+      "speaker": "오형근",
+      "title": "[BIGCHAT 2023] 와일드카드 서브도메인을 향한 여정 - 오형근(AUSG)",
+      "embedUrl": "https://www.youtube.com/embed/wOCS-AVNl4Y?si=v-9GfWv3Lvoq9tby"
     }
   ]
 }
