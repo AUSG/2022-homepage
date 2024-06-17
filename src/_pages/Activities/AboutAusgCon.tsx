@@ -17,7 +17,7 @@ const AboutAusgCon = () => {
 
   return (
     <>
-      <div className="bg-primary p-5 md:py-20 md:text-center">
+      <div className="h-[280px] bg-primary p-5 md:py-20 md:text-center">
         <h2 className="text-2xl font-semibold text-white md:text-4xl">
           아우쓱이 세상에 공유하고자 하는 가치 <br className="md:hidden" />
           AUSGCON
@@ -35,7 +35,7 @@ const AboutAusgCon = () => {
 
       <div className="lg:mx-auto lg:max-w-screen-xl">
         <h3 className="ml-5 mt-8 text-lg font-bold md:ml-8 md:text-2xl lg:mt-16">
-          AUSGCON 영상
+          Latest AUSGCON Videos
         </h3>
         <div className="embla mt-3">
           <div className="overflow-hidden" ref={emblaRef}>
