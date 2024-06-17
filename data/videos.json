@@ -1,15 +1,21 @@
 {
   "videos": [
     {
+      "speaker": "김연수",
+      "title": "[BIGCHAT 2023] 단 두줄로 AI 배포하기 - 김연수 (AUSG)",
+      "url": "https://www.youtube.com/watch?v=GzQCS04w_b8",
+      "year": 2023
+    },
+    {
       "speaker": "강시온",
-      "title": "피할 수 없으면 즐겨라! - 강시온 (AUSG)",
-      "url": "https://www.youtube.com/watch?v=-vJlD6ISKuU",
+      "title": "오픈소스 세계로 전생 - 강시온 (AUSG)",
+      "url": "https://www.youtube.com/watch?v=l8TO45Np4TE",
       "year": 2023
     },
     {
       "speaker": "김수경",
       "title": "머지몬 3단 진화 : 영상 병합 SSE 적용기 - 김수경 (AUSG)",
-      "url": "https://www.youtube.com/watch?v=Ga2ju4emxk0",
+      "url": "https://www.youtube.com/watch?v=zWNk5yZztNI",
       "year": 2023
     },
     {
@@ -100,6 +106,11 @@
 
   "ausgconVideos": [
     {
+      "speaker": "우수연",
+      "title": "[AUSGCON 2023] 내 애플리케이션의 컨테이너화, AWS에서 시작하기 - 우수연 (IBM / AUSG)",
+      "embedUrl": "https://www.youtube.com/embed/K4AZpaEFkmg?si=EYTjLx0-xewWgmf7"
+    },
+    {
       "speaker": "박진수",
       "title": "[AUSGCON 2023] Istio와Cognito를 통한 인증, 인가 및 유저 관리 - 박진수 (데브시스터즈 / AUSG)",
       "embedUrl": "https://www.youtube.com/embed/0FkNzFYUgtc?si=XwQpaZUbXUhU-NIQ"
@@ -118,14 +129,19 @@
 
   "bigChatVideos": [
     {
+      "speaker": "김연수",
+      "title": "[BIGCHAT 2023] 단 두줄로 AI 배포하기 - 김연수 (AUSG)",
+      "embedUrl": "https://www.youtube.com/embed/GzQCS04w_b8?si=l1JtG3rpdG-JdtP1"
+    },
+    {
       "speaker": "강시온",
-      "title": "[BIGCHAT 2023] 피할 수 없으면 즐겨라! - 강시온 (AUSG)",
-      "embedUrl": "https://www.youtube.com/embed/-vJlD6ISKuU?si=FO0cjYUZ97F_A_H6"
+      "title": "[BIGCHAT 2023] 오픈소스 세계로 전생 - 강시온 (AUSG)",
+      "embedUrl": "https://www.youtube.com/embed/l8TO45Np4TE?si=4nNiOXGVMzzYMhEb"
     },
     {
       "speaker": "김수경",
       "title": "[BIGCHAT 2023] 머지몬 3단 진화 : 영상 병합 SSE 적용기 - 김수경 (AUSG)",
-      "embedUrl": "https://www.youtube.com/embed/Ga2ju4emxk0?si=YhQEAPKP-TiDjid8"
+      "embedUrl": "https://www.youtube.com/embed/zWNk5yZztNI?si=d0TilId3N2l2fA-M"
     },
     {
       "speaker": "오형근",
