@@ -1,10 +1,8 @@
 import Link from 'next/link';
-import Card from '@/src/components/Card';
-// import ArrowRightIcon from 'public/icons/arrow_right.svg';
 import React from 'react';
 import ArrowRight from '../../../../public/icons/arrow_right.svg';
 import videoData from '../../../../data/videos.json';
-import BigChatBackground from '../../../../public/images/2021-bigchat-background.svg';
+import BigChatBackground from './BigChatBackground';
 
 // TODO: fetch data from API server
 const posts = [
@@ -47,7 +45,7 @@ export default function BlogSection() {
                   rel="noreferrer"
                   className="relative mr-4 flex-shrink-0 flex-grow basis-36 overflow-hidden rounded-[20px]"
                 >
-                  <BigChatBackground width="100%" height="100%" />
+                  <BigChatBackground year={video.year} />
                   <div className="absolute inset-x-1 bottom-1 rounded-[20px] bg-gray-900 bg-opacity-70 p-2.5 text-white">
                     <div className="text-xs">{video.speaker}</div>
                     <div
