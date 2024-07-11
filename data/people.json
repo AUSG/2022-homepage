@@ -1,6 +1,15 @@
 {
   "people": [
     {
+      "year": "8th",
+      "name_ko": "최용환",
+      "name_en": "Yany Choi",
+      "photo": "yanychoi.jpeg",
+      "short_bio": "행운은 준비된 자에게 찾아온다",
+      "github_username": "YanyChoi",
+      "linkedin_username": "yany-choi"
+    },
+    {
       "year": "7th",
       "name_ko": "이다은",
       "name_en": "Danna Lee",
