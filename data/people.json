@@ -2,6 +2,14 @@
   "people": [
     {
       "year": "8th",
+      "name_ko": "도정민",
+      "name_en": "Jeongmin Do",
+      "photo": "dojeongmin.jpeg",
+      "short_bio": "온 세상이 네잎클로버야🍀",
+      "github_username": "silverstar0727"
+    },
+    {
+      "year": "8th",
       "name_ko": "최용환",
       "name_en": "Yany Choi",
       "photo": "yanychoi.jpeg",
