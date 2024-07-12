@@ -2,6 +2,14 @@
   "people": [
     {
       "year": "8th",
+      "name_ko": "이승헌",
+      "name_en": "Seungheon Lee",
+      "photo": "seungheon.jpeg",
+      "short_bio": "내가 하는 모든 일을 퀘스트처럼 즐겨볼래",
+      "github_username": "dev-Crayon"
+    },
+    {
+      "year": "8th",
       "name_ko": "도정민",
       "name_en": "Jeongmin Do",
       "photo": "dojeongmin.jpeg",
