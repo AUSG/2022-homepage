@@ -2,6 +2,23 @@
   "people": [
     {
       "year": "8th",
+      "name_ko": "이승헌",
+      "name_en": "Seungheon Lee",
+      "photo": "seungheon.jpeg",
+      "short_bio": "내가 하는 모든 일을 퀘스트처럼 즐겨볼래",
+      "github_username": "dev-Crayon"
+    },
+    {
+      "year": "8th",
+      "name_ko": "김보겸",
+      "name_en": "Bokyum Kim",
+      "photo": "kyum.png",
+      "short_bio": "타인의 생산성을 향상시키는 환경을 구축하는 데에서 기쁨을 느낍니다",
+      "github_username": "seedspirit",
+      "linkedin_username": "bokyum-kim-725780207"
+    },
+    {
+      "year": "8th",
       "name_ko": "도정민",
       "name_en": "Jeongmin Do",
       "photo": "dojeongmin.jpeg",
