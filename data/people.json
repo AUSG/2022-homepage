@@ -2,6 +2,14 @@
   "people": [
     {
       "year": "8th",
+      "name_ko": "박가영",
+      "name_en": "Gayeong Park",
+      "photo": "gayeong.jpg",
+      "short_bio": "다양하게 도전해 보는 것을 좋아합니다.",
+      "github_username": "ParkIsComing"
+    },
+    {
+      "year": "8th",
       "name_ko": "이승헌",
       "name_en": "Seungheon Lee",
       "photo": "seungheon.jpeg",
