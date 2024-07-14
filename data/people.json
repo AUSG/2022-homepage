@@ -12,6 +12,16 @@
     },
     {
       "year": "8th",
+      "name_ko": "박예준",
+      "name_en": "Yejun Park",
+      "photo": "yejun.png",
+      "short_bio": "Try my best. Always be happy",
+      "github_username": "jun02160",
+      "linkedin_username": "yejun-park-15a0eb",
+      "homepage_url": "https://velog.io/@dev_tmb"
+    },
+    {
+      "year": "8th",
       "name_ko": "서찬혁",
       "name_en": "Chanhyeok Seo",
       "photo": "chanhyeok.jpeg",
@@ -106,6 +116,16 @@
       "github_username": "synoti21",
       "linkedin_username": "jiwan-ahn-8b3293265",
       "homepage_url": "https://velog.io/@synoti21"
+    },
+    {
+      "year": "8th",
+      "name_ko": "최은수",
+      "name_en": "Eunsu Choi",
+      "photo": "eunsu.jpeg",
+      "short_bio": "후회 없는 내일을 위해, 오늘도 최선을 다해 나아갑니다 🍏",
+      "github_username": "eunsu02",
+      "linkedin_username": "eunsu-choi-9597a4315",
+      "homepage_url": "https://velog.io/@eunsu02"
     },
     {
       "year": "7th",
