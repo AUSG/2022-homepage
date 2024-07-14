@@ -2,6 +2,16 @@
   "people": [
     {
       "year": "8th",
+      "name_ko": "서찬혁",
+      "name_en": "Chanhyeok Seo",
+      "photo": "chanhyeok.jpeg",
+      "short_bio": "Everything is learnable!",
+      "github_username": "mushroom1324",
+      "linkedin_username": "chanhyeok-seo-8650552b7",
+      "homepage_url": "https://popcorn-overflow.tistory.com/"
+    },
+    {
+      "year": "8th",
       "name_ko": "이승헌",
       "name_en": "Seungheon Lee",
       "photo": "seungheon.jpeg",
