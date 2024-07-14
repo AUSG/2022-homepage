@@ -1,6 +1,34 @@
 {
   "people": [
     {
+      "year": "8th", 
+      "name_ko": "이정진", 
+      "name_en": "Jeongjin Lee",
+      "photo": "jeongjin.jpg",
+      "short_bio": "사용자 경험을 최우선으로 생각하는 개발자",
+      "linkedin_username": "leejeongjin",
+      "github_username": "dl-00-e8", 
+      "homepage_url": "https://velog.io/@dl-00-e8"
+    },
+    {
+      "year": "8th",
+      "name_ko": "박예준",
+      "name_en": "Yejun Park",
+      "photo": "yejun.png",
+      "short_bio": "Try my best. Always be happy",
+      "github_username": "jun02160",
+      "linkedin_username": "yejun-park-15a0eb",
+      "homepage_url": "https://velog.io/@dev_tmb"
+    },
+    {
+      "year": "8th",
+      "name_ko": "인지원",
+      "name_en": "Jiwon In",
+      "photo": "jiwonin.jpeg",
+      "short_bio": "Life is LGTM\uD83D\uDE0E",
+      "github_username": "jiixon"
+    },
+    {
       "year": "8th",
       "name_ko": "길상혁",
       "name_en": "Sanghyuck Kill",
@@ -105,6 +133,16 @@
       "github_username": "synoti21",
       "linkedin_username": "jiwan-ahn-8b3293265",
       "homepage_url": "https://velog.io/@synoti21"
+    },
+    {
+      "year": "8th",
+      "name_ko": "최은수",
+      "name_en": "Eunsu Choi",
+      "photo": "eunsu.jpeg",
+      "short_bio": "후회 없는 내일을 위해, 오늘도 최선을 다해 나아갑니다 🍏",
+      "github_username": "eunsu02",
+      "linkedin_username": "eunsu-choi-9597a4315",
+      "homepage_url": "https://velog.io/@eunsu02"
     },
     {
       "year": "7th",
