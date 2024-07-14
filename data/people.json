@@ -2,6 +2,14 @@
   "people": [
     {
       "year": "8th",
+      "name_ko": "김지원",
+      "name_en": "Jiwon Kim",
+      "photo": "jiwonKim.jpg",
+      "short_bio": "도전을 즐기는 개발자",
+      "github_username": "JiwonKim08"
+    },
+    {
+      "year": "8th",
       "name_ko": "이승헌",
       "name_en": "Seungheon Lee",
       "photo": "seungheon.jpeg",
