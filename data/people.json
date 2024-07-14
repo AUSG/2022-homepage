@@ -2,6 +2,15 @@
   "people": [
     {
       "year": "8th",
+      "name_ko": "이현제",
+      "name_en": "Hyunje Lee",
+      "photo": "hyunje.png",
+      "short_bio": "기쁨은 나누면 배가 돼요 🤗",
+      "github_username": "leehjhjhj",
+      "homepage_url": "https://imasimdi.dev"
+    },
+    {
+      "year": "8th",
       "name_ko": "이승헌",
       "name_en": "Seungheon Lee",
       "photo": "seungheon.jpeg",
