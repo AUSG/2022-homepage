@@ -2,6 +2,16 @@
   "people": [
     {
       "year": "8th",
+      "name_ko": "박예준",
+      "name_en": "Yejun Park",
+      "photo": "yejun.png",
+      "short_bio": "Try my best. Always be happy",
+      "github_username": "jun02160",
+      "linkedin_username": "yejun-park-15a0eb",
+      "homepage_url": "https://velog.io/@dev_tmb"
+    },
+    {
+      "year": "8th",
       "name_ko": "서찬혁",
       "name_en": "Chanhyeok Seo",
       "photo": "chanhyeok.jpeg",
