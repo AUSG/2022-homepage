@@ -22,6 +22,14 @@
     },
     {
       "year": "8th",
+      "name_ko": "인지원",
+      "name_en": "Jiwon In",
+      "photo": "jiwonin.jpeg",
+      "short_bio": "Life is LGTM\uD83D\uDE0E",
+      "github_username": "jiixon"
+    },
+    {
+      "year": "8th",
       "name_ko": "서찬혁",
       "name_en": "Chanhyeok Seo",
       "photo": "chanhyeok.jpeg",
