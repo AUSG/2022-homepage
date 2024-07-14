@@ -2,6 +2,15 @@
   "people": [
     {
       "year": "8th",
+      "name_ko": "공진성",
+      "name_en": "Jinseong Kong",
+      "photo": "jinseong.jpg",
+      "short_bio": "끊임없이 우물밖을 탐구하는 개구리",
+      "github_username": "kkardd",
+      "homepage_url": "https://kkardd.github.io"
+    },
+    {
+      "year": "8th",
       "name_ko": "이현제",
       "name_en": "Hyunje Lee",
       "photo": "hyunje.png",
