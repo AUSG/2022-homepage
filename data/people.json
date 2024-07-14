@@ -12,6 +12,40 @@
     },
     {
       "year": "8th",
+      "name_ko": "공진성",
+      "name_en": "Jinseong Kong",
+      "photo": "jinseong.jpg",
+      "short_bio": "끊임없이 우물밖을 탐구하는 개구리",
+      "github_username": "kkardd",
+      "homepage_url": "https://kkardd.github.io"
+    },
+    {
+      "year": "8th",
+      "name_ko": "이현제",
+      "name_en": "Hyunje Lee",
+      "photo": "hyunje.png",
+      "short_bio": "기쁨은 나누면 배가 돼요 🤗",
+      "github_username": "leehjhjhj",
+      "homepage_url": "https://imasimdi.dev"
+    },
+    {
+      "year": "8th",
+      "name_ko": "박가영",
+      "name_en": "Gayeong Park",
+      "photo": "gayeong_2.jpg",
+      "short_bio": "다양하게 도전해 보는 것을 좋아합니다.",
+      "github_username": "ParkIsComing"
+    },
+    {
+      "year": "8th",
+      "name_ko": "김지원",
+      "name_en": "Jiwon Kim",
+      "photo": "jiwonKim.jpg",
+      "short_bio": "도전을 즐기는 개발자",
+      "github_username": "JiwonKim08"
+    },
+    {
+      "year": "8th",
       "name_ko": "이승헌",
       "name_en": "Seungheon Lee",
       "photo": "seungheon.jpeg",
