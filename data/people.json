@@ -1,6 +1,132 @@
 {
   "people": [
     {
+      "year": "8th", 
+      "name_ko": "김대휘", 
+      "name_en": "Daehwi Kim",
+      "photo": "daehwi.jpeg",
+      "short_bio": "이유는 방법보다 강력하다",
+      "linkedin_username": "daehwi-kim-4ab106295",
+      "github_username": "kimday0326"
+    },
+    {
+      "year": "8th", 
+      "name_ko": "이정진", 
+      "name_en": "Jeongjin Lee",
+      "photo": "jeongjin.jpg",
+      "short_bio": "사용자 경험을 최우선으로 생각하는 개발자",
+      "linkedin_username": "leejeongjin",
+      "github_username": "dl-00-e8", 
+      "homepage_url": "https://velog.io/@dl-00-e8"
+    },
+    {
+      "year": "8th",
+      "name_ko": "이은지",
+      "name_en": "Eunji Lee",
+      "photo": "EunjiLee.png",
+      "short_bio": "Make it all Sage with Bedrock",
+      "github_username": "maeilej",
+      "linkedin_username": "eunji-lee-448338281"
+    },
+    {
+      "year": "8th",
+      "name_ko": "박예준",
+      "name_en": "Yejun Park",
+      "photo": "yejun.png",
+      "short_bio": "Try my best. Always be happy",
+      "github_username": "jun02160",
+      "linkedin_username": "yejun-park-15a0eb",
+      "homepage_url": "https://velog.io/@dev_tmb"
+    },
+    {
+      "year": "8th",
+      "name_ko": "인지원",
+      "name_en": "Jiwon In",
+      "photo": "jiwonin.jpeg",
+      "short_bio": "Life is LGTM\uD83D\uDE0E",
+      "github_username": "jiixon"
+    },
+    {
+      "year": "8th",
+      "name_ko": "길상혁",
+      "name_en": "Sanghyuck Kill",
+      "photo": "kill.jpg",
+      "short_bio": "노는게 제일좋아~",
+      "github_username": "killsanghyuck",
+      "linkedin_username": "gillsang"
+    },
+    {
+      "year": "8th",
+      "name_ko": "김도훈",
+      "name_en": "Dohun Kim",
+      "photo": "dohun.jpg",
+      "short_bio": "꾸준 그 잡채",
+      "linkedin_username": "dohun-kim-8b0953308",
+      "github_username": "kdhhuns2000",
+      "homepage_url": "https://velog.io/@kdhhuns2000/"
+    },
+    {
+      "year": "8th",
+      "name_ko": "서찬혁",
+      "name_en": "Chanhyeok Seo",
+      "photo": "chanhyeok.jpeg",
+      "short_bio": "Everything is learnable!",
+      "github_username": "mushroom1324",
+      "linkedin_username": "chanhyeok-seo-8650552b7",
+      "homepage_url": "https://popcorn-overflow.tistory.com/"
+    },
+    {
+      "year": "8th",
+      "name_ko": "공진성",
+      "name_en": "Jinseong Kong",
+      "photo": "jinseong.jpg",
+      "short_bio": "끊임없이 우물밖을 탐구하는 개구리",
+      "github_username": "kkardd",
+      "homepage_url": "https://kkardd.github.io"
+    },
+    {
+      "year": "8th",
+      "name_ko": "이현제",
+      "name_en": "Hyunje Lee",
+      "photo": "hyunje.png",
+      "short_bio": "기쁨은 나누면 배가 돼요 🤗",
+      "github_username": "leehjhjhj",
+      "homepage_url": "https://imasimdi.dev"
+    },
+    {
+      "year": "8th",
+      "name_ko": "박가영",
+      "name_en": "Gayeong Park",
+      "photo": "gayeong_2.jpg",
+      "short_bio": "다양하게 도전해 보는 것을 좋아합니다.",
+      "github_username": "ParkIsComing"
+    },
+    {
+      "year": "8th",
+      "name_ko": "김지원",
+      "name_en": "Jiwon Kim",
+      "photo": "jiwonKim.jpg",
+      "short_bio": "도전을 즐기는 개발자",
+      "github_username": "JiwonKim08"
+    },
+    {
+      "year": "8th",
+      "name_ko": "이승헌",
+      "name_en": "Seungheon Lee",
+      "photo": "seungheon.jpeg",
+      "short_bio": "내가 하는 모든 일을 퀘스트처럼 즐겨볼래",
+      "github_username": "dev-Crayon"
+    },
+    {
+      "year": "8th",
+      "name_ko": "김보겸",
+      "name_en": "Bokyum Kim",
+      "photo": "kyum.png",
+      "short_bio": "타인의 생산성을 향상시키는 환경을 구축하는 데에서 기쁨을 느낍니다",
+      "github_username": "seedspirit",
+      "linkedin_username": "bokyum-kim-725780207"
+    },
+    {
       "year": "8th",
       "name_ko": "박지혜",
       "name_en": "Jihye Park",
@@ -44,6 +170,16 @@
       "github_username": "synoti21",
       "linkedin_username": "jiwan-ahn-8b3293265",
       "homepage_url": "https://velog.io/@synoti21"
+    },
+    {
+      "year": "8th",
+      "name_ko": "최은수",
+      "name_en": "Eunsu Choi",
+      "photo": "eunsu.jpeg",
+      "short_bio": "후회 없는 내일을 위해, 오늘도 최선을 다해 나아갑니다 🍏",
+      "github_username": "eunsu02",
+      "linkedin_username": "eunsu-choi-9597a4315",
+      "homepage_url": "https://velog.io/@eunsu02"
     },
     {
       "year": "7th",
