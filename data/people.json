@@ -10,8 +10,8 @@
       "github_username": "SuminSSon"
     },
     {
-      "year": "8th", 
-      "name_ko": "김대휘", 
+      "year": "8th",
+      "name_ko": "김대휘",
       "name_en": "Daehwi Kim",
       "photo": "daehwi.jpeg",
       "short_bio": "이유는 방법보다 강력하다",
@@ -19,23 +19,23 @@
       "github_username": "kimday0326"
     },
     {
-      "year": "8th", 
-      "name_ko": "김수진", 
+      "year": "8th",
+      "name_ko": "김수진",
       "name_en": "Sujin Kim",
       "photo": "cowboysj.jpg",
       "short_bio": "'고민할 시간에 일단 해보기'중독ㅎㅁㅎ",
       "linkedin_username": "sujin-kim-080875316",
       "github_username": "cowboysj",
-      "homepage_url":"https://cowboysj.tistory.com/"
+      "homepage_url": "https://cowboysj.tistory.com/"
     },
     {
-      "year": "8th", 
-      "name_ko": "이정진", 
+      "year": "8th",
+      "name_ko": "이정진",
       "name_en": "Jeongjin Lee",
       "photo": "jeongjin.jpg",
       "short_bio": "사용자 경험을 최우선으로 생각하는 개발자",
       "linkedin_username": "leejeongjin",
-      "github_username": "dl-00-e8", 
+      "github_username": "dl-00-e8",
       "homepage_url": "https://velog.io/@dl-00-e8"
     },
     {
@@ -199,6 +199,15 @@
       "github_username": "eunsu02",
       "linkedin_username": "eunsu-choi-9597a4315",
       "homepage_url": "https://velog.io/@eunsu02"
+    },
+    {
+      "year": "8th",
+      "name_ko": "홍혁준",
+      "name_en": "HyukJoon Hong",
+      "photo": "hyukjoon.png",
+      "short_bio": "끊임없이 의심하고 반증하기",
+      "linkedin_username": "hong-sile",
+      "github_username": "hong-sile"
     },
     {
       "year": "7th",
