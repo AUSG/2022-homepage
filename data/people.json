@@ -2,6 +2,15 @@
   "people": [
     {
       "year": "8th", 
+      "name_ko": "손수민", 
+      "name_en": "Sumin Son",
+      "photo": "suminson.jpg",
+      "short_bio": "친절한 개발자",
+      "linkedin_username": "sumin-son-7900852a9",
+      "github_username": "SuminSSon"
+    },
+    {
+      "year": "8th", 
       "name_ko": "김대휘", 
       "name_en": "Daehwi Kim",
       "photo": "daehwi.jpeg",
