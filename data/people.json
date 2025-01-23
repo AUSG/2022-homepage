@@ -187,7 +187,7 @@
       "photo": "jiwan.jpg",
       "short_bio": "Engineer, to be a Pioneer",
       "github_username": "synoti21",
-      "linkedin_username": "jiwan-ahn-8b3293265",
+      "linkedin_usernampe": "jiwan-ahn-8b3293265",
       "homepage_url": "https://velog.io/@synoti21"
     },
     {
@@ -208,6 +208,15 @@
       "short_bio": "끊임없이 의심하고 반증하기",
       "linkedin_username": "hong-sile",
       "github_username": "hong-sile"
+    },
+    {
+      "year": "8th",
+      "name_ko": "황유환",
+      "name_en": "Yuhwan Hwang",
+      "photo": "yuhwan.jpg",
+      "short_bio": "묵묵하게 꾸준히",
+      "github_username": "yxhwxn",
+      "linkedin_username": "yuhwan-hwang-345624328"
     },
     {
       "year": "7th",
