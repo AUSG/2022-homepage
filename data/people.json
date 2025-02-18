@@ -2,6 +2,15 @@
   "people": [
     {
       "year": "8th",
+      "name_ko": "김민준",
+      "name_en": "Minjun Kim",
+      "photo": "kimminjun_profile.jpg",
+      "short_bio": "문명의 발전에 기여하고 싶은 사람",
+      "linkedin_username": "me1e",
+      "homepage_url": "https://www.instagram.com/______mele______/"
+    },
+    {
+      "year": "8th",
       "name_ko": "손수민",
       "name_en": "Sumin Son",
       "photo": "suminson.jpg",
