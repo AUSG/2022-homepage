@@ -18,44 +18,9 @@
 
 <img src="https://user-images.githubusercontent.com/52230505/188212131-ba29a491-826a-4022-a48c-65d53e295ac8.png" width="600">
 
-## Contributors
-
-<!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-7-orange.svg?style=flat-square)](#contributors-)
-<!-- ALL-CONTRIBUTORS-BADGE:END -->
-
-<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
-<!-- prettier-ignore-start -->
-<!-- markdownlint-disable -->
-<table>
-  <tbody>
-    <tr>
-      <td align="center" valign="top" width="14.28%"><a href="https://github.com/naru200"><img src="https://avatars.githubusercontent.com/u/52230505?v=4?s=100" width="100px;" alt="Jinsu Bae"/><br /><sub><b>Jinsu Bae</b></sub></a><br /><a href="#maintenance-naru200" title="Maintenance">🚧</a></td>
-      <td align="center" valign="top" width="14.28%"><a href="http://blog.eunsukim.me"><img src="https://avatars.githubusercontent.com/u/31213226?v=4?s=100" width="100px;" alt="Eunsu(Daniel) Kim"/><br /><sub><b>Eunsu(Daniel) Kim</b></sub></a><br /><a href="#maintenance-eunsukimme" title="Maintenance">🚧</a></td>
-      <td align="center" valign="top" width="14.28%"><a href="https://github.com/14km"><img src="https://avatars.githubusercontent.com/u/45898974?v=4?s=100" width="100px;" alt="MinTae Kim"/><br /><sub><b>MinTae Kim</b></sub></a><br /><a href="https://github.com/AUSG/2022-homepage/commits?author=14km" title="Code">💻</a></td>
-      <td align="center" valign="top" width="14.28%"><a href="https://suyeon96.tistory.com/"><img src="https://avatars.githubusercontent.com/u/64878866?v=4?s=100" width="100px;" alt="Suyeon Woo"/><br /><sub><b>Suyeon Woo</b></sub></a><br /><a href="https://github.com/AUSG/2022-homepage/commits?author=suyeon96" title="Code">💻</a></td>
-      <td align="center" valign="top" width="14.28%"><a href="http://roeniss.tistory.com"><img src="https://avatars.githubusercontent.com/u/26613280?v=4?s=100" width="100px;" alt="Roeniss Moon"/><br /><sub><b>Roeniss Moon</b></sub></a><br /><a href="https://github.com/AUSG/2022-homepage/commits?author=roeniss" title="Code">💻</a></td>
-      <td align="center" valign="top" width="14.28%"><a href="https://github.com/sudosubin"><img src="https://avatars.githubusercontent.com/u/32478597?v=4?s=100" width="100px;" alt="Subin Kim"/><br /><sub><b>Subin Kim</b></sub></a><br /><a href="https://github.com/AUSG/2022-homepage/commits?author=sudosubin" title="Code">💻</a></td>
-      <td align="center" valign="top" width="14.28%"><a href="https://rnokhs.tistory.com/"><img src="https://avatars.githubusercontent.com/u/72328687?v=4?s=100" width="100px;" alt="Hansu Kim"/><br /><sub><b>Hansu Kim</b></sub></a><br /><a href="https://github.com/AUSG/2022-homepage/commits?author=mokhs00" title="Code">💻</a></td>
-    </tr>
-  </tbody>
-</table>
-
-<!-- markdownlint-restore -->
-<!-- prettier-ignore-end -->
-
-<!-- ALL-CONTRIBUTORS-LIST:END -->
-<!-- prettier-ignore-start -->
-<!-- markdownlint-disable -->
-
-<!-- markdownlint-restore -->
-<!-- prettier-ignore-end -->
-
-<!-- ALL-CONTRIBUTORS-LIST:END -->
-
 ## Development
 
-2022-homepage 프로젝트는 [Next.js](https://nextjs.org/)와 [Typescript](https://www.typescriptlang.org/), [TailwindCSS](https://tailwindcss.com/) 로 만들어졌습니다. 
+2022-homepage 프로젝트는 [Next.js](https://nextjs.org/)와 [Typescript](https://www.typescriptlang.org/), [TailwindCSS](https://tailwindcss.com/) 로 만들어졌습니다.
 
 패키지 매니저는 최신 버전의 [NPM](https://npmjs.com) 을 사용합니다.
 
@@ -75,8 +40,8 @@ npm run dev
 
 현재 [Fly.io](https://fly.io)의 AUSG Organization에 배포되어 있습니다.
 
-main 브랜치에 코드 변경사항이 푸쉬되면 Github Action에 의해 자동으로 배포됩니다. 
-<br /> 
+main 브랜치에 코드 변경사항이 푸쉬되면 Github Action에 의해 자동으로 배포됩니다.
+<br />
 단, main 브랜치는 보호되고 있기 때문에, PR을 통해 코드를 병합해야 합니다.
 
 
