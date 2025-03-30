@@ -8,7 +8,7 @@ const Document = () => {
           rel="stylesheet"
           as="style"
           crossOrigin="true"
-          href="https://unpkg.com/pretendard@1.3.5/dist/web/static/pretendard-dynamic-subset.css"
+          href="https://cdn.jsdelivr.net/npm/pretendard@1.3.5/dist/web/static/pretendard-dynamic-subset.css"
         />
       </Head>
       <body>
