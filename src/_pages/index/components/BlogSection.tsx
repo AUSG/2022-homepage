@@ -29,14 +29,50 @@ const posts = [
 export default function BlogSection() {
   return (
     <div className="bg-primary">
-      <div className="py-[48px] pl-[20px] md:mx-auto md:max-w-screen-xl xl:py-[100px]">
+      <div className="py-[48px] px-[20px] md:mx-auto md:max-w-screen-xl xl:py-[100px]">
         <h1 className="text-[24px] font-bold leading-[34px] text-white xl:text-[36px] xl:leading-[52px]">
           AUSG 멤버들이 공유한 <br className="xl:hidden" />
           지식과 경험을 확인해보세요!
         </h1>
-        <section className="mt-6 flex gap-[16px] xl:mt-12 xl:gap-[48px]">
-          <div className="w-full text-center text-[18px] font-bold text-white">
-            <div className="flex overflow-x-scroll pb-4">
+        <section className="space-evenly mt-6 flex flex-col gap-[16px] md:flex-row xl:mt-12 xl:gap-[48px]">
+          <div className="flex basis-[50%] flex-col">
+            <span className="pb-4 text-[20px] font-bold text-white  md:text-2xl">
+              BigChat 발표영상 플레이리스트
+            </span>
+
+            {/* ref for dynamic youtube iframe sizing : https://stackoverflow.com/a/54924505/8556340 */}
+            <div className="relative mx-auto h-0 w-full pb-[56.25%]">
+              <iframe
+                className="absolute top-0 left-0 h-full w-full"
+                src="https://www.youtube.com/embed/videoseries?si=idHMm0h2O93bHMkJ&amp;list=PLzE5CrlMM0CDLVzxgir4Kbj7oPBD4VUvC"
+                title="BigChat 발표영상 플레이리스트"
+                frameBorder="1"
+                allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerPolicy="strict-origin-when-cross-origin"
+                allowFullScreen
+              />
+            </div>
+          </div>
+          <div className="flex basis-[50%] flex-col">
+            <span className="pb-4 text-[20px] font-bold text-white  md:text-2xl">
+              외부 발표영상 플레이리스트
+            </span>
+
+            <div className="relative mx-auto h-0 w-full pb-[56.25%]">
+              <iframe
+                className="absolute top-0 left-0 h-full w-full"
+                src="https://www.youtube.com/embed/videoseries?si=loa-rXJnT3nTl_Mv&amp;list=PLzE5CrlMM0CBxMT6DeEoWbgSnobkfg74L"
+                title="외부 발표영상 플레이리스트"
+                frameBorder="0"
+                allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerPolicy="strict-origin-when-cross-origin"
+                allowFullScreen
+              />
+            </div>
+          </div>
+        </section>
+        {/* <div className="w-full text-center text-[18px] font-bold text-white">
+          <div className="flex overflow-x-scroll pb-4">
               {videoData.videos.slice(0, 5).map((video: any) => (
                 <a
                   key={video.title}
@@ -70,17 +106,15 @@ export default function BlogSection() {
                 />
               </a>
             </Link>
-          </div>
-          {/* {posts.map(post => ( */}
-          {/*  <Card */}
-          {/*    key={post.url} */}
-          {/*    title={post.title} */}
-          {/*    url={post.url} */}
-          {/*    author={post.author} */}
-          {/*  /> */}
-          {/* ))} */}
-        </section>
-
+          </div> */}{' '}
+        {/* {posts.map(post => ( */}
+        {/*  <Card */}
+        {/*    key={post.url} */}
+        {/*    title={post.title} */}
+        {/*    url={post.url} */}
+        {/*    author={post.author} */}
+        {/*  /> */}
+        {/* ))} */}
         <div className="flex justify-center pr-[20px]">
           {/* TODO: 블로그 페이지 개발 후 주석 해제하기 */}
           {/* <button
