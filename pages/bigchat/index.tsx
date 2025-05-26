@@ -7,34 +7,34 @@ const BigChat = () => {
   // 선택된 연도 상태 관리
   const [selectedYear, setSelectedYear] = useState("2024");
 
-  // 링크 관리
-  const registrationLink = "https://umoh.io/ko/ausg-public-bigchat";
+  // 밋업으로 이동
+  const registrationLink = "";
 
   // 타임테이블 데이터
   const timeTableData = [
     {
-      time: "16:10",
+      time: "19:00",
       period: "오후",
       title: "Keynote",
       subtitle: "",
       presenter: "도정민 (9기 Organizer)",
     },
     {
-      time: "16:20",
+      time: "19:20",
       period: "오후", 
       title: "프로그래밍의 상식에 반박하기",
       subtitle: "당연하다고 생각했던 것들에 대한 새로운 관점",
       presenter: "문성혁 (Coupang)",
     },
     {
-      time: "16:55",
+      time: "19:55",
       period: "오후",
       title: "Platform Engineering의 함정",
       subtitle: "당신이 몰랐던 Platform Engineering의 함정",
-      presenter: "안지완 (몰로코)",
+      presenter: "안지완 (몰로코, software engineer)",
     },
     {
-      time: "17:35",
+      time: "20:30",
       period: "오후",
       title: "홈서버 위에서 쿠버네티스 기반 호스팅 서비스 만들기",
       subtitle: "좌충우돌 쿠버네티스 홈서버 호스팅 서비스 만들기",
@@ -154,9 +154,9 @@ const BigChat = () => {
                       <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-2">
                         <div>
                           <h3 className="text-lg font-bold text-primary">{presentation.title}</h3>
-                          <div className="flex items-center gap-2 text-sm mt-1">
-                            <span className="text-gray-600">👤 {presentation.presenter}</span>
-                          </div>
+                        <div className="mb-2">
+                          <span className="text-base font-medium text-gray-700">{presentation.presenter}</span>
+                        </div>
                         </div>
                         <div className="flex flex-col md:items-end">
                           <span className="text-sm text-gray-500">{presentation.date}</span>
