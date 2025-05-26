@@ -22,16 +22,19 @@ export default function IntroSection() {
   // 이메일 입력창 토글 변수
   const showEmailInput = true; // true: 보이기, false: 숨기기
 
-  const applyDeadlineDate = dayjs('2024-06-27 23:59:59')
+  const applyOpenDate = dayjs('2025-06-13 00:00:00')
+    .tz('Asia/Seoul')
+    .toDate();
+  const applyDeadlineDate = dayjs('2025-06-30 23:59:59')
     .tz('Asia/Seoul')
     .toDate(); // 8기 지원 마감일 (KST)
-  const bigchatDeadlineDate = dayjs('2024-06-23 23:59:59')
+  const bigchatDeadlineDate = dayjs('2025-06-23 23:59:59')
     .tz('Asia/Seoul')
     .toDate(); // 퍼블릭 빅챗 마감일 (KST)
 
   const krCurrentDate = dayjs().tz('Asia/Seoul').toDate(); // 한국 시간 기준 현재 시간
 
-  const isApplyClosed = krCurrentDate > applyDeadlineDate;
+  const isApplyClosed = (krCurrentDate > applyDeadlineDate) || (krCurrentDate < applyOpenDate);
   const isBigchatClosed = krCurrentDate > bigchatDeadlineDate;
 
   const [days, hours, minutes, seconds] = useCountdown(applyDeadlineDate);
