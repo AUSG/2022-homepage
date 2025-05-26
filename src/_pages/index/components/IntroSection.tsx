@@ -76,8 +76,8 @@ export default function IntroSection() {
             <div className="mt-[24px] hidden items-center gap-4 md:flex">
               <p className="text-[28px] font-bold text-white md:text-center md:text-[40px]">
                 {isApplyClosed
-                  ? '8기 모집이 마감되었습니다.'
-                  : '☁️ 8기 모집중 ☁️'}
+                  ? '곧 9기 모집이 시작됩니다!'
+                  : '☁️ 9기 모집중 ☁️'}
               </p>
               {isApplyClosed ? null : (
                 <button
@@ -126,8 +126,8 @@ export default function IntroSection() {
           <div className="flex items-center gap-4">
             <p className="text-[22px] font-bold text-white md:text-center md:text-[40px]">
               {isApplyClosed
-                ? '8기 모집이 마감되었습니다.'
-                : '☁️ 8기 모집중 ☁️'}
+                ? '9기 모집이 마감되었습니다.'
+                : '☁️ 9기 모집중 ☁️'}
             </p>
             {isApplyClosed ? null : (
               <button
