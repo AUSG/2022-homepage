@@ -131,7 +131,11 @@ export default function IntroSection() {
               클라우드 커뮤니티
             </h1>
             <div className="mt-[24px] hidden items-center gap-4 md:flex">
-
+              <p className="text-[28px] font-bold text-white md:text-center md:text-[40px]">
+                {isApplyClosed
+                  ? '곧 9기 모집이 시작됩니다!'
+                  : '☁️ 9기 모집중 ☁️'}
+              </p>
               {isApplyClosed ? null : (
                 <button
                   type="button"
@@ -204,7 +208,11 @@ export default function IntroSection() {
         </div>
         <div className="mt-[24px] flex flex-col flex-wrap items-center justify-center gap-4 md:hidden">
           <div className="flex items-center gap-4">
-
+            <p className="text-[22px] font-bold text-white md:text-center md:text-[40px]">
+              {isApplyClosed
+                ? '9기 모집이 마감되었습니다.'
+                : '☁️ 9기 모집중 ☁️'}
+            </p>
             {isApplyClosed ? null : (
               <button
                 type="button"
