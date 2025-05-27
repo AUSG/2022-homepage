@@ -59,28 +59,46 @@ export default function IntroSection() {
     router.push('https://umoh.io/ausg-public-bigchat');
   };
 
-  const handleEmailSubmit = (e: React.FormEvent) => {
+  const handleEmailSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     if (email) {
-      // 여기에 이메일 전송 로직 추가
-      console.log('이메일 등록:', email);
-      
-      // 토스트 표시
-      setShowToast(true);
-      setEmail(''); // 입력창 초기화
-      
-      // 3초 후 토스트 숨기기
-      setTimeout(() => {
-        setShowToast(false);
-      }, 3000);
-      
-      // Google Analytics 이벤트 추가
-      event({
-        action: 'email_signup',
-        category: 'engagement',
-        label: '9기 모집 알림 신청',
-        value: 1,
-      });
+      try {
+        // API 호출
+        const response = await fetch('https://2dlw6f2uxkhweoqvxnp2kniezq0xjzmu.lambda-url.ap-northeast-2.on.aws/email/register', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify({ email }),
+        });
+
+        if (response.ok || response.status === 201) {
+          console.log('이메일 등록 성공:', email);
+          
+          // 토스트 표시
+          setShowToast(true);
+          setEmail(''); // 입력창 초기화
+          
+          // 3초 후 토스트 숨기기
+          setTimeout(() => {
+            setShowToast(false);
+          }, 3000);
+          
+          // Google Analytics 이벤트 추가
+          event({
+            action: 'email_signup',
+            category: 'engagement',
+            label: '9기 모집 알림 신청',
+            value: 1,
+          });
+        } else {
+          console.error('이메일 등록 실패:', response.status);
+          alert('이메일 등록 중 오류가 발생했습니다. 다시 시도해주세요.');
+        }
+      } catch (error) {
+        console.error('이메일 등록 오류:', error);
+        alert('네트워크 오류가 발생했습니다. 다시 시도해주세요.');
+      }
     }
   };
 
