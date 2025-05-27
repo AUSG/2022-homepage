@@ -25,9 +25,15 @@ export default function IntroSection() {
   const applyOpenDate = dayjs('2025-06-13 00:00:00')
     .tz('Asia/Seoul')
     .toDate();
+  
   const applyDeadlineDate = dayjs('2025-06-30 23:59:59')
     .tz('Asia/Seoul')
-    .toDate(); // 8기 지원 마감일 (KST)
+    .toDate(); // 9기 지원 마감일 (KST)
+  
+  const bigchatOpenDate = dayjs('2025-06-13 00:00:00')
+    .tz('Asia/Seoul')
+    .toDate(); // 퍼블릭 빅챗 시작일 (KST)
+  
   const bigchatDeadlineDate = dayjs('2025-06-23 23:59:59')
     .tz('Asia/Seoul')
     .toDate(); // 퍼블릭 빅챗 마감일 (KST)
@@ -35,7 +41,7 @@ export default function IntroSection() {
   const krCurrentDate = dayjs().tz('Asia/Seoul').toDate(); // 한국 시간 기준 현재 시간
 
   const isApplyClosed = (krCurrentDate > applyDeadlineDate) || (krCurrentDate < applyOpenDate);
-  const isBigchatClosed = krCurrentDate > bigchatDeadlineDate;
+  const isBigchatClosed = (krCurrentDate > bigchatDeadlineDate) || (krCurrentDate < bigchatOpenDate);
 
   const [days, hours, minutes, seconds] = useCountdown(applyDeadlineDate);
 
@@ -43,7 +49,7 @@ export default function IntroSection() {
     event({
       action: 'apply',
       category: 'click',
-      label: 'AUSG 8기 지원하기',
+      label: 'AUSG 9기 지원하기',
       value: 1,
     });
     router.push('/apply');
@@ -64,7 +70,7 @@ export default function IntroSection() {
     if (email) {
       try {
         // API 호출
-        const response = await fetch('https://2dlw6f2uxkhweoqvxnp2kniezq0xjzmu.lambda-url.ap-northeast-2.on.aws/email/register', {
+        const response = await fetch('https://ovshxcxfyslspeeqa26og2uvya0gqkfc.lambda-url.ap-northeast-2.on.aws/email/register', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
