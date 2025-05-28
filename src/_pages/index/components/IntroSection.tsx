@@ -15,19 +15,33 @@ dayjs.extend(timezone);
 
 export default function IntroSection() {
   const [isClient, setIsClient] = useState(false);
+  const [email, setEmail] = useState('');
+  const [showToast, setShowToast] = useState(false);
   const router = useRouter();
 
-  const applyDeadlineDate = dayjs('2024-06-27 23:59:59')
+  // 이메일 입력창 토글 변수
+  const showEmailInput = true; // true: 보이기, false: 숨기기
+
+  const applyOpenDate = dayjs('2025-06-13 00:00:00')
     .tz('Asia/Seoul')
-    .toDate(); // 8기 지원 마감일 (KST)
-  const bigchatDeadlineDate = dayjs('2024-06-23 23:59:59')
+    .toDate();
+  
+  const applyDeadlineDate = dayjs('2025-06-30 23:59:59')
+    .tz('Asia/Seoul')
+    .toDate(); // 9기 지원 마감일 (KST)
+  
+  const bigchatOpenDate = dayjs('2025-06-13 00:00:00')
+    .tz('Asia/Seoul')
+    .toDate(); // 퍼블릭 빅챗 시작일 (KST)
+  
+  const bigchatDeadlineDate = dayjs('2025-06-23 23:59:59')
     .tz('Asia/Seoul')
     .toDate(); // 퍼블릭 빅챗 마감일 (KST)
 
   const krCurrentDate = dayjs().tz('Asia/Seoul').toDate(); // 한국 시간 기준 현재 시간
 
-  const isApplyClosed = krCurrentDate > applyDeadlineDate;
-  const isBigchatClosed = krCurrentDate > bigchatDeadlineDate;
+  const isApplyClosed = (krCurrentDate > applyDeadlineDate) || (krCurrentDate < applyOpenDate);
+  const isBigchatClosed = (krCurrentDate > bigchatDeadlineDate) || (krCurrentDate < bigchatOpenDate);
 
   const [days, hours, minutes, seconds] = useCountdown(applyDeadlineDate);
 
@@ -35,7 +49,7 @@ export default function IntroSection() {
     event({
       action: 'apply',
       category: 'click',
-      label: 'AUSG 8기 지원하기',
+      label: 'AUSG 9기 지원하기',
       value: 1,
     });
     router.push('/apply');
@@ -49,6 +63,49 @@ export default function IntroSection() {
       value: 1,
     });
     router.push('https://umoh.io/ausg-public-bigchat');
+  };
+
+  const handleEmailSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    if (email) {
+      try {
+        // API 호출
+        const response = await fetch('https://ovshxcxfyslspeeqa26og2uvya0gqkfc.lambda-url.ap-northeast-2.on.aws/email/register', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify({ email }),
+        });
+
+        if (response.ok || response.status === 201) {
+          console.log('이메일 등록 성공:', email);
+          
+          // 토스트 표시
+          setShowToast(true);
+          setEmail(''); // 입력창 초기화
+          
+          // 3초 후 토스트 숨기기
+          setTimeout(() => {
+            setShowToast(false);
+          }, 3000);
+          
+          // Google Analytics 이벤트 추가
+          event({
+            action: 'email_signup',
+            category: 'engagement',
+            label: '9기 모집 알림 신청',
+            value: 1,
+          });
+        } else {
+          console.error('이메일 등록 실패:', response.status);
+          alert('이메일 등록 중 오류가 발생했습니다. 다시 시도해주세요.');
+        }
+      } catch (error) {
+        console.error('이메일 등록 오류:', error);
+        alert('네트워크 오류가 발생했습니다. 다시 시도해주세요.');
+      }
+    }
   };
 
   useEffect(() => {
@@ -76,8 +133,8 @@ export default function IntroSection() {
             <div className="mt-[24px] hidden items-center gap-4 md:flex">
               <p className="text-[28px] font-bold text-white md:text-center md:text-[40px]">
                 {isApplyClosed
-                  ? '8기 모집이 마감되었습니다.'
-                  : '☁️ 8기 모집중 ☁️'}
+                  ? '곧 9기 모집이 시작됩니다!'
+                  : '☁️ 9기 모집중 ☁️'}
               </p>
               {isApplyClosed ? null : (
                 <button
@@ -89,6 +146,33 @@ export default function IntroSection() {
                 </button>
               )}
             </div>
+                          {isApplyClosed && showEmailInput && (
+                <div className="mt-6 hidden flex-col items-center gap-6 md:flex">
+                  <div className="flex flex-col items-center gap-4">
+                    <p className="text-[26px] font-bold text-white">
+                      9기 모집 시작 알림을 받고 싶다면?
+                    </p>
+                    <form onSubmit={handleEmailSubmit} className="flex items-center gap-3">
+                      <div className="relative">
+                        <input
+                          type="email"
+                          value={email}
+                          onChange={(e) => setEmail(e.target.value)}
+                          placeholder="이메일을 입력해주세요"
+                          className="bg-transparent px-2 py-2 text-white placeholder-white/70 border-0 border-b-2 border-white/50 focus:outline-none focus:border-white transition-colors duration-200 min-w-[280px]"
+                          required
+                        />
+                      </div>
+                      <button
+                        type="submit"
+                        className="rounded-full bg-white px-6 py-2 text-[16px] font-bold text-primary duration-200 hover:bg-white/90"
+                      >
+                        알림 신청
+                      </button>
+                    </form>
+                  </div>
+                </div>
+              )}
             {isApplyClosed ? null : (
               <div className="hidden items-center gap-4 md:flex md:flex-col">
                 <p className="text-[18px] font-bold text-white md:text-[24px]">
@@ -126,8 +210,8 @@ export default function IntroSection() {
           <div className="flex items-center gap-4">
             <p className="text-[22px] font-bold text-white md:text-center md:text-[40px]">
               {isApplyClosed
-                ? '8기 모집이 마감되었습니다.'
-                : '☁️ 8기 모집중 ☁️'}
+                ? '9기 모집이 마감되었습니다.'
+                : '☁️ 9기 모집중 ☁️'}
             </p>
             {isApplyClosed ? null : (
               <button
@@ -139,6 +223,33 @@ export default function IntroSection() {
               </button>
             )}
           </div>
+                      {isApplyClosed && showEmailInput && (
+              <div className="flex flex-col items-center gap-4">
+                <div className="flex flex-col items-center gap-4 w-full">
+                  <p className="text-[26px] font-bold text-white text-center">
+                    9기 모집 시작 알림을 받고 싶다면?
+                  </p>
+                  <form onSubmit={handleEmailSubmit} className="flex flex-col items-center gap-3 w-full max-w-[280px]">
+                    <div className="relative w-full">
+                      <input
+                        type="email"
+                        value={email}
+                        onChange={(e) => setEmail(e.target.value)}
+                        placeholder="이메일을 입력해주세요"
+                        className="w-full bg-transparent px-2 py-2 text-[16px] text-white placeholder-white/70 border-0 border-b-2 border-white/50 focus:outline-none focus:border-white transition-colors duration-200 text-center"
+                        required
+                      />
+                    </div>
+                    <button
+                      type="submit"
+                      className="rounded-full bg-white px-6 py-2 text-[14px] font-bold text-primary duration-200 hover:bg-white/90"
+                    >
+                      알림 신청
+                    </button>
+                  </form>
+                </div>
+              </div>
+            )}
           {isApplyClosed ? null : (
             <div className="flex items-center gap-4 md:hidden">
               <p className="text-[18px] font-bold text-white md:text-[24px]">
@@ -164,6 +275,16 @@ export default function IntroSection() {
           </div>
         </div>
       </main>
+      
+      {/* 토스트 알림 */}
+      {showToast && (
+        <div className="fixed top-4 left-1/2 transform -translate-x-1/2 z-50 transition-all duration-300 ease-in-out max-w-[90vw]">
+          <div className="flex items-center gap-2 rounded-lg bg-white px-4 py-3 shadow-lg border border-gray-200 whitespace-nowrap">
+            <span className="text-green-500 text-lg">🎉</span>
+            <span className="text-gray-800 font-medium text-sm md:text-base">알림 신청이 완료되었습니다!</span>
+          </div>
+        </div>
+      )}
     </div>
   );
 }
