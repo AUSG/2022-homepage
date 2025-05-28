@@ -17,6 +17,8 @@ export default function IntroSection() {
   const [isClient, setIsClient] = useState(false);
   const [email, setEmail] = useState('');
   const [showToast, setShowToast] = useState(false);
+  const [email, setEmail] = useState('');
+  const [showToast, setShowToast] = useState(false);
   const router = useRouter();
 
   // 이메일 입력창 토글 변수
