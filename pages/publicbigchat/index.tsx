@@ -109,7 +109,7 @@ const BigChat = () => {
               rel="noopener noreferrer"
               className="inline-block rounded-full bg-white px-6 py-3 font-bold text-primary shadow-lg transition-colors hover:bg-gray-50"
             >
-              참가 신청하기
+              Meet up 참가 신청
             </a>
           </div>
         </header>
@@ -119,13 +119,13 @@ const BigChat = () => {
           <div className="mx-auto max-w-4xl">
             {/* 이벤트 정보 카드 */}
             <div className="mb-12">
-              <div className="rounded-3xl bg-primary bg-opacity-60 p-8 text-white shadow-xl">
+              <div className="rounded-3xl border-2 border-primary border-opacity-30 bg-white/90 p-8 text-gray-800 shadow-lg backdrop-blur-sm transition-all duration-300 hover:border-primary hover:border-opacity-50 hover:shadow-xl">
                 <div className="grid gap-6 md:grid-cols-2">
                   {/* 날짜 및 시간 정보 */}
                   <div className="flex items-center space-x-4">
-                    <div className="flex aspect-square h-16 w-16 flex-shrink-0 items-center justify-center rounded-full bg-white bg-opacity-20">
+                    <div className="flex aspect-square h-16 w-16 flex-shrink-0 items-center justify-center rounded-full border border-primary border-opacity-30 bg-primary bg-opacity-10">
                       <svg
-                        className="h-8 w-8"
+                        className="h-8 w-8 text-primary"
                         fill="none"
                         stroke="currentColor"
                         viewBox="0 0 24 24"
@@ -139,17 +139,19 @@ const BigChat = () => {
                       </svg>
                     </div>
                     <div>
-                      <h3 className="text-lg font-bold">일시</h3>
+                      <h3 className="text-lg font-bold text-primary">일시</h3>
                       <p className="text-lg">{eventInfo.date}</p>
-                      <p className="text-base opacity-90">{eventInfo.time}</p>
+                      <p className="text-base text-gray-600">
+                        {eventInfo.time}
+                      </p>
                     </div>
                   </div>
 
                   {/* 위치 정보 */}
                   <div className="flex items-center space-x-4">
-                    <div className="flex aspect-square h-16 w-16 flex-shrink-0 items-center justify-center rounded-full bg-white bg-opacity-20">
+                    <div className="flex aspect-square h-16 w-16 flex-shrink-0 items-center justify-center rounded-full border border-primary border-opacity-30 bg-primary bg-opacity-10">
                       <svg
-                        className="h-8 w-8"
+                        className="h-8 w-8 text-primary"
                         fill="none"
                         stroke="currentColor"
                         viewBox="0 0 24 24"
@@ -164,14 +166,14 @@ const BigChat = () => {
                           strokeLinecap="round"
                           strokeLinejoin="round"
                           strokeWidth={2}
-                          d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
+                          d="M15 11a3 3 0 11-6 0 3 3 0 616 0z"
                         />
                       </svg>
                     </div>
                     <div>
-                      <h3 className="text-lg font-bold">장소</h3>
+                      <h3 className="text-lg font-bold text-primary">장소</h3>
                       <p className="text-lg">{eventInfo.location}</p>
-                      <p className="text-base opacity-90">
+                      <p className="text-base text-gray-600">
                         {eventInfo.locationDetail}
                       </p>
                     </div>
