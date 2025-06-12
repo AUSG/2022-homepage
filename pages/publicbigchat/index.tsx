@@ -2,6 +2,7 @@ import { Fragment, useState } from 'react';
 import Head from 'next/head';
 
 import Header from '@/src/components/Header';
+import { BIGCHAT_CONFIG } from '@/src/constants/config';
 
 interface Presentation {
   title: string;
@@ -18,7 +19,7 @@ const BigChat = () => {
   const [selectedYear, setSelectedYear] = useState('2024');
 
   // 밋업으로 이동
-  const registrationLink = '';
+  const registrationLink = BIGCHAT_CONFIG.url;
 
   // 이벤트 정보 데이터
   const eventInfo = {
@@ -97,11 +98,16 @@ const BigChat = () => {
         <header className="bg-primary px-4 py-12 text-white">
           <div className="container mx-auto text-center">
             <h1 className="mb-4 text-2xl font-bold md:text-4xl">
-              경험과 노하우를 공유하는 PUBLIC BIGCHAT 🚀
+              경험과 노하우를 공유하는
+              <br className="md:hidden" />
+              <span className="hidden md:inline"> </span>
+              PUBLIC BIGCHAT 🚀
             </h1>
             <p className="mb-6 text-lg md:text-xl">
-              다양한 분야의 AUSG 멤버들이 한 데 모여 클라우드 개발 경험과
-              노하우를 공유해요.
+              다양한 분야의 AUSG 멤버들이 한 데 모여
+              <br className="md:hidden" />
+              <span className="hidden md:inline"> </span>
+              클라우드 개발 경험과 노하우를 공유해요.
             </p>
             <a
               href={registrationLink}
@@ -109,7 +115,7 @@ const BigChat = () => {
               rel="noopener noreferrer"
               className="inline-block rounded-full bg-white px-6 py-3 font-bold text-primary shadow-lg transition-colors hover:bg-gray-50"
             >
-              Meet up 참가 신청
+              신청하기
             </a>
           </div>
         </header>
