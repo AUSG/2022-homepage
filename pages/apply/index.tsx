@@ -79,7 +79,7 @@ export default function Apply() {
           {/* 우리가 찾는 인재상 섹션 */}
           <div className="mb-[60px]">
             <h2 className="mb-8 text-center text-[28px] font-bold text-white md:text-[36px]">
-              함께 성장할 AUSG을 <br className="md:hidden" />
+              함께 성장할 멤버를 <br className="md:hidden" />
               찾고 있어요.
             </h2>
             <div className="grid gap-6 md:grid-cols-3">
