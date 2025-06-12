@@ -8,6 +8,13 @@ const QUOTES = [
   },
   {
     content:
+      '기술만 보며 달리던 내게 세상을 바라보는 혜안을 선물해 준 동아리입니다. 다양한 분야에서 최고를 달리고 있는 멤버들과 함께 성장할 수 있어 행복합니다 :)',
+    name: '송승호',
+    profile: 'AUSG 7기, AWS AI-Engineering Community Builder',
+    imagePath: '/people/seunghosong.jpg',
+  },
+  {
+    content:
       '저는 지식 공유와 함께 성장하는 경험을 좋아해서 AUSG 합류했고 구성원분들 만나 몰입하고 함께하는 시간이 정말 즐거웠어요. 그리고 AUSG에는 지식 공유를 좋아하면서 열정적이고 수준높은 인재들이 함께 있는데요! 이 사람들과 함께 하는 순간순간이 서로에게 자극이 되고 좋은 에너지를 주고받는 시간이었던 것 같습니다 :) 앞으로 AUSG에 함께하실 분들도 이 소중한 경험을 꼭 느껴보셨으면 좋겠어요!',
     name: '김한수',
     profile: 'AUSG 6기, 뱅크샐러드 Server Engineer',
@@ -64,6 +71,13 @@ const QUOTES = [
   },
   {
     content:
+      '시야를 넓히는 데에 있어서 굉장히 도움이 되는 동아리입니다. 빅챗 뿐만 아니라 커뮤니티 내에서 많은 분들이 적극적으로 공유해주시는 정보, 기술, 그리고 토론하는 것을 보면서 한층 더 성장하는 기회를 얻었습니다. 또한, AUSG에서 직접 발표하는 기회들을 얻으며 지식을 공유하는 즐거움을 느낄 수 있어서 좋았습니다. AUSG은 모든 기수간 가장 활기가 도는 동아리인 만큼, 같이 AUSG에서 성장해보아요~',
+    name: '안지완',
+    profile: 'AUSG 8기, 몰로코 Software Engineer',
+    imagePath: '/people/jiwanahn.jpg',
+  },
+  {
+    content:
       '대학생 때 AUSG에 합류해 좋은 사람들을 만나고 성장할 수 있었던 건 큰 행운이었어요. 다양한 분야의 학생 개발자들과 네트워킹할 수 있는 AUSG 활동은 제가 첫 커리어를 정하는 데나 기술 공부를 할 때 좋은 밑바탕이 되어주었어요. 지금도 항상 좋은 영향을 받고 있네요 ㅎㅎ 우리 AUSG에서 같이 놀아요!',
     name: '김윤서',
     profile: 'AUSG 6기, AWS Solutions Architect',
@@ -78,10 +92,10 @@ const QUOTES = [
   },
   {
     content:
-      '개발과 클라우드라는 세상을 얼마나 좁게 보고있었는지 여기서 깨달았습니다. 아우쓱을 통해 시야를 넓히고 멋진 인연들을 만들 수 있었습니다!',
+      'AUSG 활동을 시작하면서 세상이 얼마나 넓은지 체감했습니다. 많은 ausg 멤버들과 함께 가장 큰 성장을 할 수 있었고, 정말 많은 것을 경험할 수 있었습니다. Ausg라는 기회를 놓치지 마세요!',
     name: '오규태',
-    profile: 'AUSG 4기, 국방통합데이터센터',
-    imagePath: '/people/einokt.jpg',
+    profile: 'AUSG 4기, EasyShed Devops engineer',
+    imagePath: '/people/einokt-2.jpg',
   },
   {
     content:
@@ -92,10 +106,17 @@ const QUOTES = [
   },
   {
     content:
+      '단순히 지식만 쌓는 동아리가 아닌, 멋진 사람들을 만날 수 있는 동아리입니다. 같은 꿈을 꾸는 사람들과 함께 배우고 성장할 수 있는 시간이었습니다. 발표를 통해 스스로에 대한 자신감을 얻었고, 배운 것을 나누고 싶다는 마음이 드는 행운 가득한 동아리입니다.',
+    name: '손수민',
+    profile: 'AUSG 8기, 경희대학교',
+    imagePath: '/people/soominson.jpg',
+  },
+  {
+    content:
       'AUSG에서 꽤 구체적인 (동시에 한없이 러프한) 관심사를 가진 분들과의 대화를 통해 여러 가지로 느낀 것도 많고 배운 것도 많았습니다. 클라우드와 AWS, 그리고 IT에 관심이 있는 분들은 많이 지원해 주세요!',
     name: '문성혁',
-    profile: 'AUSG 3기, 데브시스터즈 DevOps Engineer',
-    imagePath: '/people/roeniss.jpg',
+    profile: 'AUSG 3기, Coupang',
+    imagePath: '/people/roeniss-2.jpg',
   },
   {
     content:

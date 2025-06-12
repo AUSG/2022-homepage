@@ -16,7 +16,7 @@ const RECRUIT_QUESTIONS = [
   {
     title: '현재 모집 중인가요?',
     description:
-      '<p>2024년 8기 모집은 종료되었어요. 2025년 하반기에 찾아올 9기 모집을 기대해 주세요!</p>',
+      '<p>현재 AUSG 9기를 모집 중이에요. 홈페이지 및 인스타그램 @ausg.awskrug를 통해 자세한 정보를 확인해 주세요!</p>',
     isHidden: !isClosed,
   },
   {
