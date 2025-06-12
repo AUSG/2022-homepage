@@ -23,32 +23,32 @@ const BigChat = () => {
   // 타임테이블 데이터
   const timeTableData = [
     {
-      id: 'keynote',
-      time: '19:00',
+      id: '1',
+      time: '18:50',
       period: '오후',
       title: 'Keynote',
       subtitle: '',
       presenter: '도정민 (9기 Organizer)',
     },
     {
-      id: 'programming',
-      time: '19:20',
+      id: '2',
+      time: '19:05',
       period: '오후',
       title: 'Unpopular opinions',
       subtitle: '개발 상식에 반기 들기',
       presenter: ' 문성혁(AUSG 3기, 쿠팡 Sr. Back-end Engineer)',
     },
     {
-      id: 'kubernetes',
-      time: '20:30',
+      id: '3',
+      time: '19:40',
       period: '오후',
       title: '홈서버 위에서 쿠버네티스 기반 호스팅 서비스 만들기',
       subtitle: '홈서버 환경을 바탕으로 Platform As A Service 만들어보기',
       presenter: '김보겸(AUSG 8기, Lablup Software Engineer)',
     },
     {
-      id: 'platform',
-      time: '19:55',
+      id: '4',
+      time: '20:10',
       period: '오후',
       title: 'Platform Engineering의 함정',
       subtitle:
@@ -124,7 +124,7 @@ const BigChat = () => {
                   }`}
                 >
                   <div className="flex flex-col gap-4 md:flex-row">
-                    <div className="min-w-[100px] rounded-xl bg-primary p-4 text-center text-white">
+                    <div className="flex h-24 min-w-[100px] flex-col items-center justify-center rounded-xl bg-primary p-4 text-center text-white">
                       <div className="text-sm">{session.period}</div>
                       <div className="text-2xl font-bold">{session.time}</div>
                     </div>
