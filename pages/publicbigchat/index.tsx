@@ -20,6 +20,14 @@ const BigChat = () => {
   // 밋업으로 이동
   const registrationLink = '';
 
+  // 이벤트 정보 데이터
+  const eventInfo = {
+    date: '2025년 6월 26일 (토)',
+    time: '오후 6시 50분 ~ 8시 40분',
+    location: 'AWS Korea',
+    locationDetail: '서울 강남구 테헤란로 231 센터필드 EAST 18층',
+  };
+
   // 타임테이블 데이터
   const timeTableData = [
     {
@@ -109,6 +117,69 @@ const BigChat = () => {
         {/* 메인 콘텐츠 */}
         <div className="container mx-auto px-4 py-12">
           <div className="mx-auto max-w-4xl">
+            {/* 이벤트 정보 카드 */}
+            <div className="mb-12">
+              <div className="rounded-3xl bg-primary bg-opacity-60 p-8 text-white shadow-xl">
+                <div className="grid gap-6 md:grid-cols-2">
+                  {/* 날짜 및 시간 정보 */}
+                  <div className="flex items-center space-x-4">
+                    <div className="flex aspect-square h-16 w-16 flex-shrink-0 items-center justify-center rounded-full bg-white bg-opacity-20">
+                      <svg
+                        className="h-8 w-8"
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth={2}
+                          d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
+                        />
+                      </svg>
+                    </div>
+                    <div>
+                      <h3 className="text-lg font-bold">일시</h3>
+                      <p className="text-lg">{eventInfo.date}</p>
+                      <p className="text-base opacity-90">{eventInfo.time}</p>
+                    </div>
+                  </div>
+
+                  {/* 위치 정보 */}
+                  <div className="flex items-center space-x-4">
+                    <div className="flex aspect-square h-16 w-16 flex-shrink-0 items-center justify-center rounded-full bg-white bg-opacity-20">
+                      <svg
+                        className="h-8 w-8"
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth={2}
+                          d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
+                        />
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth={2}
+                          d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
+                        />
+                      </svg>
+                    </div>
+                    <div>
+                      <h3 className="text-lg font-bold">장소</h3>
+                      <p className="text-lg">{eventInfo.location}</p>
+                      <p className="text-base opacity-90">
+                        {eventInfo.locationDetail}
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
             <h2 className="mb-8 text-center text-2xl font-bold text-primary">
               이번 Public Big Chat 타임테이블
             </h2>
