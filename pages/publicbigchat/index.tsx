@@ -33,7 +33,7 @@ const BigChat = () => {
     {
       id: '1',
       time: '18:50',
-      period: '오후',
+      period: '',
       title: 'Keynote',
       subtitle: '',
       presenter: '도정민 (9기 Organizer)',
@@ -41,27 +41,27 @@ const BigChat = () => {
     {
       id: '2',
       time: '19:05',
-      period: '오후',
+      period: '세션1',
       title: 'Unpopular opinions',
       subtitle: '개발 상식에 반기 들기',
-      presenter: ' 문성혁(AUSG 3기, 쿠팡 Sr. Back-end Engineer)',
+      presenter: ' 문성혁\n(AUSG 3기, 쿠팡 Sr. Back-end Engineer)',
     },
     {
       id: '3',
       time: '19:40',
-      period: '오후',
-      title: '홈서버 위에서 쿠버네티스 기반 호스팅 서비스 만들기',
+      period: '세션2',
+      title: '홈서버 위에서 쿠버네티스 기반\n 호스팅 서비스 만들기',
       subtitle: '홈서버 환경을 바탕으로 Platform As A Service 만들어보기',
-      presenter: '김보겸(AUSG 8기, Lablup Software Engineer)',
+      presenter: '김보겸\n(AUSG 8기, Lablup Software Engineer)',
     },
     {
       id: '4',
       time: '20:10',
-      period: '오후',
+      period: '세션3',
       title: 'Platform Engineering의 함정',
       subtitle:
         "'Magic Button'이 만들어내는 장밋빛 환상, 성공적인 Platform Engineering 도입의 숨겨진 방해 요소에 대해 같이 이야기해봐요",
-      presenter: '안지완(AUSG 8기, 몰로코 Software Engineer)',
+      presenter: '안지완\n(AUSG 8기, 몰로코 Software Engineer)',
     },
   ];
 
@@ -96,10 +96,10 @@ const BigChat = () => {
         {/* 헤더 섹션 */}
         <header className="bg-primary px-4 py-12 text-white">
           <div className="container mx-auto text-center">
-            <h1 className="mb-4 text-3xl font-bold md:text-4xl">
-              경험과 노하우를 공유하는 PUBLIC BIG CHAT 🚀
+            <h1 className="mb-4 text-2xl font-bold md:text-4xl">
+              경험과 노하우를 공유하는 PUBLIC BIGCHAT 🚀
             </h1>
-            <p className="mb-6 text-xl">
+            <p className="mb-6 text-lg md:text-xl">
               다양한 분야의 AUSG 멤버들이 한 데 모여 클라우드 개발 경험과
               노하우를 공유해요.
             </p>
@@ -139,9 +139,9 @@ const BigChat = () => {
                       </svg>
                     </div>
                     <div>
-                      <h3 className="text-lg font-bold text-primary">일시</h3>
-                      <p className="text-lg">{eventInfo.date}</p>
-                      <p className="text-base text-gray-600">
+                      <h3 className="text-base font-bold text-primary md:text-lg">일시</h3>
+                      <p className="text-base md:text-lg">{eventInfo.date}</p>
+                      <p className="text-sm text-gray-600 md:text-base">
                         {eventInfo.time}
                       </p>
                     </div>
@@ -171,9 +171,9 @@ const BigChat = () => {
                       </svg>
                     </div>
                     <div>
-                      <h3 className="text-lg font-bold text-primary">장소</h3>
-                      <p className="text-lg">{eventInfo.location}</p>
-                      <p className="text-base text-gray-600">
+                      <h3 className="text-base font-bold text-primary md:text-lg">장소</h3>
+                      <p className="text-base md:text-lg">{eventInfo.location}</p>
+                      <p className="text-sm text-gray-600 md:text-base">
                         {eventInfo.locationDetail}
                       </p>
                     </div>
@@ -182,36 +182,38 @@ const BigChat = () => {
               </div>
             </div>
 
-            <h2 className="mb-8 text-center text-2xl font-bold text-primary">
-              이번 Public Big Chat 타임테이블
+            <h2 className="mb-8 text-center text-xl font-bold text-primary md:text-2xl">
+              이번 PUBLIC BIGCHAT 타임테이블
             </h2>
 
-            <div className="mb-16 rounded-3xl bg-primary bg-opacity-10 p-6 shadow-lg">
+            <div className="mb-16 rounded-3xl bg-primary bg-opacity-10 p-4 shadow-lg md:p-6">
               {timeTableData.map(session => (
                 <div
                   key={session.id}
-                  className={`rounded-2xl border-2 border-primary border-opacity-20 bg-white p-5 shadow-sm ${
+                  className={`rounded-2xl border-2 border-primary border-opacity-20 bg-white p-4 shadow-sm md:p-5 ${
                     session.id !== timeTableData[timeTableData.length - 1].id
                       ? 'mb-4'
                       : ''
                   }`}
                 >
-                  <div className="flex flex-col gap-4 md:flex-row">
-                    <div className="flex h-24 min-w-[100px] flex-col items-center justify-center rounded-xl bg-primary p-4 text-center text-white">
-                      <div className="text-sm">{session.period}</div>
-                      <div className="text-2xl font-bold">{session.time}</div>
+                  <div className="flex flex-row items-center gap-3 md:gap-4">
+                    <div className="flex h-16 w-16 flex-shrink-0 flex-col items-center justify-center rounded-xl bg-primary text-center text-white md:h-24 md:w-24">
+                      <div className="text-xs md:text-sm">{session.period}</div>
+                      <div className="text-sm font-bold md:text-2xl">
+                        {session.time}
+                      </div>
                     </div>
-                    <div className="flex-1">
-                      <h3 className="mb-1 text-xl font-bold text-primary">
+                    <div className="min-w-0 flex-1">
+                      <h3 className="mb-1 whitespace-pre-line text-base font-bold text-primary md:whitespace-normal md:text-xl">
                         {session.title}
                       </h3>
                       <div className="mb-2">
-                        <span className="text-base font-medium text-gray-700">
+                        <span className="whitespace-pre-line text-xs font-medium text-gray-700 md:whitespace-normal md:text-base">
                           {session.presenter}
                         </span>
                       </div>
                       {session.subtitle && (
-                        <p className="text-base italic text-gray-800">
+                        <p className="text-sm italic text-gray-800 md:text-base">
                           {session.subtitle}
                         </p>
                       )}
@@ -223,8 +225,8 @@ const BigChat = () => {
 
             {/* 역대 발표 섹션 */}
             <div className="mt-16">
-              <h2 className="mb-8 text-center text-2xl font-bold text-primary">
-                역대 Public Big Chat 발표
+              <h2 className="mb-8 text-center text-xl font-bold text-primary md:text-2xl">
+                역대 PUBLIC BIGCHAT 발표
               </h2>
 
               {/* 연도 선택 탭 */}
@@ -235,7 +237,7 @@ const BigChat = () => {
                       key={year}
                       type="button"
                       onClick={() => setSelectedYear(year)}
-                      className={`rounded-full px-6 py-2 font-medium transition-colors ${
+                      className={`rounded-full px-4 py-1 text-sm font-medium transition-colors md:px-6 md:py-2 md:text-base ${
                         selectedYear === year
                           ? 'bg-primary text-white'
                           : 'text-primary hover:bg-primary hover:bg-opacity-20'
@@ -253,21 +255,21 @@ const BigChat = () => {
                   {presentationsByYear[selectedYear]?.map(presentation => (
                     <div
                       key={`${selectedYear}-${presentation.title}`}
-                      className="rounded-xl border-l-4 border-primary bg-white p-4 shadow-sm transition-shadow hover:shadow-md"
+                      className="rounded-xl border-l-4 border-primary bg-white p-3 shadow-sm transition-shadow hover:shadow-md md:p-4"
                     >
                       <div className="flex flex-col gap-2 md:flex-row md:items-center md:justify-between">
                         <div>
-                          <h3 className="text-lg font-bold text-primary">
+                          <h3 className="text-base font-bold text-primary md:text-lg">
                             {presentation.title}
                           </h3>
                           <div className="mb-2">
-                            <span className="text-base font-medium text-gray-700">
+                            <span className="text-sm font-medium text-gray-700 md:text-base">
                               {presentation.presenter}
                             </span>
                           </div>
                         </div>
                         <div className="flex flex-col md:items-end">
-                          <span className="text-sm text-gray-500">
+                          <span className="text-xs text-gray-500 md:text-sm">
                             {presentation.date}
                           </span>
                         </div>
