@@ -12,6 +12,7 @@ import YoutubeIcon from '@/public/icons/youtube.svg';
 import ArrowRight from '@/public/icons/arrow_right.svg';
 import Close from '@/public/icons/close.svg';
 import clsx from 'clsx';
+import { getRecruitmentStatus } from '../utils/check-status';
 
 interface HeaderProps {
   theme?: 'white' | 'colored';
@@ -25,6 +26,8 @@ export default function Header({ theme = 'white' }: HeaderProps) {
     if (theme === 'white') return 'fill-primary';
     return 'fill-white';
   }, [theme]);
+
+  const { isApplyPeriod, generation } = getRecruitmentStatus();
 
   const externalLinks = useMemo(
     () => [
@@ -77,7 +80,7 @@ export default function Header({ theme = 'white' }: HeaderProps) {
             <a
               className={clsx(
                 theme === 'white' ? 'text-primary' : 'text-white',
-                'mr-6 hidden items-center p-4 font-bold lg:flex'
+                'mr-6 hidden items-center p-3 font-bold lg:flex'
               )}
             >
               Activities
@@ -87,17 +90,29 @@ export default function Header({ theme = 'white' }: HeaderProps) {
             <a
               className={clsx(
                 theme === 'white' ? 'text-primary' : 'text-white',
-                'mr-6 hidden items-center p-4 font-bold lg:flex'
+                'mr-4 hidden items-center p-3 font-bold lg:flex'
               )}
             >
               People
             </a>
           </Link>
+          {isApplyPeriod && (
+            <Link href="/apply">
+              <a
+                className={clsx(
+                  theme === 'white' ? 'text-primary' : 'text-white',
+                  'mr-4 hidden items-center p-3 font-bold lg:flex'
+                )}
+              >
+                Recruit
+              </a>
+            </Link>
+          )}
           <Link href="/publicbigchat">
             <a
               className={clsx(
                 theme === 'white' ? 'text-primary' : 'text-white',
-                'mr-6 hidden items-center p-4 font-bold lg:flex'
+                'mr-4 hidden items-center p-3 font-bold lg:flex'
               )}
             >
               PublicBigChat
@@ -107,7 +122,7 @@ export default function Header({ theme = 'white' }: HeaderProps) {
             <a
               className={clsx(
                 theme === 'white' ? 'text-primary' : 'text-white',
-                'hidden items-center p-4 font-bold lg:flex'
+                'hidden items-center p-3 font-bold lg:flex'
               )}
             >
               Contact
@@ -129,7 +144,7 @@ export default function Header({ theme = 'white' }: HeaderProps) {
               href={url}
               target="_blank"
               rel="noopener noreferrer"
-              className={`mr-4 px-2 ${fillColor} h-[48px] w-[48px] `}
+              className={`mr-4 px-1 ${fillColor} h-[40px] w-[40px] `}
             >
               {icon}
             </a>
@@ -189,6 +204,16 @@ export default function Header({ theme = 'white' }: HeaderProps) {
                 <ArrowRight width="36" height="36" fill="white" />
               </a>
             </Link>
+            {isApplyPeriod && (
+              <Link href="/apply">
+                <a className="flex items-center">
+                  <span className="mr-[8px] text-[24px] font-bold text-white">
+                    Recruit
+                  </span>
+                  <ArrowRight width="36" height="36" fill="white" />
+                </a>
+              </Link>
+            )}
             <Link href="/publicbigchat">
               <a className="flex items-center">
                 <span className="mr-[8px] text-[24px] font-bold text-white">
