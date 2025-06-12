@@ -5,13 +5,11 @@ import CloudTruncatedImage from 'public/images/cloud-truncated.svg';
 import { useRouter } from 'next/router';
 import { event } from '@/src/lib/gtag';
 import useCountdown from '@/src/_pages/hooks/useCountdown';
-
-import dayjs from 'dayjs';
-import utc from 'dayjs/plugin/utc';
-import timezone from 'dayjs/plugin/timezone';
-
-dayjs.extend(utc);
-dayjs.extend(timezone);
+import { RECRUITMENT_CONFIG } from '@/src/constants/config';
+import {
+  getRecruitmentStatus,
+  getBigchatStatus,
+} from '@/src/utils/check-status';
 
 export default function IntroSection() {
   const [isClient, setIsClient] = useState(false);
@@ -19,37 +17,25 @@ export default function IntroSection() {
   const [showToast, setShowToast] = useState(false);
   const router = useRouter();
 
-  // 이메일 입력창 토글 변수
-  const showEmailInput = true; // true: 보이기, false: 숨기기
+  // 중앙화된 모집 설정 사용
+  const {
+    isApplyPeriod,
+    isAfterApply,
+    generation,
+    applyDeadline,
+    showEmailInput,
+  } = getRecruitmentStatus();
 
-  const applyOpenDate = dayjs('2025-06-13 00:00:00').tz('Asia/Seoul').toDate();
+  // 빅챗 상태 확인
+  const { isBigchatPeriod } = getBigchatStatus();
 
-  const applyDeadlineDate = dayjs('2025-06-30 23:59:59')
-    .tz('Asia/Seoul')
-    .toDate(); // 9기 지원 마감일 (KST)
-
-  const bigchatOpenDate = dayjs('2025-06-13 00:00:00')
-    .tz('Asia/Seoul')
-    .toDate(); // 퍼블릭 빅챗 시작일 (KST)
-
-  const bigchatDeadlineDate = dayjs('2025-06-23 23:59:59')
-    .tz('Asia/Seoul')
-    .toDate(); // 퍼블릭 빅챗 마감일 (KST)
-
-  const krCurrentDate = dayjs().tz('Asia/Seoul').toDate(); // 한국 시간 기준 현재 시간
-
-  const isApplyClosed =
-    krCurrentDate > applyDeadlineDate || krCurrentDate < applyOpenDate;
-  const isBigchatClosed =
-    krCurrentDate > bigchatDeadlineDate || krCurrentDate < bigchatOpenDate;
-
-  const [days, hours, minutes, seconds] = useCountdown(applyDeadlineDate);
+  const [days, hours, minutes, seconds] = useCountdown(applyDeadline.toDate());
 
   const handleApplyClick = () => {
     event({
       action: 'apply',
       category: 'click',
-      label: 'AUSG 9기 지원하기',
+      label: `AUSG ${generation}기 지원하기`,
       value: 1,
     });
     router.push('/apply');
@@ -70,16 +56,13 @@ export default function IntroSection() {
     if (email) {
       try {
         // API 호출
-        const response = await fetch(
-          'https://ovshxcxfyslspeeqa26og2uvya0gqkfc.lambda-url.ap-northeast-2.on.aws/email/register',
-          {
-            method: 'POST',
-            headers: {
-              'Content-Type': 'application/json',
-            },
-            body: JSON.stringify({ email }),
-          }
-        );
+        const response = await fetch(RECRUITMENT_CONFIG.emailApiUrl, {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify({ email }),
+        });
 
         if (response.ok || response.status === 201) {
           // 토스트 표시
@@ -95,7 +78,7 @@ export default function IntroSection() {
           event({
             action: 'email_signup',
             category: 'engagement',
-            label: '9기 모집 알림 신청',
+            label: `${generation}기 모집 알림 신청`,
             value: 1,
           });
         } else {
@@ -133,23 +116,23 @@ export default function IntroSection() {
             </h1>
             <div className="mt-[24px] hidden items-center gap-4 md:flex">
               <p className="text-[28px] font-bold text-white md:text-center md:text-[40px]">
-                {isApplyClosed ? '' : '☁️ 9기 모집중 ☁️'}
+                {!isApplyPeriod ? '' : `${generation}기 모집 중!`}
               </p>
-              {isApplyClosed ? null : (
+              {!isApplyPeriod ? null : (
                 <button
                   type="button"
                   onClick={handleApplyClick}
-                  className="rounded-md bg-white px-6 py-2 text-[18px] font-bold text-primary duration-200 hover:bg-white/90"
+                  className="rounded-full bg-white px-6 py-3 text-[18px] font-bold text-primary shadow-lg transition-all duration-200 hover:bg-white/90 hover:shadow-xl"
                 >
                   지원하기
                 </button>
               )}
             </div>
-            {isApplyClosed && showEmailInput && (
+            {!isApplyPeriod && showEmailInput && (
               <div className="mt-6 hidden flex-col items-center gap-6 md:flex">
                 <div className="flex flex-col items-center gap-4">
                   <p className="text-[26px] font-bold text-white">
-                    9기 모집 시작 알림을 받고 싶다면?
+                    {generation}기 모집 시작 알림을 받고 싶다면?
                   </p>
                   <form
                     onSubmit={handleEmailSubmit}
@@ -175,18 +158,18 @@ export default function IntroSection() {
                 </div>
               </div>
             )}
-            {isApplyClosed ? null : (
-              <div className="hidden items-center gap-4 md:flex md:flex-col">
+            {!isApplyPeriod ? null : (
+              <div className="mt-2 hidden items-center gap-4 md:flex md:flex-col">
                 <p className="text-[18px] font-bold text-white md:text-[24px]">
                   {isClient
-                    ? `🔥 지원 마감까지 ${days}일 ${hours}시간 ${minutes}분 ${seconds}초 🔥`
+                    ? `🔥 지원 마감까지 ${days}일 ${hours}시간 ${minutes}분 ${seconds}초`
                     : null}
                 </p>
                 <div className="flex items-center gap-2">
                   <p className="text-[18px] font-bold text-white md:text-[24px]">
-                    {isBigchatClosed ? null : 'AUSG이 궁금하다면?'}
+                    {!isBigchatPeriod ? null : 'AUSG이 궁금하다면?'}
                   </p>
-                  {isBigchatClosed ? null : (
+                  {!isBigchatPeriod ? null : (
                     <button
                       type="button"
                       onClick={handleBigchatClick}
@@ -209,25 +192,48 @@ export default function IntroSection() {
           />
         </div>
         <div className="mt-[24px] flex flex-col flex-wrap items-center justify-center gap-4 md:hidden">
-          <div className="flex items-center gap-4">
-            <p className="text-[22px] font-bold text-white md:text-center md:text-[40px]">
-              {isApplyClosed ? '' : '☁️ 9기 모집중 ☁️'}
+          <div className="flex items-center gap-3">
+            <p className="text-center text-[22px] font-bold leading-[3rem] text-white">
+              {!isApplyPeriod ? '' : `☁️ ${generation}기 모집중 ☁️`}
             </p>
-            {isApplyClosed ? null : (
+            {!isApplyPeriod ? null : (
               <button
                 type="button"
                 onClick={handleApplyClick}
-                className="shrink-0 rounded-md bg-white px-6 py-2 text-[18px] font-bold text-primary hover:bg-white/90"
+                className="flex h-12 shrink-0 items-center rounded-full bg-white px-6 py-3 text-[16px] font-bold text-primary shadow-lg transition-all duration-200 hover:bg-white/90 hover:shadow-xl"
               >
                 지원하기
               </button>
             )}
           </div>
-          {isApplyClosed && showEmailInput && (
+          {!isApplyPeriod ? null : (
+            <div className="flex flex-col items-center gap-3">
+              <p className="text-center text-[16px] font-bold text-white">
+                {isClient
+                  ? `🔥지원 마감까지 ${days}일 ${hours}시간 ${minutes}분 ${seconds}초🔥`
+                  : null}
+              </p>
+              <div className="flex items-center gap-2">
+                <p className="text-center text-[16px] font-bold text-white">
+                  {!isBigchatPeriod ? null : 'AUSG이 궁금하다면?'}
+                </p>
+                {!isBigchatPeriod ? null : (
+                  <button
+                    type="button"
+                    onClick={handleBigchatClick}
+                    className="rounded-md bg-white/90 px-6 py-2 text-[16px] font-bold text-primary transition-all duration-200 hover:bg-white"
+                  >
+                    퍼블릭 빅챗 참여하기
+                  </button>
+                )}
+              </div>
+            </div>
+          )}
+          {!isApplyPeriod && showEmailInput && (
             <div className="flex flex-col items-center gap-4">
               <div className="flex w-full flex-col items-center gap-4">
                 <p className="text-center text-[26px] font-bold text-white">
-                  9기 모집 시작 알림을 받고 싶다면?
+                  {generation}기 모집 시작 알림을 받고 싶다면?
                 </p>
                 <form
                   onSubmit={handleEmailSubmit}
@@ -253,29 +259,6 @@ export default function IntroSection() {
               </div>
             </div>
           )}
-          {isApplyClosed ? null : (
-            <div className="flex items-center gap-4 md:hidden">
-              <p className="text-[18px] font-bold text-white md:text-[24px]">
-                {isClient
-                  ? `🔥지원 마감까지 ${days}일 ${hours}시간 ${minutes}분 ${seconds}초🔥`
-                  : null}
-              </p>
-            </div>
-          )}
-          <div className="flex flex-col items-center gap-2">
-            <p className="text-[18px] font-bold text-white md:text-[24px]">
-              {isBigchatClosed ? null : 'AUSG이 궁금하다면?'}
-            </p>
-            {isBigchatClosed ? null : (
-              <button
-                type="button"
-                onClick={handleBigchatClick}
-                className="rounded-md bg-white px-6 py-2 text-[18px] font-bold text-primary duration-200 hover:bg-white/90"
-              >
-                퍼블릭 빅챗 참여하기
-              </button>
-            )}
-          </div>
         </div>
       </main>
 
