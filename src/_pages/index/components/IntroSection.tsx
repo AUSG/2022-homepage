@@ -20,7 +20,7 @@ export default function IntroSection() {
   const router = useRouter();
 
   // 이메일 입력창 토글 변수
-  const showEmailInput = true; // true: 보이기, false: 숨기기
+  const showEmailInput = false; // true: 보이기, false: 숨기기
 
   const applyOpenDate = dayjs('2025-06-13 00:00:00').tz('Asia/Seoul').toDate();
 
