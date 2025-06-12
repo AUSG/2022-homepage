@@ -189,7 +189,7 @@ export default function Header({ theme = 'white' }: HeaderProps) {
                 <ArrowRight width="36" height="36" fill="white" />
               </a>
             </Link>
-            <Link href="/bigchat">
+            <Link href="/publicbigchat">
               <a className="flex items-center">
                 <span className="mr-[8px] text-[24px] font-bold text-white">
                   PublicBigChat
