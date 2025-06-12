@@ -139,7 +139,9 @@ const BigChat = () => {
                       </svg>
                     </div>
                     <div>
-                      <h3 className="text-base font-bold text-primary md:text-lg">일시</h3>
+                      <h3 className="text-base font-bold text-primary md:text-lg">
+                        일시
+                      </h3>
                       <p className="text-base md:text-lg">{eventInfo.date}</p>
                       <p className="text-sm text-gray-600 md:text-base">
                         {eventInfo.time}
@@ -171,8 +173,12 @@ const BigChat = () => {
                       </svg>
                     </div>
                     <div>
-                      <h3 className="text-base font-bold text-primary md:text-lg">장소</h3>
-                      <p className="text-base md:text-lg">{eventInfo.location}</p>
+                      <h3 className="text-base font-bold text-primary md:text-lg">
+                        장소
+                      </h3>
+                      <p className="text-base md:text-lg">
+                        {eventInfo.location}
+                      </p>
                       <p className="text-sm text-gray-600 md:text-base">
                         {eventInfo.locationDetail}
                       </p>
