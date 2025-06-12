@@ -93,6 +93,16 @@ export default function Header({ theme = 'white' }: HeaderProps) {
               People
             </a>
           </Link>
+          <Link href="/publicbigchat">
+            <a
+              className={clsx(
+                theme === 'white' ? 'text-primary' : 'text-white',
+                'mr-6 hidden items-center p-4 font-bold lg:flex'
+              )}
+            >
+              PublicBigChat
+            </a>
+          </Link>
           <Link href="/contact">
             <a
               className={clsx(
@@ -175,6 +185,14 @@ export default function Header({ theme = 'white' }: HeaderProps) {
               <a className="flex items-center">
                 <span className="mr-[8px] text-[24px] font-bold text-white">
                   People
+                </span>
+                <ArrowRight width="36" height="36" fill="white" />
+              </a>
+            </Link>
+            <Link href="/publicbigchat">
+              <a className="flex items-center">
+                <span className="mr-[8px] text-[24px] font-bold text-white">
+                  PublicBigChat
                 </span>
                 <ArrowRight width="36" height="36" fill="white" />
               </a>
