@@ -23,7 +23,7 @@ const BigChat = () => {
 
   // 이벤트 정보 데이터
   const eventInfo = {
-    date: '2025년 6월 26일 (토)',
+    date: '2025년 6월 26일 (목)',
     time: '오후 6시 50분 ~ 8시 40분',
     location: 'AWS Korea',
     locationDetail: '서울 강남구 테헤란로 231 센터필드 EAST 18층',
