@@ -62,7 +62,7 @@ export default function IntroSection() {
       label: '퍼블릭 빅챗 참여하기',
       value: 1,
     });
-    router.push('https://umoh.io/ausg-public-bigchat');
+    router.push('/publicbigchat');
   };
 
   const handleEmailSubmit = async (e: React.FormEvent) => {
