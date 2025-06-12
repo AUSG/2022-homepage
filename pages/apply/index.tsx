@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { NextSeo } from 'next-seo';
+import Link from 'next/link';
 import Header from '@/src/components/Header';
 import { event } from '@/src/lib/gtag';
 import { getRecruitmentStatus } from '@/src/utils/check-status';
@@ -73,7 +74,6 @@ export default function Apply() {
             <h1 className="mb-4 text-[32px] font-bold text-white md:text-[48px]">
               AUSG {generation}기 지원하기
             </h1>
-            <p className="text-[18px] text-white/80 md:text-[24px]"></p>
           </div>
 
           {/* 우리가 찾는 인재상 섹션 */}
@@ -181,12 +181,11 @@ export default function Apply() {
           <div className="mt-8 text-center">
             <p className="text-[14px] text-white/60">
               문의사항이 있으시면{' '}
-              <a
-                href="/contact"
-                className="text-white underline hover:text-white/80"
-              >
-                Contact
-              </a>{' '}
+              <Link href="/contact">
+                <a className="text-white underline hover:text-white/80">
+                  Contact
+                </a>
+              </Link>{' '}
               페이지를 참고해주세요.
             </p>
           </div>
