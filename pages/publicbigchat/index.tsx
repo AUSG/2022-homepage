@@ -89,7 +89,7 @@ const BigChat = () => {
         <header className="bg-primary px-4 py-12 text-white">
           <div className="container mx-auto text-center">
             <h1 className="mb-4 text-3xl font-bold md:text-4xl">
-              경험과 노하우를 공유하는 PUBLIC BIG CHAT
+              경험과 노하우를 공유하는 PUBLIC BIG CHAT 🚀
             </h1>
             <p className="mb-6 text-xl">
               다양한 분야의 AUSG 멤버들이 한 데 모여 클라우드 개발 경험과
@@ -138,7 +138,7 @@ const BigChat = () => {
                         </span>
                       </div>
                       {session.subtitle && (
-                        <p className="text-sm italic text-gray-600">
+                        <p className="text-base italic text-gray-800">
                           {session.subtitle}
                         </p>
                       )}
@@ -151,7 +151,7 @@ const BigChat = () => {
             {/* 역대 발표 섹션 */}
             <div className="mt-16">
               <h2 className="mb-8 text-center text-2xl font-bold text-primary">
-                역대 Public Big Chat 발표 모음
+                역대 Public Big Chat 발표
               </h2>
 
               {/* 연도 선택 탭 */}
