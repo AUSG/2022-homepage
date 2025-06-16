@@ -19,7 +19,7 @@ const Activities = () => {
       <main>
         <div className="md:mx-auto lg:max-w-screen-xl">
           <Header />
-          <h1 className="mt-3 ml-5 mb-6 text-2xl font-bold md:text-center md:text-4xl lg:mb-16">
+          <h1 className="mb-6 ml-5 mt-3 text-2xl font-bold md:text-center md:text-4xl lg:mb-16">
             Activities
           </h1>
         </div>

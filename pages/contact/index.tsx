@@ -14,7 +14,7 @@ const Contact = () => {
       </Head>
       <div className="md:mx-auto md:max-w-screen-xl">
         <Header />
-        <div className="mt-3 ml-5 text-2xl font-bold md:text-center md:text-4xl">
+        <div className="ml-5 mt-3 text-2xl font-bold md:text-center md:text-4xl">
           Contact
         </div>
 
@@ -28,7 +28,7 @@ const Contact = () => {
             질문 받습니다.
           </div>
           <div
-            className="relative mr-3 mt-1 ml-auto mb-3 aspect-[441/226] h-24
+            className="relative mb-3 ml-auto mr-3 mt-1 aspect-[441/226] h-24
             md:m-0 md:mr-12 md:h-[calc(100%-60px)] md:w-auto"
           >
             <Image
@@ -40,7 +40,7 @@ const Contact = () => {
           </div>
         </div>
 
-        <div className="relative mx-5 mt-6 mb-12 md:mt-10">
+        <div className="relative mx-5 mb-12 mt-6 md:mt-10">
           {isLoaded ? undefined : (
             <div className="absolute inset-0 flex h-[440px] w-full items-center justify-center bg-gray-100">
               <svg

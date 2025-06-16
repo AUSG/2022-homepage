@@ -35,7 +35,7 @@ const People = ({ randomNumber }: { randomNumber: number }) => {
       </Head>
       <div className="md:mx-auto md:max-w-screen-xl">
         <Header />
-        <h1 className="mt-3 ml-5 text-2xl font-bold md:text-center md:text-4xl lg:mb-16">
+        <h1 className="ml-5 mt-3 text-2xl font-bold md:text-center md:text-4xl lg:mb-16">
           People
         </h1>
 
@@ -44,7 +44,7 @@ const People = ({ randomNumber }: { randomNumber: number }) => {
             peopleData.people.filter(({ year }) => year === tab).length > 0 && (
               <Fragment key={tab}>
                 <ScrollNavigation currentTab={tab} />
-                <div className="mt-8 mb-6 grid grid-cols-1 gap-y-4 px-5 lg:mt-20 lg:mb-[60px] lg:grid-cols-2 lg:gap-x-16 lg:gap-y-12 lg:px-8">
+                <div className="mb-6 mt-8 grid grid-cols-1 gap-y-4 px-5 lg:mb-[60px] lg:mt-20 lg:grid-cols-2 lg:gap-x-16 lg:gap-y-12 lg:px-8">
                   {shuffle(
                     peopleData.people.filter(({ year }) => year === tab),
                     randomNumber
