@@ -264,7 +264,7 @@ export default function IntroSection() {
 
       {/* 토스트 알림 */}
       {showToast && (
-        <div className="fixed top-4 left-1/2 z-50 max-w-[90vw] -translate-x-1/2 transform transition-all duration-300 ease-in-out">
+        <div className="fixed left-1/2 top-4 z-50 max-w-[90vw] -translate-x-1/2 transform transition-all duration-300 ease-in-out">
           <div className="flex items-center gap-2 whitespace-nowrap rounded-lg border border-gray-200 bg-white px-4 py-3 shadow-lg">
             <span className="text-lg text-green-500">🎉</span>
             <span className="text-sm font-medium text-gray-800 md:text-base">

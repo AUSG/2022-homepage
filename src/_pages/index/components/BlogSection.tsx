@@ -29,7 +29,7 @@ const posts = [
 export default function BlogSection() {
   return (
     <div className="bg-primary">
-      <div className="py-[48px] px-[20px] md:mx-auto md:max-w-screen-xl xl:py-[100px]">
+      <div className="px-[20px] py-[48px] md:mx-auto md:max-w-screen-xl xl:py-[100px]">
         <h1 className="text-[24px] font-bold leading-[34px] text-white xl:text-[36px] xl:leading-[52px]">
           AUSG 멤버들이 공유한 <br className="xl:hidden" />
           지식과 경험을 확인해보세요!
@@ -43,7 +43,7 @@ export default function BlogSection() {
             {/* ref for dynamic youtube iframe sizing : https://stackoverflow.com/a/54924505/8556340 */}
             <div className="relative mx-auto h-0 w-full pb-[56.25%]">
               <iframe
-                className="absolute top-0 left-0 h-full w-full"
+                className="absolute left-0 top-0 h-full w-full"
                 src="https://www.youtube.com/embed/videoseries?si=idHMm0h2O93bHMkJ&amp;list=PLzE5CrlMM0CDLVzxgir4Kbj7oPBD4VUvC"
                 title="BigChat 발표영상 플레이리스트"
                 frameBorder="1"
@@ -60,7 +60,7 @@ export default function BlogSection() {
 
             <div className="relative mx-auto h-0 w-full pb-[56.25%]">
               <iframe
-                className="absolute top-0 left-0 h-full w-full"
+                className="absolute left-0 top-0 h-full w-full"
                 src="https://www.youtube.com/embed/videoseries?si=loa-rXJnT3nTl_Mv&amp;list=PLzE5CrlMM0CBxMT6DeEoWbgSnobkfg74L"
                 title="외부 발표영상 플레이리스트"
                 frameBorder="0"

@@ -53,10 +53,10 @@ export default function Apply() {
   return (
     <>
       <NextSeo
-        title={`AUSG ${generation}기 지원하기`}
+        title="AUSG - Apply"
         description={`AUSG ${generation}기 모집에 지원해보세요! 대학생 개발자를 위한 클라우드 커뮤니티 AUSG에서 함께 성장하실 분을 찾습니다.`}
         openGraph={{
-          title: `AUSG ${generation}기 지원하기`,
+          title: 'AUSG - Apply',
           description: `AUSG ${generation}기 모집에 지원해보세요! 대학생 개발자를 위한 클라우드 커뮤니티 AUSG에서 함께 성장하실 분을 찾습니다.`,
           type: 'website',
           url: 'https://ausg.me/apply',
@@ -89,7 +89,7 @@ export default function Apply() {
                 <h3 className="mb-3 text-[18px] font-bold text-primary/80 md:text-[20px]">
                   성장과 배움에 열정적인 사람
                 </h3>
-                <p className="text-primary/65 text-[13px] leading-relaxed md:text-[14px]">
+                <p className="text-[13px] leading-relaxed text-primary/65 md:text-[14px]">
                   새로운 기술을 배우는데 겁내지 않고,
                   <br />
                   지속적으로 발전하려는 의지가 있는 분
@@ -102,7 +102,7 @@ export default function Apply() {
                 <h3 className="mb-3 text-[18px] font-bold text-primary/80 md:text-[20px]">
                   지식 공유와 소통에 적극적인 사람
                 </h3>
-                <p className="text-primary/65 text-[13px] leading-relaxed md:text-[14px]">
+                <p className="text-[13px] leading-relaxed text-primary/65 md:text-[14px]">
                   함께 성장하며 서로의 경험을 나누는 것을 즐기는 분
                 </p>
               </div>
@@ -113,7 +113,7 @@ export default function Apply() {
                 <h3 className="mb-3 text-[18px] font-bold text-primary/80 md:text-[20px]">
                   기술을 즐기는 사람
                 </h3>
-                <p className="text-primary/65 text-[13px] leading-relaxed md:text-[14px]">
+                <p className="text-[13px] leading-relaxed text-primary/65 md:text-[14px]">
                   개발과 기술에 대한 순수한 흥미와 재미를 느끼는 분
                 </p>
               </div>
