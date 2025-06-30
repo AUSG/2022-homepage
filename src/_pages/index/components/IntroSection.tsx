@@ -114,7 +114,7 @@ export default function IntroSection() {
               <br />
               클라우드 커뮤니티
             </h1>
-            <div className="mt-[24px] hidden items-center gap-4 md:flex">
+            {/* <div className="mt-[24px] hidden items-center gap-4 md:flex">
               <p className="text-[28px] font-bold text-white md:text-center md:text-[40px]">
                 {!isApplyPeriod ? '' : `${generation}기 모집 중!`}
               </p>
@@ -127,7 +127,7 @@ export default function IntroSection() {
                   지원하기
                 </button>
               )}
-            </div>
+            </div> */}
             {!isApplyPeriod && showEmailInput && (
               <div className="mt-6 hidden flex-col items-center gap-6 md:flex">
                 <div className="flex flex-col items-center gap-4">

@@ -109,14 +109,13 @@ const BigChat = () => {
               <span className="hidden md:inline"> </span>
               클라우드 개발 경험과 노하우를 공유해요.
             </p>
-            <a
-              href={registrationLink}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-block rounded-full bg-white px-6 py-3 font-bold text-primary shadow-lg transition-colors hover:bg-gray-50"
+            <button
+              type="button"
+              disabled
+              className="inline-block cursor-not-allowed rounded-full bg-gray-300 px-6 py-3 font-bold text-primary shadow-lg"
             >
-              신청하기
-            </a>
+              신청 마감
+            </button>
           </div>
         </header>
 
