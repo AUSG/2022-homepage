@@ -2,6 +2,15 @@
   "people": [
     {
       "year": "9th",
+      "name_ko": "장영환",
+      "name_en": "Yeonghwan Jang",
+      "photo": "yeonghwan.jpg",
+      "short_bio": "대세에 지장 없다",
+      "github_username": "yeong-hwan",
+      "linkedin_username": "yeonghwan-jang",
+    },
+    {
+      "year": "9th",
       "name_ko": "가동식",
       "name_en": "Dongsik Ga",
       "photo": "gadongsik.jpeg",
