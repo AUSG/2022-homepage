@@ -11,6 +11,15 @@
     },
     {
       "year": "9th",
+      "name_ko": "김보람",
+      "name_en": "Boram Kim",
+      "photo": "boram.jpg",
+      "short_bio": "유통기한 없는 열정을 추구합니다",
+      "github_username": "bo-ram-bo-ram",
+      "homepage_url": "https://velog.io/@bo-ram-bo-ram/posts"
+    },
+    {
+      "year": "9th",
       "name_ko": "가동식",
       "name_en": "Dongsik Ga",
       "photo": "gadongsik.jpeg",
@@ -83,6 +92,14 @@
       "short_bio": "멋쟁이 엔지니어",
       "linkedin_username": "yoonji-heo",
       "github_username": "myeunee"
+    },
+    {
+      "year": "9th",
+      "name_ko": "박시현",
+      "name_en": "Sihyeon Park",
+      "photo": "sihyeon.jpg",
+      "short_bio": "Why not?",
+      "github_username": "lilloo04"
     },
     {
       "year": "9th",
