@@ -2,6 +2,15 @@
   "people": [
     {
       "year": "9th",
+      "name_ko": "이호연",
+      "name_en": "Hoyeon Lee",
+      "photo": "hoyeon.jpg",
+      "short_bio": "기술로 선한 영향력을 실현하고자 합니다",
+      "linkedin_username": "hoyeonying",
+      "github_username": "howooyeon"
+    },
+    {
+      "year": "9th",
       "name_ko": "김건우",
       "name_en": "Geonu Kim",
       "photo": "9th-kim-geonu.jpg",
