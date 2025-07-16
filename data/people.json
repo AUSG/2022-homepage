@@ -2,6 +2,15 @@
   "people": [
     {
       "year": "9th",
+      "name_ko": "가동식",
+      "name_en": "Dongsik Ga",
+      "photo": "gadongsik.jpeg",
+      "short_bio": "지식을 나누며 함께 성장하기 📚",
+      "linkedin_username": "eple0329",
+      "github_username": "eple0329"
+    },
+    {
+      "year": "9th",
       "name_ko": "김건우",
       "name_en": "Geonu Kim",
       "photo": "9th-kim-geonu.jpg",
