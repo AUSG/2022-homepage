@@ -68,6 +68,15 @@
     },
     {
       "year": "9th",
+      "name_ko": "허윤지",
+      "name_en": "Yoonji Heo",
+      "photo": "YoonjiHeo.jpg",
+      "short_bio": "멋쟁이 엔지니어",
+      "linkedin_username": "yoonji-heo",
+      "github_username": "myeunee"
+    },
+    {
+      "year": "9th",
       "name_ko": "전지원",
       "name_en": "Jiwon Jun",
       "photo": "jiwonjeon.jpg",
