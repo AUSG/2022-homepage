@@ -11,6 +11,15 @@
     },
     {
       "year": "9th",
+      "name_ko": "고태규",
+      "name_en": "Taekyu Ko",
+      "photo": "taekyu.jpg",
+      "short_bio": "늦었다고 생각할때는 진짜늦으니까 지금해보자!",
+      "github_username": "TaekyuKo",
+      "homepage_url": "https://velog.io/@taekyu_"
+    },
+    {
+      "year": "9th",
       "name_ko": "김건우",
       "name_en": "Geonu Kim",
       "photo": "9th-kim-geonu.jpg",
