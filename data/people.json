@@ -2,6 +2,24 @@
   "people": [
     {
       "year": "9th",
+      "name_ko": "장영환",
+      "name_en": "Yeonghwan Jang",
+      "photo": "yeonghwan.jpg",
+      "short_bio": "대세에 지장 없다",
+      "github_username": "yeong-hwan",
+      "linkedin_username": "yeonghwan-jang"
+    },
+    {
+      "year": "9th",
+      "name_ko": "김보람",
+      "name_en": "Boram Kim",
+      "photo": "boram.jpg",
+      "short_bio": "유통기한 없는 열정을 추구합니다",
+      "github_username": "bo-ram-bo-ram",
+      "homepage_url": "https://velog.io/@bo-ram-bo-ram/posts"
+    },
+    {
+      "year": "9th",
       "name_ko": "가동식",
       "name_en": "Dongsik Ga",
       "photo": "gadongsik.jpeg",
@@ -60,11 +78,37 @@
       "year": "9th",
       "name_ko": "김대현",
       "name_en": "Daehyun Kim",
-      "photo": "daehyun.JPG",
+      "photo": "daehyun.jpg",
       "short_bio": "기술을 통해 더 나은 세상을 만들기 위해 구르는중 🐤",
       "linkedin_username": "daehyun-kim-b6336b291",
       "github_username": "Daehyun-Bigbread",
       "homepage_url": "https://daehyun-bigbread.tistory.com/"
+    },
+    {
+      "year": "9th",
+      "name_ko": "허윤지",
+      "name_en": "Yoonji Heo",
+      "photo": "YoonjiHeo.jpg",
+      "short_bio": "멋쟁이 엔지니어",
+      "linkedin_username": "yoonji-heo",
+      "github_username": "myeunee"
+    },
+    {
+      "year": "9th",
+      "name_ko": "박시현",
+      "name_en": "Sihyeon Park",
+      "photo": "sihyeon.jpg",
+      "short_bio": "Why not?",
+      "github_username": "lilloo04"
+    },
+    {
+      "year": "9th",
+      "name_ko": "전지원",
+      "name_en": "Jiwon Jun",
+      "photo": "jiwonjeon.jpg",
+      "short_bio": "경험은 많을수록 좋다!",
+      "linkedin_username": "jiwon-jun-540437342",
+      "github_username": "jiwonly"
     },
     {
       "year": "8th",
