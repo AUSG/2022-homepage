@@ -2,6 +2,15 @@
   "people": [
     {
       "year": "9th",
+      "name_ko": "김동윤",
+      "name_en": "Dongyun Kim",
+      "photo": "dongyun.jpg",
+      "short_bio": "시작은 작게, 끝은 성대하게, 묵묵히 끝까지 갑니다",
+      "linkedin_username": "dyk-im",
+      "github_username": "dyk-im"
+    },
+    {
+      "year": "9th",
       "name_ko": "권지윤",
       "name_en": "Jiyun Kwon",
       "photo": "jiyunkwon.jpg",
