@@ -2,6 +2,16 @@
   "people": [
     {
       "year": "9th",
+      "name_ko": "권지윤",
+      "name_en": "Jiyun Kwon",
+      "photo": "jiyunkwon.jpg",
+      "short_bio": "재귀함수처럼 목표에 도달할 때까지 끝없이 도전합니다 💫",
+      "linkedin_username": "jiyun-kwon-aba389240",
+      "github_username": "june0216",
+      "homepage_url": "https://coding-with-the-lord-everyday.tistory.com/"
+    },
+    {
+      "year": "9th",
       "name_ko": "김시은",
       "name_en": "Sieun Kim",
       "photo": "sieun.jpg",
