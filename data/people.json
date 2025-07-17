@@ -2,6 +2,15 @@
   "people": [
     {
       "year": "9th",
+      "name_ko": "김시은",
+      "name_en": "Sieun Kim",
+      "photo": "sieun.jpg",
+      "short_bio": "거대한 참나무도 시작은 도토리였다 🌳",
+      "github_username": "seplease",
+      "homepage_url": "https://rec-of.tistory.com/"
+    },
+    {
+      "year": "9th",
       "name_ko": "장영환",
       "name_en": "Yeonghwan Jang",
       "photo": "yeonghwan.jpg",
