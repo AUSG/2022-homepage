@@ -12,6 +12,22 @@
     },
     {
       "year": "9th",
+      "name_ko": "이건",
+      "name_en": "Geon Lee",
+      "photo": "geon.jpg",
+      "short_bio": "개발자가 개발에 집중하도록 하는 엔지니어",
+      "github_username": "gun9212"
+    },
+    {
+      "year": "9th",
+      "name_ko": "정종인",
+      "name_en": "JongIn Chung",
+      "photo": "chungjongin.jpg",
+      "short_bio": "행복하게 개발하고 싶은 개발자",
+      "github_username": "https://github.com/dddingzong"
+    },
+    {
+      "year": "9th",
       "name_ko": "김동윤",
       "name_en": "Dongyun Kim",
       "photo": "dongyun.jpg",
