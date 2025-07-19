@@ -2,6 +2,16 @@
   "people": [
     {
       "year": "9th",
+      "name_ko": "김유경",
+      "name_en": "Yukyung Kim",
+      "photo": "yukyung.jpeg",
+      "short_bio": "Let’s build 🚀",
+      "linkedin_username": "y0ukyung",
+      "github_username": "Kim-Yukyung",
+      "homepage_url": "https://velog.io/@yukyung_16/posts"
+    },
+    {
+      "year": "9th",
       "name_ko": "김동윤",
       "name_en": "Dongyun Kim",
       "photo": "dongyun.jpg",
