@@ -2,6 +2,25 @@
   "people": [
     {
       "year": "9th",
+      "name_ko": "박재성",
+      "name_en": "Jaeseong Park",
+      "photo": "jspark.jpeg",
+      "short_bio": "오늘 하루에 최선을!",
+      "linkedin_username": "jspark6815",
+      "github_username": "jspark6815"
+    },
+    {
+      "year": "9th",
+      "name_ko": "신동준",
+      "name_en": "Dongjun Shin",
+      "photo": "shindongjun.jpg",
+      "short_bio": "많은 사람이 겪고 있는 문제를 풀어가는 개발자가 되고 싶습니다",
+      "linkedin_username": "americano212",
+      "github_username": "americano212",
+      "homepage_url": "https://www.dongjun.me/"
+    },
+    {
+      "year": "9th",
       "name_ko": "이다연",
       "name_en": "Dayeon Lee",
       "photo": "dayeonlee.jpeg",
