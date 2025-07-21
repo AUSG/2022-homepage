@@ -2,6 +2,15 @@
   "people": [
     {
       "year": "9th",
+      "name_ko": "김희재",
+      "name_en": "Heejae Kim",
+      "photo": "heejae.jpg",
+      "short_bio": "도전하는 삶을 살자! 🚀",
+      "linkedin_username": "1026hz",
+      "github_username": "1026hz"
+    },
+    {
+      "year": "9th",
       "name_ko": "박재성",
       "name_en": "Jaeseong Park",
       "photo": "jspark.jpeg",
