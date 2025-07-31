@@ -2,6 +2,14 @@
   "people": [
     {
       "year": "9th",
+      "name_ko": "한현진",
+      "name_en": "Hyeonjin Han",
+      "photo": "hyeonjin.jpg",
+      "short_bio": "멋진 세상, 함께 만들어볼까요?",
+      "github_username": "progresshans"
+    },
+    {
+      "year": "9th",
       "name_ko": "장인호",
       "name_en": "Inho Jang",
       "photo": "inho.jpg",
