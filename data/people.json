@@ -229,6 +229,14 @@
     },
     {
       "year": "9th",
+      "name_ko": "이현정",
+      "name_en": "Hyunjeong Lee",
+      "photo": "hyunjeong.jpeg",
+      "short_bio": "The darkest hour is just before the dawn.",
+      "github_username": "mintchococ"
+    },
+    {
+      "year": "9th",
       "name_ko": "이태경",
       "name_en": "Taekyung Lee",
       "photo": "taekyung.jpg",
