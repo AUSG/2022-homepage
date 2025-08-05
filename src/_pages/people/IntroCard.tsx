@@ -14,6 +14,7 @@ interface IntroCardProps {
   github_username?: string;
   linkedin_username?: string;
   homepage_url?: string;
+  role?: 'Regulator' | 'Organizer';
 }
 
 const IntroCard: FC<IntroCardProps> = ({
@@ -24,9 +25,21 @@ const IntroCard: FC<IntroCardProps> = ({
   github_username,
   linkedin_username,
   homepage_url,
+  role,
 }) => {
   return (
-    <div className="flex flex-shrink-0 rounded-2xl p-3 shadow-[0px_0px_8px_rgba(0,0,0,0.1)] lg:p-4">
+    <div className="relative flex flex-shrink-0 rounded-2xl p-3 shadow-[0px_0px_8px_rgba(0,0,0,0.1)] lg:p-4">
+      {role && (
+        <div className="absolute top-2 right-2 flex items-center rounded-full bg-white px-2 py-1 text-xs font-bold text-primary lg:px-3 lg:py-1 lg:text-sm">
+          {role}
+          <Image
+            src="/icons/regulator.svg"
+            alt="Regulator Icon"
+            width={26}
+            height={26}
+          />
+        </div>
+      )}
       <div className="relative mr-3 h-12 flex-shrink-0 basis-12 overflow-hidden rounded-full lg:mr-6 lg:h-24 lg:basis-24 ">
         <Image
           src={`/people/${photo}`}

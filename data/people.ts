@@ -9,6 +9,7 @@ export interface Person {
   github_username?: string;
   linkedin_username?: string;
   homepage_url?: string;
+  is_organizer?: boolean;
 }
 
 export interface PeopleData {
