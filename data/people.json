@@ -2,6 +2,15 @@
   "people": [
     {
       "year": "10th",
+      "name_ko": "박소윤",
+      "name_en": "Soyun Park",
+      "photo": "SoyunPark.jpg",
+      "short_bio": "Dreams come true. 💭",
+      "linkedin_username": "ha2pine2s",
+      "github_username": "ha2pine2s"
+    },
+    {
+      "year": "10th",
       "name_ko": "이지호",
       "name_en": "Jiho Lee",
       "photo": "leejiho.webp",
