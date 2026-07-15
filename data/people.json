@@ -1,6 +1,15 @@
 {
   "people": [
     {
+        "year": "10th",
+        "name_ko": "김홍석",
+        "name_en": "Hongseok Kim",
+        "photo": "HongseokKim.jpg",
+        "short_bio": "틀을 깨고 질문을 던지는 개발자가 되기 위해 달리는 중 🏃‍♂️",
+        "linkedin_username": "hongseok01",
+        "github_username": "drghdtjr"
+    },
+    {
       "year": "10th",
       "name_ko": "박소윤",
       "name_en": "Soyun Park",
