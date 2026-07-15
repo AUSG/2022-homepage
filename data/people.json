@@ -1,6 +1,14 @@
 {
   "people": [
     {
+      "year": "10th",
+      "name_ko": "이현진",
+      "name_en": "Hyunchin Lee",
+      "photo": "hyunchin.jpg",
+      "short_bio": "의미 없는 시간은 없다 ᕦ(ò_óˇ)ᕤ",
+      "github_username": "hgeniee"
+    },
+    {
       "year": "9th",
       "name_ko": "한현진",
       "name_en": "Hyeonjin Han",
