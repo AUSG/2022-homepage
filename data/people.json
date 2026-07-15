@@ -2,6 +2,15 @@
   "people": [
     {
       "year": "10th",
+      "name_ko": "이지호",
+      "name_en": "Jiho Lee",
+      "photo": "leejiho.webp",
+      "short_bio": "Hello, World!",
+      "linkedin_username": "jiho-lee-2a0b69340",
+      "github_username": "wlgh1553"
+    },
+    {
+      "year": "10th",
       "name_ko": "이현진",
       "name_en": "Hyunchin Lee",
       "photo": "hyunchin.jpg",
