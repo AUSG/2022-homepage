@@ -1,6 +1,15 @@
 {
   "people": [
     {
+      "year": "10th", 
+      "name_ko": "김지민", 
+      "name_en": "Jimin Kim",
+      "photo": "jiminkim.jpg", 
+      "short_bio": "매일을 항해하는 삶",
+      "github_username": "jinnieusLab",
+      "homepage_url": "https://9oongoguma.tistory.com"
+    },
+    {
       "year": "10th",
       "name_ko": "오현승",
       "name_en": "Hyeonseung Oh",
