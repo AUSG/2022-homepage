@@ -2,6 +2,16 @@
   "people": [
     {
         "year": "10th",
+        "name_ko": "강동현",
+        "name_en": "DongHyeon Kang",
+        "photo": "kangdh.webp",
+        "short_bio": "견현사제(見賢思齊)를 따르며 언제나 개발자로 살고 싶은 강동현 입니다.",
+        "linkedin_username": "동현-강-6b15923b6",
+        "github_username": "kang1027",
+        "homepage_url": "https://kang1027.com" 
+    },
+    {
+        "year": "10th",
         "name_ko": "김홍석",
         "name_en": "Hongseok Kim",
         "photo": "HongseokKim.jpg",
