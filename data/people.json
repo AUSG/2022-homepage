@@ -2,6 +2,15 @@
   "people": [
     {
       "year": "10th",
+      "name_ko": "문채일",
+      "name_en": "Chaeil Moon",
+      "photo": "cimon.jpg",
+      "short_bio": "What I cannot create, I do not understand. - Richard Feynman",
+      "linkedin_username": "문채일",
+      "github_username": "chae2"
+    },
+    {
+      "year": "10th",
       "name_ko": "오현승",
       "name_en": "Hyeonseung Oh",
       "photo": "hyeonseung-oh.jpg",
