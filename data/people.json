@@ -1,6 +1,14 @@
 {
   "people": [
     {
+      "year": "10th",
+      "name_ko": "이정훈",
+      "name_en": "Jeonghun Lee",
+      "photo": "jeonghun.jpg",
+      "short_bio": "주어진 상황에서 최선을!",
+      "github_username": "tomass22"
+    },
+    {
         "year": "10th",
         "name_ko": "강동현",
         "name_en": "DongHyeon Kang",
