@@ -30,6 +30,14 @@
     },
     {
       "year": "10th", 
+      "name_ko": "김주용", 
+      "name_en": "Jooyong Kim",
+      "photo": "JooyongKim.webp", 
+      "short_bio": "탁월함은 한 번의 행동이 아니라 습관이다",
+      "github_username": "armidion"
+    },
+    {
+      "year": "10th", 
       "name_ko": "김지민", 
       "name_en": "Jimin Kim",
       "photo": "jiminkim.webp", 
