@@ -2,6 +2,15 @@
   "people": [
     {
       "year": "10th",
+      "name_ko": "황준영",
+      "name_en": "Junyoung Hwang",
+      "photo": "jy.webp",
+      "short_bio": "Any obstacle is breakable",
+      "linkedin_username": "junyoung-hwang-609133288",
+      "github_username": "ghkdwnwsdud"
+    },
+    {
+      "year": "10th",
       "name_ko": "백준규",
       "name_en": "Junekyu Baek",
       "photo": "june.webp",
