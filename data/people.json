@@ -1,6 +1,15 @@
 {
   "people": [
     {
+      "year": "10th",
+      "name_ko": "박상영",
+      "name_en": "Sangyeong Park",
+      "photo": "sangyeong.jpg",
+      "short_bio": "좋은 하루🍀",
+      "linkedin_username": "sangyeong-park-a5086330a",
+      "github_username": "sangyeong01"
+    },
+    {
       "year": "10th", 
       "name_ko": "김주용", 
       "name_en": "Jooyong Kim",
@@ -104,6 +113,14 @@
       "photo": "haramjeong.webp",
       "short_bio": "같이 열심히 해봐요!",
       "github_username": "haramj"
+    },
+    {
+      "year": "10th",
+      "name_ko": "김태현",
+      "name_en": "Taehyun Kim",
+      "photo": "kimtaehyun.jpg",
+      "short_bio": "끝까지 파고, 가고",
+      "github_username": "kth0213"
     },
     {
       "year": "9th",
