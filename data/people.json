@@ -2,6 +2,15 @@
   "people": [
     {
       "year": "10th",
+      "name_ko": "백준규",
+      "name_en": "Junekyu Baek",
+      "photo": "june.png",
+      "short_bio": "Make it count 🔥",
+      "linkedin_username": "준규-백-b19912400",
+      "github_username": "junekyu02"
+    },
+    {
+      "year": "10th",
       "name_ko": "최은소",
       "name_en": "Eunsu Choi",
       "photo": "eunso.webp",
