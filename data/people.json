@@ -2,6 +2,16 @@
   "people": [
     {
       "year": "10th",
+      "name_ko": "최은소",
+      "name_en": "Eunsu Choi",
+      "photo": "eunso.webp",
+      "short_bio": "병목이 되지 말자",
+      "linkedin_username": "ctrlesc",
+      "github_username": "esc-beep",
+      "homepage_url": "https://ctrl-shit-esc.tistory.com/"
+    },
+    {
+      "year": "10th",
       "name_ko": "박상영",
       "name_en": "Sangyeong Park",
       "photo": "sangyeong.jpg",
