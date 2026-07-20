@@ -12,6 +12,15 @@
     },
     {
       "year": "10th",
+      "name_ko": "임현지",
+      "name_en": "Hyunji Lim",
+      "photo": "hyunji.png",
+      "short_bio": "언제나 최선을 다하자!",
+      "linkedin_username": "현지-임-34935b398",
+      "github_username": "hyunji26"
+    },    
+    {
+      "year": "10th",
       "name_ko": "황준영",
       "name_en": "Junyoung Hwang",
       "photo": "jy.webp",
