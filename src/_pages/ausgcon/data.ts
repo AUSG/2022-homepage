@@ -11,6 +11,15 @@ export interface AusgconCard {
 
 export const ausgconCards: AusgconCard[] = [
   {
+    year: '2026',
+    title: '2026 AUSGCON',
+    meta: ['2026.09.05', 'AWS 센터필드'],
+    imageSrc: '/images/ausgcon/ausgcon-2026.png',
+    imageWidth: 1000,
+    imageHeight: 500,
+    eventPageUrl: 'https://2026.ausg.me/',
+  },
+  {
     year: '2025',
     title: '2025 AUSGCON',
     meta: ['2025.09.13', 'AWS 센터필드'],
