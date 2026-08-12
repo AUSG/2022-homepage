@@ -57,6 +57,34 @@
       "speaker": "2025 JapanAWS Jr. Champions",
       "title": "Software Engineering Careers and Their Relationship with AWS in Japan",
       "backgroundYear": 2021
+    },
+    {
+      "date": "2026.06.23",
+      "speaker": "이동훈",
+      "title": "AI한테 장애 대응 맡겨보기",
+      "backgroundYear": 2021,
+      "videoUrl": "https://www.youtube.com/watch?v=Xzj2tRkHH2s"
+    },
+    {
+      "date": "2026.06.23",
+      "speaker": "이현제",
+      "title": "Lambda Durable Functions과 S3 Vectors로 구닥다리 RAG 갱생시키기",
+      "backgroundYear": 2021,
+      "videoUrl": "https://www.youtube.com/watch?v=RwHUUlNODQs"
+    },
+    {
+      "date": "2026.06.23",
+      "speaker": "이태경",
+      "title": "우리들의 성장, AUSG에서 시작해요!",
+      "backgroundYear": 2021,
+      "videoUrl": "https://www.youtube.com/watch?v=E95eFrWfHp4"
+    },
+    {
+      "date": "2026.06.23",
+      "speaker": "김수빈",
+      "title": "AWS와 함께한 8년",
+      "backgroundYear": 2021,
+      "videoUrl": "https://www.youtube.com/watch?v=eidNYOwvQRI"
     }
   ]
 }
